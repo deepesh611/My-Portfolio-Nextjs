@@ -4,14 +4,30 @@ import { ImageSlider } from "@/components/Image-Slider";
 
 export default function Home() {
   return (
-    <div className="w-[100vw] flex justify-center">
-      <div className="fixed inset-0 z-[-1] bg-black w-[100vw] h-full">
+    <div className="container flex flex-col items-center scroll-smooth">
+      <div className="fixed inset-0 z-[-1] bg-black w-full h-full">
         <AuroraBackgroundDemo />
       </div>
       <FloatingNavbar />
-      <div className="relative z-[0] flex pt-[100px] w-[100vw] justify-center"> 
+      
+      <section id="home" className="relative z-[0] flex pt-[100px] w-full justify-center min-h-[100vh]">
+        {/* Home section content here */}
+      </section>
+      
+      <section id="about" className="relative z-[0] flex pt-[100px] w-full justify-center min-h-[100vh]">
+        <h2 className="text-4xl font-bold text-center mb-4 text-white">About Me</h2>
+        {/* About section content here */}
+      </section>
+      
+      <section id="certificates" className="relative z-[0] flex pt-[100px] w-full justify-center">
+        <h2 className="text-4xl font-bold text-center mb-4 text-white">Certificates</h2>
+      </section>
         <ImageSlider />
-      </div>
+      
+      <section id="contact" className="relative z-[0] flex pt-[100px] w-full justify-center min-h-[100vh]">
+        <h2 className="text-4xl font-bold text-center mb-4 text-white">Contact Me</h2>
+        {/* Contact section content here */}
+      </section>
     </div>
   );
 }

@@ -67,3 +67,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white; /* Ensure text is visible on a black background */
+}
+
+/* Navbar link active state */
+.nav-link.active {
+  color: #FFD700; /* Gold color to highlight the active section */
+}
