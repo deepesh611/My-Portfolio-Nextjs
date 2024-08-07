@@ -47,7 +47,7 @@ export function FloatingNavbar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-opacity-70 backdrop-blur-md p-4">
+    <div className="fixed top-0 left-0 w-full z-50 bg-opacity-70 p-4">
       <FloatingNav navItems={navItems} activeSection={activeSection} />
     </div>
   );

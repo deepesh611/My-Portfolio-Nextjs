@@ -13,7 +13,7 @@ export const FloatingNav = ({ navItems, className }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "fixed inset-x-0 mx-auto flex items-center justify-center max-w-fit border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-lg z-[5000] px-4 py-2 space-x-4",
+          "fixed inset-x-0 mx-auto flex items-center justify-center max-w-fit border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-lg z-[5000] px-6 py-4 space-x-6",
           className
         )}
       >
