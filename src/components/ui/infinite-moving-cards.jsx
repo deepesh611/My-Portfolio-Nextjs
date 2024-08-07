@@ -8,7 +8,7 @@ export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className
+  className,
 }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -39,9 +39,15 @@ export const InfiniteMovingCards = ({
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
-        containerRef.current.style.setProperty("--animation-direction", "forwards");
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "forwards"
+        );
       } else {
-        containerRef.current.style.setProperty("--animation-direction", "reverse");
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "reverse"
+        );
       }
     }
   };
@@ -76,19 +82,22 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[350px] md:h-[200px] group"
             style={{
-              background: "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+              background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
+              padding: 0,
             }}
             key={idx}
           >
-            <img
-              src={item.imageUrl}
-              alt={`Image ${idx + 1}`}
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <div className="mt-4 text-center text-gray-100">
-              {item.caption}
+            <div className="relative">
+              <img
+                src={item.imageUrl}
+                alt={`Image ${idx + 1}`}
+                className="w-full h-full object-cover rounded-md"
+              />
+              <div className="absolute inset-x-0 bottom-3 flex items-center justify-center p-4 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {item.caption}
+              </div>
             </div>
           </li>
         ))}
