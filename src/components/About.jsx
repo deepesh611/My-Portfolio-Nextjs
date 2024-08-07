@@ -8,7 +8,7 @@ export const About = () => {
             In addition to my technical expertise, I have experience in leadership and teamwork, having led the robotics community of my college. This role allowed me to hone my management skills and collaborate effectively with a diverse group of individuals.
             <br/><br/>
             I am proficient in several programming languages, including Python, C, and C++, and I have a solid understanding of frontend technologies such as React, Next.js, and JavaScript. My hands-on experience extends to working with hardware platforms like Arduino, Raspberry Pi, and Jetson, which has deepened my understanding of the intersection between software and hardware.
-          </p>
+          </p><br/>
 
           <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-8">
             <div className="text-center mb-6 sm:mb-0">
@@ -24,7 +24,8 @@ export const About = () => {
               <h3 className="text-xl md:text-2xl font-semibold text-teal-300">Skills</h3>
               <p className="mt-2 text-sm md:text-base">
                 Python, Networking, C/C++, Frontend, <br/>
-                Database Management, Shell Scripting
+                Database Management, Shell Scripting, <br/>
+                Arduino & RaspBerry Pi Programming
               </p>
             </div>
           </div>

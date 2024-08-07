@@ -12,7 +12,7 @@ export function Header() {
                 <img
                 src="https://avatars.githubusercontent.com/u/123585104?v=4" 
                 alt="Profile Picture"
-                className="w-60 h-60 rounded-full border-2 border-white mb-8 shadow-lg"
+                className="w-60 h-60 rounded-full border-2 border-white mb-10 shadow-lg"
                 />
                 <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
                 Deepesh Patil

@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <FloatingNavbar />
 
-      <section id="home" className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
+      <section id="home" className="relative z-[0] flex flex-col items-center pt-16 md:pt-16 w-full min-h-screen px-4">
         <Header />
       </section>
 
