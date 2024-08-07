@@ -3,7 +3,7 @@ import React from "react";
 import { FlipWords } from "./ui/flip-words";
 
 export function Header() {
-    const words = ["Frontend-Developer", "Python-Programmer", "IoT-Developer", "Network-Admin", "Arduino-Expert","Tech-Savvy"];
+    const words = ["Python-Programmer","Network-Admin", "Frontend-Developer", "Arduino-Expert","Tech-Savvy"];
 
     return (
         <header className="relative flex items-center justify-center h-screen text-center text-white bg-transparent">

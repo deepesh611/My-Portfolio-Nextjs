@@ -5,9 +5,9 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function ImageSlider() {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
+    <div>
       <InfiniteMovingCards
-        items={testimonials}
+        items={certificates}
         direction="right"
         speed="slow"
       />
@@ -20,21 +20,14 @@ export function ImageSlider() {
   );
 }
 
-const testimonials = [
+const certificates = [
   {
-    imageUrl: "https://via.placeholder.com/300x200?text=Image+1",
-    caption: "Image 1 Description",
+    imageUrl: "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tfGVufDB8fDB8fHww",
+    caption: "Certificate 1",
   },
   {
-    imageUrl: "https://via.placeholder.com/300x200?text=Image+2",
-    caption: "Image 2 Description",
+    imageUrl: "https://images.unsplash.com/photo-1496449903678-68ddcb189a24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fHww",
+    caption: "Certificate 2",
   },
-  {
-    imageUrl: "https://via.placeholder.com/300x200?text=Image+3",
-    caption: "Image 3 Description",
-  },
-  {
-    imageUrl: "https://via.placeholder.com/300x200?text=Image+4",
-    caption: "Image 4 Description",
-  },
+  // Add more certificates here
 ];
