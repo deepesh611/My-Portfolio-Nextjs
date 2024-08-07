@@ -20,14 +20,19 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="certificates" className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full px-4">
+      <section id="projects" className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">My Work</h2>
+        
+      </section>
+
+      <section id="certificates" className="relative z-[0] flex flex-col items-center pb-20 pt-16 md:pt-24 w-full px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Certificates</h2>
         <ImageSlider />
       </section>
 
-      <section id="contact" className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Contact Me</h2>
-        {/* Contact section content here */}
+      <section id="education" className="relative z-[0] flex flex-col items-center pb-20 pt-16 md:pt-24 w-full px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Education</h2>
+        
       </section>
     </div>
   );
