@@ -13,7 +13,7 @@ export const FloatingNav = ({ navItems, className }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "fixed top-4 inset-x-0 mx-auto flex items-center justify-center max-w-fit border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-lg z-[5000] px-8 py-2 space-x-6",
+          "fixed inset-x-0 mx-auto flex items-center justify-center max-w-fit border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-lg z-[5000] px-4 py-2 space-x-4",
           className
         )}
       >
@@ -22,11 +22,12 @@ export const FloatingNav = ({ navItems, className }) => {
             key={`link-${idx}`}
             href={navItem.link}
             className={cn(
-              "relative flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500 transition-colors duration-200"
+              "relative flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500 transition-colors duration-200",
+              "text-xs sm:text-sm md:text-base lg:text-base"
             )}
           >
             {navItem.icon}
-            <span className="text-sm">{navItem.name}</span>
+            <span className="hidden sm:inline">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>
