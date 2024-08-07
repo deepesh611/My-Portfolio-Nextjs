@@ -1,6 +1,7 @@
 import { FloatingNavbar } from "@/components/Navbar";
-import { AuroraBackgroundDemo } from "@/components/Background";
+import { Header } from "@/components/Header";
 import { ImageSlider } from "@/components/Image-Slider";
+import { AuroraBackgroundDemo } from "@/components/Background";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <FloatingNavbar />
       
       <section id="home" className="relative z-[0] flex pt-[100px] w-full justify-center min-h-[100vh]">
-        {/* Home section content here */}
+        <Header />
       </section>
       
       <section id="about" className="relative z-[0] flex pt-[100px] w-full justify-center min-h-[100vh]">
