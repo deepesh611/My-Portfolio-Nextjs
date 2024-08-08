@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { About } from "@/components/About";
 import { ImageSlider } from "@/components/Image-Slider";
 import { AuroraBG } from "@/components/Background";
+import { Timeline } from "@/components/Education";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
 
       <section id="education" className="relative z-[0] flex flex-col items-center pb-20 pt-16 md:pt-24 w-full px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Education</h2>
-        
+        <Timeline />
       </section>
     </div>
   );

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { LinkPreview } from "@/components/ui/link-preview";
 
 export const About = () => {
