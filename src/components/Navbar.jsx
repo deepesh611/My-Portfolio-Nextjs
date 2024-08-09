@@ -29,7 +29,7 @@ export function FloatingNavbar() {
       name: "Education",
       link: "#education",
       icon: <IconBook2 className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    }
+    },
   ];
 
   const [activeSection, setActiveSection] = useState("home");

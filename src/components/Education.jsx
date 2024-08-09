@@ -4,16 +4,25 @@ export function Timeline() {
       year: "2026", 
       title: "Indian Institute of Information Technology Pune", 
       description: "Bachelor's in Computer Science & Engineering." },
+    {
+      year: "2023",
+      title: "Coincent Internship",
+      description: "Completed an internship program on 'Artificial Intelligence with Python'"
+    },
+    {
+      year: "2023",
+      title: "Coincent Training Program",
+      description: "Completed 'Artificial Intelligence with Python' training program."
+    },
     { 
       year: "2022", 
-      title: "Graduated from Indian School Muscat", 
+      title: "Indian School Muscat", 
       description: "CBSE curriculum with a focus on Science, specializing in Computer Science." 
-    }
+    },
   ];
 
   return (
     <div className="relative container mx-auto px-6 py-10 pb-20">
-      {/* Timeline line */}
       <div className="absolute w-1 bg-teal-500 h-full left-1/2 transform -translate-x-1/2"></div>
 
       <ul className="relative space-y-12">
@@ -29,7 +38,6 @@ export function Timeline() {
                 <p className="mt-1 text-sm">{event.description}</p>
               </div>
             </div>
-            {/* Circle indicating each event */}
             <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-teal-500 border-4 border-gray-800"></div>
           </li>
         ))}

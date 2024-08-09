@@ -8,12 +8,12 @@ export const FloatingNav = ({ navItems, className }) => {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -10 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "fixed inset-x-0 mx-auto flex items-center justify-center max-w-fit border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-lg z-[5000] px-6 py-4 space-x-6",
+          "fixed inset-x-0 mx-auto flex items-center justify-center max-w-fit border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black/30 bg-white backdrop-blur-md shadow-lg z-[5000] px-6 py-4 space-x-6",
           className
         )}
       >

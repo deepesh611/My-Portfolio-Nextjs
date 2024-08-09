@@ -82,3 +82,76 @@ body {
   color: #FFD700; /* Gold color to highlight the active section */
 }
 
+/* Add these styles to your CSS */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+  z-index: 10;
+  font-size: 1rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+  opacity: 0.5;
+}
+
+.project-card:hover .project-card-title {
+  transform: translateY(-30px);
+}
+
+.project-card:hover .project-card-description {
+  opacity: 1;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.badge-slider {
+  --animation-duration: 20s;
+  --animation-direction: forwards;
+}
+
+.badge-slider .animate-scroll {
+  animation: var(--animation-direction) var(--animation-duration) linear infinite;
+}
