@@ -3,7 +3,7 @@ import React from "react";
 import { FlipWords } from "./ui/flip-words";
 
 export function Header() {
-    const words = ["Python-Programmer","Network-Admin", "Frontend-Developer", "IoT-Practitioner","Tech-Savvy"];
+    const words = ["Python-Programmer","Network-Engineer", "Frontend-Developer", "IoT-Practitioner","Tech-Savvy"];
 
     return (
         <header className="relative flex items-center justify-center h-screen text-center text-white bg-transparent">
@@ -19,6 +19,7 @@ export function Header() {
                 </h1>
                 <br/>
                 <div className="text-lg md:text-xl mb-6">
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Hi, I'm a
                 <FlipWords words={words} />
                 </div>

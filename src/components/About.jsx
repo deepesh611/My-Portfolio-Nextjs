@@ -54,6 +54,7 @@ export const About = () => {
                 Certified Member of{" "}<LinkPreview url="https://www.isc2.org/isc2insights" className="font-extrabold">
                 (ISC)²
             </LinkPreview>, <br/>
+                  {/* eslint-disable-next-line react/no-unescaped-entities */}
                 President of IIIT Pune's
                 {" "}<LinkPreview url="https://github.com/ROFIES-IIITP" className="font-extrabold">
                 Robotics Club

@@ -29,7 +29,7 @@ export function ImageSlider() {
 
 const certificates = [
   {
-    imageUrl: "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tfGVufDB8fDB8fHww",
+    imageUrl: "https://drive.google.com/drive/folders/1ZmVEbrcJEhePaRfhUkQrcxQLWsZKisjb",
     caption: "Certificate 1",
   },
   {

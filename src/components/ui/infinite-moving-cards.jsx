@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  }, [addAnimation]);
 
   const [start, setStart] = useState(false);
 
@@ -90,6 +90,7 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <div className="relative">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={item.imageUrl}
                 alt={`Image ${idx + 1}`}
