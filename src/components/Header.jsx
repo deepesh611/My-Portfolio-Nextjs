@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { FlipWords } from "./ui/flip-words";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export function Header() {
     const words = ["Python-Programmer","Network-Engineer", "Frontend-Developer", "IoT-Practitioner","Tech-Savvy"];
@@ -18,10 +21,25 @@ export function Header() {
                 Deepesh Patil
                 </h1>
                 <br/>
+
                 <div className="text-lg md:text-xl mb-6">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Hi, I'm a
-                <FlipWords words={words} />
+                    Hi, I'm a
+                    <FlipWords words={words} />
+                </div>
+                <div className="flex space-x-8 mt-4">
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
+                    </a>
+                    <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
+                    </a>
+                    <a href="mailto:your.email@example.com">
+                        <FontAwesomeIcon icon={faEnvelope} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
+                    </a>
                 </div>
             </div>
         </header>
