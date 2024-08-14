@@ -28,10 +28,10 @@ export function Header() {
                     <FlipWords words={words} />
                 </div>
                 <div className="flex space-x-8 mt-4">
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
+                    <a href="https://github.com/deepesh611" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300"/>
                     </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/deepesh-patil-103a87258/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
                     </a>
                     <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">

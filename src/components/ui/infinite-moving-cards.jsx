@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, [addAnimation]);
+  }, []);
 
   const [start, setStart] = useState(false);
 
@@ -82,21 +82,20 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[350px] md:h-[200px] group"
+            className="w-[350px] h-[200px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[350px] md:h-[200px] group"
             style={{
               background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
               padding: 0,
             }}
             key={idx}
           >
-            <div className="relative">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="relative w-full h-full">
               <img
                 src={item.imageUrl}
                 alt={`Image ${idx + 1}`}
                 className="w-full h-full object-cover rounded-md"
               />
-              <div className="absolute inset-x-0 bottom-3 flex items-center justify-center p-4 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-x-0 bottom-0 flex items-center justify-center p-2 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {item.caption}
               </div>
             </div>
