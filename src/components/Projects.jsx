@@ -35,7 +35,7 @@ export function Projects() {
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             <div className="project-card bg-gray-950 bg-opacity-10 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-4xl hover:-translate-y-2">
               <div className="relative w-full h-0 pb-[100%]">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="object-cover w-full h-full"
