@@ -9,7 +9,7 @@ export function Projects() {
       {
         title: "OmniLangDB",
         image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*94n7Yjm2xml9dVFbTph0hA.jpeg",
-        description: "Developing AI models to predict and prevent cyber threats.",
+        description: "An all-in-one solution for connecting DBs in various languages",
         link: "https://github.com/deepesh611/OmniLangDB"
       },
     ];
