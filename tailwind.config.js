@@ -114,6 +114,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         shimmer: "shimmer 2s linear infinite",
+        'spin-slow': 'spin 3s linear infinite',
+        'pulse-slow': 'pulse 2s infinite',
       },
     },
   },

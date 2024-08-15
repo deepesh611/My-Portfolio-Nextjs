@@ -1,12 +1,30 @@
+"use client";
+
 import { About } from "@/components/About";
+import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Projects } from "@/components/Projects";
 import { Timeline } from "@/components/Education";
 import { AuroraBG } from "@/components/Background";
+import { PreLoader } from "@/components/Pre-Loader";
 import { FloatingNavbar } from "@/components/Navbar";
 import { ImageSlider } from "@/components/Image-Slider";
 
 export default function Home() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating a delay to mimic content loading, you can replace this with your actual data fetching logic
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Set the delay time as needed
+  }, []);
+
+  if (loading) {
+    return <PreLoader />;
+  }
+
   return (
     <div className="relative flex flex-col items-center scroll-smooth">
       <div className="fixed inset-0 z-[-1] bg-black w-full h-full">
