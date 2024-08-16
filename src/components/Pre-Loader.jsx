@@ -5,14 +5,14 @@ export function PreLoader() {
   const [messageIndex, setMessageIndex] = useState(0);
 
   const messages = [
-    "Pretending to load...",
-    "Loading... because why not?",
+    "Cooking up some digital wizardry...",
     "Summoning the data gnomes...",
+    "Pretending to load...",
+    "Calculating time left to procrastinate...",
     "Almost there, just kidding...",
     "The magic potion is almost ready!",
-    "Cooking up some digital wizardry...",
     "Hang tight, we're polishing the code...",
-    "Calculating time left to procrastinate...",
+    "Loading... because why not?",
     "Making sure everything's perfect... or not.",
     "Your request is in the queue... at the front!",
   ];

@@ -9,8 +9,14 @@ export function Projects() {
     {
       title: "OmniLangDB",
       image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*94n7Yjm2xml9dVFbTph0hA.jpeg",
-      description: "An all-in-one solution for connecting databases in various languages.",
+      description: "An all-in-one documentation solution for connecting databases in various languages.",
       link: "https://github.com/deepesh611/OmniLangDB"
+    },
+    {
+      title: "Raspberry-Pi NAS",
+      image: "https://miro.medium.com/v2/resize:fit:1400/0*4IvpGb15N5zMg51Q",
+      description: "An easy-to-carry NAS (Network Attached Storage) with a Raspberry-Pi 3",
+      link: "https://github.com/deepesh611/Raspberry-Pi-NAS"
     },
   ];
 
