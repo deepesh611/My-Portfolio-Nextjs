@@ -39,7 +39,7 @@ export function Projects() {
     return projects.map((project, index) => (
       <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-4 flex justify-center">
         <a href={project.link} target="_blank" rel="noopener noreferrer">
-          <div className="project-card bg-gray-900 bg-opacity-80 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="project-card bg-gray-900 bg-opacity-80 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2x">
             <div className="relative w-full h-56">
               <img
                 src={project.image}
@@ -51,7 +51,7 @@ export function Projects() {
               <h3 className="project-card-title text-white text-xl font-bold mb-2">
                 {project.title}
               </h3>
-              <p className="project-card-description text-gray-300">
+              <p className="project-card-description text-white">
                 {project.description}
               </p>
             </div>

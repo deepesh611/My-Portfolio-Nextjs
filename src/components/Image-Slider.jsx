@@ -18,10 +18,6 @@ export function ImageSlider() {
       imageUrl: "https://i.postimg.cc/wvNPzdhZ/STAI-1.png",
       caption: "Best Performer Certificate",
     },
-    {
-      imageUrl: "https://i.postimg.cc/4ybSKb21/PVPIT-certf-1.png",
-      caption: "Hackathon Finalists",
-    },
   ];
 
   return (
