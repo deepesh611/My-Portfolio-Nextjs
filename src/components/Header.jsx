@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Image from 'next/image';
 import { FlipWords } from "./ui/flip-words";
+import { SocialDock } from "@/components/Floating-Dock";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -31,17 +31,7 @@ export function Header() {
                     <FlipWords words={words} />
                 </div>
 
-                <div className="flex space-x-8 mt-4">
-                    <a href="https://github.com/deepesh611" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300"/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/deepesh-patil-103a87258/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
-                    </a>
-                    <a href="https://instagram.com/_deepesh_v.p" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faInstagram} className="text-white text-4xl hover:text-teal-400 transition-colors duration-300" />
-                    </a>
-                </div>
+                <SocialDock />
             </div>
         </header>
   );

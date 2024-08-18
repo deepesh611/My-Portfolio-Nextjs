@@ -27,7 +27,7 @@ export function Achievements() {
             icon: "💻",
         },
         {
-            title: "Embedded Systems Development",
+            title: "IoT Development",
             description:
                 "Developed and implemented projects using Arduino Uno, Arduino Mega, Raspberry Pi-3, and Jetson Nano, integrating various sensors for real-world applications.",
             date: "Ongoing",

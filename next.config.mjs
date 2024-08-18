@@ -3,7 +3,8 @@ const nextConfig = {
     images: {
         domains: [
           "api.microlink.io", // Microlink Image Preview,
-          'avatars.githubusercontent.com'
+          'avatars.githubusercontent.com',
+            'assets.aceternity.com'
         ],
       },
 };
