@@ -1,8 +1,10 @@
 "use client";
 
-import { AuroraBG } from "@/components/Background"; // Adjust the import if necessary
-import { FloatingNavbar } from "@/components/Navbar2"; // Assuming you create this component
-import { ImageSlider } from "@/components/Image-Slider"; // Reusing your ImageSlider component
+import { AuroraBG } from "@/components/Background";
+import { BadgeGrid } from "@/components/Badge Grid";
+import { FloatingNavbar } from "@/components/Navbar2";
+import { CertificatesGrid } from "@/components/CertificateGrid";
+import { ParticipationCertificateGrid } from "@/components/Participation Certificate Grid";
 
 export default function CertificatesPage() {
     return (
@@ -13,11 +15,19 @@ export default function CertificatesPage() {
 
             <FloatingNavbar />
 
-            <section className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
-                <h1 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-12">
-                    My Certificates
-                </h1>
+            <section
+                className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
+                <CertificatesGrid />
             </section>
+
+            <section id="participation" className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
+                <ParticipationCertificateGrid/>
+            </section>
+
+            <section id="badges" className="relative z-[0] flex flex-col items-center min-h-screen px-4">
+                <BadgeGrid />
+            </section>
+
         </div>
     );
 }

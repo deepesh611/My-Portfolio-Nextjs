@@ -117,6 +117,8 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
         'pulse-slow': 'pulse 2s infinite',
       },
+
+
     },
   },
 

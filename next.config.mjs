@@ -4,7 +4,8 @@ const nextConfig = {
         domains: [
           "api.microlink.io", // Microlink Image Preview,
           'avatars.githubusercontent.com',
-            'assets.aceternity.com'
+            'assets.aceternity.com',
+            "res.cloudinary.com"
         ],
       },
 };

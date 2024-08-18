@@ -30,7 +30,7 @@ export function PreLoader() {
       clearTimeout(timer);
       clearInterval(messageTimer);
     };
-  }, []);
+  });
 
   if (!loading) return null;
 
