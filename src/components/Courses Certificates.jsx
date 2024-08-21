@@ -4,32 +4,37 @@ import Image from "next/image";
 
 const certificatesData = [
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002362/PVPIT_certf.-1_majjxy.jpg",
-        title: "Finalists in a National-Level Hackathon",
-        date: "February 2024",
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
+        title: "Mastercard-Cybersecurity Job Simulation",
+        date: "July 2024",
     },
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002278/Artificial_Intelligence_with_Python-Internship-1_nkjdqm.jpg",
-        title: "Artificial Intelligence with Python - Internship",
-        date: "August 2023",
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/ISC2_Security_Policies_Completency-1_eh2axm.jpg",
+        title: "ISC2-Security Principles",
+        date: "July 2024"
     },
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002313/Hacktopia_GNI_Hydrabad-1_lzrjkh.jpg",
-        title: "Certificate of Talent in a National-Level Hackathon",
-        date: "August 2023",
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/ISC2_Incidence_Response-1_ncowfe.jpg",
+        title: "ISC2-Incident Response & Disaster Recovery",
+        date: "July 2024"
     },
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724001886/STAI-1_piell3.jpg",
-        title: "Best Performer in STAI Competition",
-        date: "January 2019",
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/ISC2_Access_Control_Concepts-1_gbvtgh.jpg",
+        title: "ISC2-Access Control Concepts",
+        date: "July 2024"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/Artificial_Intelligence_with_Python-Training-1_azsd88.jpg",
+        title: "Artificial Intelligence with Python",
+        date: "July 2023"
     },
 ];
 
-export const CertificatesGrid = () => {
+export const CoursesCertificates = () => {
     return (
         <section className="relative z-0 flex flex-col items-center py-16 px-4 min-h-screen">
             <h2 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-12">
-                My Certificates
+                Courses
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {certificatesData.map((certificate, index) => (

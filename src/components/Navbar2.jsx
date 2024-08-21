@@ -3,11 +3,9 @@ import React, { useEffect, useState } from "react";
 import { FloatingNav } from "./ui/floating-navbar";
 import {
     IconHome,
-    IconUser,
-    IconCertificate,
-    IconBook2,
-    IconFolderCode,
-    IconTrophy, IconMedal, IconCertificate2, IconFileCertificate,
+    IconMedal,
+    IconFileCertificate,
+    IconFilePencil,
 } from "@tabler/icons-react";
 
 export function FloatingNavbar() {
@@ -16,6 +14,11 @@ export function FloatingNavbar() {
             name: "Home",
             link: "/",
             icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        },
+        {
+            name: "Courses",
+            link: "#courses",
+            icon: <IconFilePencil className="h-4 w-4 text-neutral-500 dark:text-white" />
         },
         {
             name: "Participations",
