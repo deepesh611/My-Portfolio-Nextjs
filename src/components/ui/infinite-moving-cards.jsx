@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -90,7 +91,9 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <div className="relative w-full h-full">
-              <img
+              <Image
+                width={350}
+                height={200}
                 src={item.imageUrl}
                 alt={`Image ${idx + 1}`}
                 className="w-full h-full object-cover rounded-md"

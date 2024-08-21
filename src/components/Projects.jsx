@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   FaPython,
   FaJs,
@@ -105,7 +106,9 @@ export function Projects() {
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             <div className="project-card bg-gray-900 bg-opacity-80 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl group relative">
               <div className="relative w-full h-56">
-                <img
+                <Image
+                    width={400}
+                    height={300}
                     src={project.image}
                     alt={project.title}
                     className="object-cover w-full h-full"
@@ -134,7 +137,7 @@ export function Projects() {
       <div className="container mx-auto px-6 py-12">
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-white mb-8 relative before:absolute before:content-[''] before:w-12 before:h-1 before:bg-gradient-to-r from-teal-400 to-blue-500 before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-[-10px]">
-            I'm currently working on...
+            I&apos;m currently working on...
           </h2>
           <div className="flex flex-wrap justify-center">
             {renderProjectCards(currentProjects)}

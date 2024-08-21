@@ -5,7 +5,14 @@ const nextConfig = {
           "api.microlink.io", // Microlink Image Preview,
           'avatars.githubusercontent.com',
             'assets.aceternity.com',
-            "res.cloudinary.com"
+            "res.cloudinary.com",
+            "dinofizzotti.com",
+            "miro.medium.com",
+            "cdn.activestate.com",
+            "www.ncsc.gov.uk",
+            "wallpapers.com",
+            "5.imimg.com",
+            "cdn.pixabay.com",
         ],
       },
 };
