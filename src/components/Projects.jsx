@@ -50,11 +50,11 @@ export function Projects() {
       languages: [<SiRaspberrypi key="raspberrypi"/>, <FaServer key='server'/>]
     },
     {
-      title: "Python Automation",
-      image: "https://cdn.activestate.com/wp-content/uploads/2020/06/AutomatableTasks.jpg",
-      description: "A comprehensive set of scripts aimed at streamlining daily tasks by automating processes, enhancing productivity and efficiency.",
-      link: "https://github.com/deepesh611/Learning-Automation",
-      languages: [<FaPython key="python"/>, <SiJupyter key='jupyter'/>]
+      title: "Eagle Encryptor",
+      image: "https://wallpapers.com/images/hd/secure-digital-data-encryption-5mzhii44tfcny1fe.jpg",
+      description: "A Desktop CLI encryption Application that can secure files with various formats",
+      link: "https://github.com/deepesh611/Eagle-Encryptor",
+      languages: [<FaPython key="python"/>, <FaLock key="lock"/>]
     },
     {
       title: "Shell Password Manager",
@@ -64,18 +64,18 @@ export function Projects() {
       languages: [<SiPowershell key="powershell"/>, <SiShell key='shell'/>, <FaKey key='key'/>]
     },
     {
+      title: "Python Automation",
+      image: "https://cdn.activestate.com/wp-content/uploads/2020/06/AutomatableTasks.jpg",
+      description: "A comprehensive set of scripts aimed at streamlining daily tasks by automating processes, enhancing productivity and efficiency.",
+      link: "https://github.com/deepesh611/Learning-Automation",
+      languages: [<FaPython key="python"/>, <SiJupyter key='jupyter'/>]
+    },
+    {
       title: "My Shell",
       image: "https://res.cloudinary.com/practicaldev/image/fetch/s--ydHN65JV--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://images.unsplash.com/photo-1629654291663-b91ad427698f%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D1674%26q%3D80",
       description: "A functional copy of terminal made in C",
       link: "https://github.com/deepesh611/My_Shell",
       languages: [<SiC key='c'/>]
-    },
-    {
-      title: "Eagle Encryptor",
-      image: "https://wallpapers.com/images/hd/secure-digital-data-encryption-5mzhii44tfcny1fe.jpg",
-      description: "A Desktop CLI encryption Application that can secure files with various formats",
-      link: "https://github.com/deepesh611/Eagle-Encryptor",
-      languages: [<FaPython key="python"/>, <FaLock key="lock"/>]
     },
     {
       title: "University Management System",

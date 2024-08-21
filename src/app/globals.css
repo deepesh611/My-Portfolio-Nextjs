@@ -162,3 +162,29 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust width to your preference */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Slightly lighter dark color for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444; /* Darker gray for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #2c2c2c; /* Adding border to blend with track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; /* Lighter gray on hover */
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #444 #2c2c2c; /* Thumb and track color */
+}
+

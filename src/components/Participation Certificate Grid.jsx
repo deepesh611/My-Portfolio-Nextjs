@@ -9,24 +9,24 @@ const certificatesData = [
         date: "June 2024",
     },
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002685/Flipkart_Grid_5.0_Participation-1_n3tz2v.jpg",
-        title: "Flipkart Grid 5.0",
-        date: "August 2023",
-    },
-    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002691/Optigo_Inter-IIIT_Coding-1_oqayuc.jpg",
         title: "Inter-IIIT Coding Contest",
         date: "April 2024",
     },
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002671/Certificate_of_Participation_Reverse_Coding_Deepesh_Patil-1_zzq0x3.jpg",
-        title: "IIIT Pune Coding Contest",
-        date: "April 2023",
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002685/Flipkart_Grid_5.0_Participation-1_n3tz2v.jpg",
+        title: "Flipkart Grid 5.0",
+        date: "August 2023",
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002683/Deepesh_May_2023_participation_43426-1_k08xvm.jpg",
         title: "AI with Python Course",
         date: "May 2023",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002671/Certificate_of_Participation_Reverse_Coding_Deepesh_Patil-1_zzq0x3.jpg",
+        title: "IIIT Pune Coding Contest",
+        date: "April 2023",
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002682/Deepesh_Patil_TopTalks_Ideathon2k22_Participation-1_ytv4b8.jpg",
