@@ -8,28 +8,28 @@ export function Achievements() {
         {
             title: "Vice-President of Robotics Community",
             description:
-                "Led the robotics community of my college for more than a year, organizing sessions, workshops and competitions.",
-            date: "January 2023 - Present",
+                "Led the robotics community at my college for over a year, successfully organizing 10+ sessions, workshops, and competitions that engaged and educated fellow students.",
+            date: "July 2023 - Present",
             icon: "🤖",
         },
         {
             title: "Top Performer in Hackathons",
             description:
-                "Recognized as a top performer in multiple national-level hackathons among 300+ teams.",
-            date: "March 2023 - May 2024",
+                "Recognized as a top performer in multiple national-level hackathons, standing out among 300+ teams for innovative solutions and technical expertise.",
+            date: "March 2023 - July 2024",
             icon: "🏆",
         },
         {
             title: "Open Source Contributions",
             description:
-                "Contributed to several open-source projects in VSoC (Vinyasa Summer of Code).",
+                "Contributed to several open-source projects, achieving 9th place among the top contributors in VSoC, demonstrating strong coding skills and commitment to open-source development.",
             date: "July 2024",
             icon: "💻",
         },
         {
             title: "IoT Development",
             description:
-                "Developed and implemented projects using Arduino Uno, Arduino Mega, Raspberry Pi-3, and Jetson Nano, integrating various sensors for real-world applications.",
+                "Developed and implemented multiple projects utilizing Arduino Uno, Arduino Mega, Raspberry Pi-3, and Jetson Nano, successfully integrating various sensors to address real-world applications and challenges.",
             date: "Ongoing",
             icon: "🔧",
         },
