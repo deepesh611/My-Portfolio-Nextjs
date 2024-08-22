@@ -106,7 +106,7 @@ export function Projects() {
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             <div className="project-card bg-gray-900 bg-opacity-80 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl group relative">
               <div className="relative w-full h-56">
-                <Image
+                <img
                     width={400}
                     height={300}
                     src={project.image}

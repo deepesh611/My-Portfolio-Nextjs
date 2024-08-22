@@ -42,7 +42,7 @@ export const CoursesCertificates = () => {
                         key={index}
                         className="relative bg-transparent bg-opacity-90 rounded-xl backdrop-blur-md shadow-lg p-4 overflow-hidden transition-transform transform hover:scale-110"
                     >
-                        <Image
+                        <img
                             src={certificate.imageUrl}
                             alt={certificate.title}
                             width={400}
