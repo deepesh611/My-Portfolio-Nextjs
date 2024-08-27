@@ -1,8 +1,7 @@
-import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
-import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 import { useRef, useState } from "react";
+import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 export const FloatingDock = ({ items, className }) => {
   return (
@@ -15,17 +14,22 @@ export const FloatingDock = ({ items, className }) => {
 const FloatingDockDesktop = ({ items, className }) => {
   let mouseX = useMotionValue(Infinity);
   return (
-      <motion.div
-          onMouseMove={(e) => mouseX.set(e.pageX)}
-          onMouseLeave={() => mouseX.set(Infinity)}
-          className={cn(
-              "mx-auto flex h-16 gap-4 items-end  rounded-2xl px-4 pb-3",
-              className
-          )}>
+      // <motion.div
+      //     onMouseMove={(e) => mouseX.set(e.pageX)}
+      //     onMouseLeave={() => mouseX.set(Infinity)}
+      //     className={cn(
+      //         "mx-auto flex h-16 gap-4 items-end  rounded-2xl px-4 pb-3",
+      //         className
+      //     )}>
+      <div className={cn(
+                "mx-auto flex h-16 gap-4 items-end  rounded-2xl px-4 pb-3",
+                className
+            )}>
         {items.map((item) => (
             <IconContainer mouseX={mouseX} key={item.title} {...item} />
         ))}
-      </motion.div>
+      {/* // </motion.div> */}
+      </div>
   );
 };
 

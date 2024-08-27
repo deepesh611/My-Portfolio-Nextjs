@@ -4,6 +4,16 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724782769/Flipkart_Grid_6.0_InfoSec_qvtlsj.jpg",
+        title: "Flipkart Grid 6.0-Information Security",
+        date: "August 2024"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724782958/Flipkart_Grid_6.0_Software_Dev_duhdmu.jpg",
+        title: "Flipkart Grid 6.0-Information Security",
+        date: "August 2024"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002679/Deepesh_Patil_certificate_IIT_Jammu-1_b4ao3d.jpg",
         title: "IIT Jammu CTF Contest",
         date: "June 2024",
