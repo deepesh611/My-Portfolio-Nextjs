@@ -4,6 +4,11 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725780046/opswat-introduction-to-critical-infrastructure-protection-icip_totete.png",
+        title: "OPSWAT Introduction to Critical Infrastructure Protection (ICIP)",
+        date: "September 2024",
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002406/isc2-candidate_fpevin.png",
         title: "(ISC)2 Members)",
         date: "July 2024",
@@ -22,13 +27,15 @@ export const BadgeGrid = () => {
                         key={index}
                         className="relative bg-transparent bg-opacity-90 rounded-xl backdrop-blur-md shadow-lg p-4 overflow-hidden transition-transform transform hover:scale-105"
                     >
-                        <img
-                            src={certificate.imageUrl}
-                            alt={certificate.title}
-                            width={400}
-                            height={300}
-                            className="object-cover w-full h-70 mb-4 rounded-lg"
-                        />
+                        <div className="flex justify-center"> {/* Flexbox to center the image */}
+                            <img
+                                src={certificate.imageUrl}
+                                alt={certificate.title}
+                                width={200}
+                                height={100}
+                                className="object-cover mb-4 rounded-lg"
+                            />
+                        </div>
                         <div className="text-center">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                 {certificate.title}
@@ -36,6 +43,7 @@ export const BadgeGrid = () => {
                             <p className="text-gray-500 dark:text-gray-400">{certificate.date}</p>
                         </div>
                     </div>
+
                 ))}
             </div>
         </section>
