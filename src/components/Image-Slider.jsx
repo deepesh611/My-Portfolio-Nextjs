@@ -7,6 +7,10 @@ import Link from "next/link";
 export function ImageSlider() {
   const certificates = [
     {
+      imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",
+      caption: "Introduction to CIP",
+    },
+    {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002278/Artificial_Intelligence_with_Python-Internship-1_nkjdqm.jpg",
       caption: "Internship from Coincent",
     },

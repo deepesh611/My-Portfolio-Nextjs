@@ -4,6 +4,11 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",
+        title: "Introduction to CIP",
+        date: "September 2024",
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
         title: "Mastercard-Cybersecurity Job Simulation",
         date: "July 2024",
