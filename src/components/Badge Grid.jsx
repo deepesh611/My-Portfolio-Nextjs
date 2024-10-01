@@ -10,7 +10,7 @@ const certificatesData = [
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002406/isc2-candidate_fpevin.png",
-        title: "(ISC)2 Members)",
+        title: "(ISC)2 Member",
         date: "July 2024",
     },
 ];

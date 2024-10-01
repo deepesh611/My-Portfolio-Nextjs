@@ -26,6 +26,10 @@ export function ImageSlider() {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
       caption: "Completed Job Simulation",
     },
+    {
+      imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1727789436/DEEPESH_PATIL-1_rsaxxm.png",
+      caption: "Top Contributor in Open Source (VSoC) ",
+    }
   ];
 
   return (

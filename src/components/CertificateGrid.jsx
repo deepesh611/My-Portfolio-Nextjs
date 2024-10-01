@@ -4,6 +4,11 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1727789436/DEEPESH_PATIL-1_rsaxxm.png",
+        title: "Top Contributor in Open Source (VSoC)",
+        date: "October 2024",
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002362/PVPIT_certf.-1_majjxy.jpg",
         title: "Finalists in a National-Level Hackathon",
         date: "February 2024",
