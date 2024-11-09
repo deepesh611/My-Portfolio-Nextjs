@@ -26,13 +26,6 @@ import {
 export function Projects() {
   const currentProjects = [
     {
-      title: "Raspberry Pi-3 Cluster",
-      image: "https://dinofizzotti.com/blog/2020-04-10-raspberry-pi-cluster-part-1-provisioning-with-ansible-and-temperature-monitoring-using-prometheus-and-grafana/IMG_3105.JPEG",
-      description: "A network of Raspberry Pi-3 devices working together to perform parallel processing tasks.",
-      link: "https://github.com/deepesh611/RaspBerry-Pi-Cluster",
-      languages: [<SiRaspberrypi key="raspberrypi"/>, <SiKubernetes key="K3S"/>]
-    },
-    {
       title: "OmniLangDB",
       image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*94n7Yjm2xml9dVFbTph0hA.jpeg",
       description: "An all-in-one documentation solution for connecting databases in various languages.",
@@ -42,13 +35,6 @@ export function Projects() {
   ];
 
   const completedProjects = [
-    {
-      title: "Portable Raspberry-Pi NAS",
-      image: "https://miro.medium.com/v2/resize:fit:1400/0*4IvpGb15N5zMg51Q",
-      description: "A portable NAS using RaspberryPi-3, enabling wireless media streaming and file access via a self-hosted hotspot on the go.",
-      link: "https://github.com/deepesh611/Raspberry-Pi/tree/main/Portable%20Raspberry-Pi%20NAS",
-      languages: [<SiRaspberrypi key="raspberrypi"/>, <FaServer key='server'/>]
-    },
     {
       title: "Eagle Encryptor",
       image: "https://wallpapers.com/images/hd/secure-digital-data-encryption-5mzhii44tfcny1fe.jpg",
@@ -65,14 +51,14 @@ export function Projects() {
     },
     {
       title: "Python Automation",
-      image: "https://cdn.activestate.com/wp-content/uploads/2020/06/AutomatableTasks.jpg",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       description: "A comprehensive set of scripts aimed at streamlining daily tasks by automating processes, enhancing productivity and efficiency.",
       link: "https://github.com/deepesh611/Learning-Automation",
       languages: [<FaPython key="python"/>, <SiJupyter key='jupyter'/>]
     },
     {
       title: "My Shell",
-      image: "https://res.cloudinary.com/practicaldev/image/fetch/s--ydHN65JV--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://images.unsplash.com/photo-1629654291663-b91ad427698f%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D1674%26q%3D80",
+      image: "https://www.freecodecamp.org/news/content/images/size/w2000/2022/03/pexels-pixabay-207580.jpg",
       description: "A functional copy of terminal made in C",
       link: "https://github.com/deepesh611/My_Shell",
       languages: [<SiC key='c'/>]
@@ -83,6 +69,13 @@ export function Projects() {
       description: "A very basic database management system with MySQL in the backend and Swing in the Frontend GUI",
       link: "https://github.com/deepesh611/University-Management-System",
       languages: [<FaJava key="java"/>, <SiMysql key='mysql'/>]
+    },
+    {
+      title: "Raspberry-Pi Projects",
+      image: "https://images.unsplash.com/photo-1610812387871-806d3db9f5aa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFzcGJlcnJ5JTIwcGl8ZW58MHx8MHx8fDA%3D",
+      description: "Using Raspberry Pi for practical tasks like setting up a web server, hosting sites on the dark web, and building a portable NAS for easy file storage and access. These projects cover a range of uses, making the most of the Raspberry Pi's capabilities in networking and storage.",
+      link: "https://github.com/deepesh611/RaspBerry-Pi-Cluster",
+      languages: [<SiRaspberrypi key="raspberrypi"/>, <SiKubernetes key="K3S"/>, <SiPowershell key='powershell'/>]
     },
     {
       title: "Arduino Projects",
