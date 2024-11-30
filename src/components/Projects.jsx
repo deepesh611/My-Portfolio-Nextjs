@@ -58,7 +58,7 @@ export function Projects() {
     },
     {
       title: "My Shell",
-      image: "https://www.freecodecamp.org/news/content/images/size/w2000/2022/03/pexels-pixabay-207580.jpg",
+      image: "https://images.unsplash.com/photo-1629654291663-b91ad427698f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description: "A functional copy of terminal made in C",
       link: "https://github.com/deepesh611/My_Shell",
       languages: [<SiC key='c'/>]
@@ -128,21 +128,21 @@ export function Projects() {
 
   return (
       <div className="container mx-auto px-6 py-12">
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center text-white mb-8 relative before:absolute before:content-[''] before:w-12 before:h-1 before:bg-gradient-to-r from-teal-400 to-blue-500 before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-[-10px]">
-            I&apos;m currently working on...
-          </h2>
-          <div className="flex flex-wrap justify-center">
-            {renderProjectCards(currentProjects)}
-          </div>
-        </div>
+        {/*<div className="mb-16">*/}
+        {/*  <h2 className="text-3xl font-bold text-center text-white mb-8 relative before:absolute before:content-[''] before:w-12 before:h-1 before:bg-gradient-to-r from-teal-400 to-blue-500 before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-[-10px]">*/}
+        {/*    I&apos;m currently working on...*/}
+        {/*  </h2>*/}
+        {/*  <div className="flex flex-wrap justify-center">*/}
+        {/*    {renderProjectCards(currentProjects)}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
-        <div className="w-full border-t border-gray-700 my-16"></div>
+        {/*<div className="w-full border-t border-gray-700 my-16"></div>*/}
 
         <div>
-          <h2 className="text-3xl font-bold text-center text-white mb-8 relative before:absolute before:content-[''] before:w-12 before:h-1 before:bg-gradient-to-r from-teal-400 to-blue-500 before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-[-10px]">
-            Completed Projects
-          </h2>
+          {/*<h2 className="text-3xl font-bold text-center text-white mb-8 relative before:absolute before:content-[''] before:w-12 before:h-1 before:bg-gradient-to-r from-teal-400 to-blue-500 before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-[-10px]">*/}
+          {/*  Completed Projects*/}
+          {/*</h2>*/}
           <div className="flex flex-wrap justify-center">
             {renderProjectCards(completedProjects)}
           </div>
