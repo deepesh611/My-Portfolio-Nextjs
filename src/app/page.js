@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Projects } from "@/components/Projects";
 import { Timeline } from "@/components/Education";
 import { AuroraBG } from "@/components/Background";
+import { Analytics } from '@vercel/analytics/next';
 import { PreLoader } from "@/components/Pre-Loader";
 import { FloatingNavbar } from "@/components/Navbar";
 import { ImageSlider } from "@/components/Image-Slider";
@@ -69,6 +70,8 @@ export default function Home() {
               <Timeline/>
           </section>
 
+        <Analytics />
       </div>
+
   );
 }
