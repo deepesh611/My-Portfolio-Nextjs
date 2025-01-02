@@ -25,16 +25,18 @@ import {
 
 export function Projects() {
   const currentProjects = [
-    {
-      title: "OmniLangDB",
-      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*94n7Yjm2xml9dVFbTph0hA.jpeg",
-      description: "An all-in-one documentation solution for connecting databases in various languages.",
-      link: "https://github.com/deepesh611/OmniLangDB",
-      languages: [<FaPython key="python"/>, <FaJs key="javascript"/>, <SiCplusplus key='cpp'/>, <FaJava key="java"/>, <SiGo key="go"/>]
-    },
+
+  //     https://c4.wallpaperflare.com/wallpaper/447/85/162/computer-lights-glow-blur-wallpaper-preview.jpg
   ];
 
   const completedProjects = [
+    {
+      title: "Home Server",
+      image: "https://c4.wallpaperflare.com/wallpaper/447/85/162/computer-lights-glow-blur-wallpaper-preview.jpg",
+      description: "Build your own Home Server",
+      link: "https://github.com/deepesh611/Home-Server",
+      languages: [<FaServer key="server"/>, <FaTerminal key="terminal"/>]
+    },
     {
       title: "Eagle Encryptor",
       image: "https://wallpapers.com/images/hd/secure-digital-data-encryption-5mzhii44tfcny1fe.jpg",
@@ -55,6 +57,13 @@ export function Projects() {
       description: "A comprehensive set of scripts aimed at streamlining daily tasks by automating processes, enhancing productivity and efficiency.",
       link: "https://github.com/deepesh611/Learning-Automation",
       languages: [<FaPython key="python"/>, <SiJupyter key='jupyter'/>]
+    },
+    {
+      title: "OmniLangDB",
+      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*94n7Yjm2xml9dVFbTph0hA.jpeg",
+      description: "An all-in-one documentation solution for connecting databases in various languages.",
+      link: "https://github.com/deepesh611/OmniLangDB",
+      languages: [<FaPython key="python"/>, <FaJs key="javascript"/>, <SiCplusplus key='cpp'/>, <FaJava key="java"/>, <SiGo key="go"/>]
     },
     {
       title: "My Shell",
@@ -83,13 +92,6 @@ export function Projects() {
       description: "Some of my Arduino Projects",
       link: "https://github.com/deepesh611/Arduino/",
       languages: [<SiCplusplus key='cpp'/>, <SiArduino key='arduino'/>]
-    },
-    {
-      title: "Function Reader",
-      image: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724220739/2024-08-21_11_40_38-Greenshot_ngijrc.png",
-      description: "A small CLI application that let's me explore python modules by showing me all the available classes and functions and by providing the official documents.",
-      link: "https://github.com/deepesh611/Function-Reader",
-      languages: [<FaPython key="python"/>, <FaTerminal key="terminal"/>]
     },
   ];
 
