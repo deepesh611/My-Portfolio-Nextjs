@@ -35,7 +35,7 @@ export function Projects() {
       image: "https://c4.wallpaperflare.com/wallpaper/115/630/492/server-depth-of-field-hardware-machine-wallpaper-preview.jpg",
       description: "Build your own Home Server",
       link: "https://github.com/deepesh611/Home-Server",
-      languages: [<FaServer key="server"/>,<SiDocker />, <SiJellyfin key="jellyfin"/>]
+      languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>]
     },
     {
       title: "Eagle Encryptor",
