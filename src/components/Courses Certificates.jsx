@@ -1,5 +1,6 @@
 "use client";
 
+import { data } from "autoprefixer";
 import Image from "next/image";
 
 const certificatesData = [
@@ -7,11 +8,6 @@ const certificatesData = [
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",
         title: "Introduction to CIP",
         date: "September 2024",
-    },
-    {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
-        title: "Mastercard-Cybersecurity Job Simulation",
-        date: "July 2024",
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/ISC2_Security_Policies_Completency-1_eh2axm.jpg",
@@ -27,6 +23,21 @@ const certificatesData = [
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/ISC2_Access_Control_Concepts-1_gbvtgh.jpg",
         title: "ISC2-Access Control Concepts",
         date: "July 2024"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1736082518/ISC2_Network_Security-1_xs9hil.jpg",
+        title: "ISC2-Network Security",
+        date: "January 2025"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1736082518/ISC2_Security_Operations-1_g2bix7.jpg",
+        title: "ISC2-Security Operations",
+        date: "January 2025"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
+        title: "Mastercard-Cybersecurity Job Simulation",
+        date: "July 2024",
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/Artificial_Intelligence_with_Python-Training-1_azsd88.jpg",
