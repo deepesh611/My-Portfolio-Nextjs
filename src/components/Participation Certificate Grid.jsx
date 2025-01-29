@@ -4,6 +4,11 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1738132819/Graphs_Camp_bn7gil.png",
+        title: "Graph Theory Programming Camp - AlgoUniversity",
+        date: "January 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724782769/Flipkart_Grid_6.0_InfoSec_qvtlsj.jpg",
         title: "Flipkart Grid 6.0-Information Security",
         date: "August 2024"

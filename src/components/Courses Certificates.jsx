@@ -35,11 +35,6 @@ const certificatesData = [
         date: "January 2025"
     },
     {
-        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
-        title: "Mastercard-Cybersecurity Job Simulation",
-        date: "July 2024",
-    },
-    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724215625/Artificial_Intelligence_with_Python-Training-1_azsd88.jpg",
         title: "Artificial Intelligence with Python",
         date: "July 2023"

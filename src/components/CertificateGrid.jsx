@@ -9,6 +9,11 @@ const certificatesData = [
         date: "October 2024",
     },
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",
+        title: "Mastercard-Cybersecurity Job Simulation",
+        date: "July 2024",
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002362/PVPIT_certf.-1_majjxy.jpg",
         title: "Finalists in a National-Level Hackathon",
         date: "February 2024",
