@@ -31,6 +31,7 @@ export function Header() {
                 </div>
 
                 <SocialDock />
+
             </div>
         </header>
   );
