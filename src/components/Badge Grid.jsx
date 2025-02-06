@@ -4,6 +4,11 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl:"https://assets.holopin.io/hf2024levels/level1-sloth-hello-coffee-0-0-0.webp",
+        title: "Hacktober Fest 2024",
+        date: "October 2024",
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725780046/opswat-introduction-to-critical-infrastructure-protection-icip_totete.png",
         title: "OPSWAT Introduction to Critical Infrastructure Protection (ICIP)",
         date: "September 2024",
