@@ -9,8 +9,8 @@ export const About = () => {
             Cyber Security
             </LinkPreview>{" "}
             and
-            {" "}<LinkPreview url="https://www.solarwinds.com/resources/it-glossary/network-administration" className="font-extrabold">
-            Network Administration
+            {" "}<LinkPreview url="https://www.cisa.gov/careers/work-rolessystem-administrator" className="font-extrabold">
+            System Administration
             </LinkPreview>. 
             I have a keen interest in exploring the latest advancements in these fields and am constantly striving to enhance my knowledge and skills.
             <br/><br/>

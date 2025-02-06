@@ -33,7 +33,7 @@ export function Projects() {
     {
       title: "Home Server",
       image: "https://c4.wallpaperflare.com/wallpaper/115/630/492/server-depth-of-field-hardware-machine-wallpaper-preview.jpg",
-      description: "Build your own Home Server",
+      description: "Build your own Media Server, VPN Server, or host any other types of services from your Home.",
       link: "https://github.com/deepesh611/Home-Server",
       languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>]
     },

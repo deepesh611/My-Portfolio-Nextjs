@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { FlipWords } from "./ui/flip-words";
 import { SocialDock } from "@/components/Floating-Dock";
 
 
 export function Header() {
-    const words = ["Python-Programmer","Network-Engineer", "Frontend-Developer", "IoT-Practitioner","Tech-Savvy"];
+    const words = ["Python-Programmer","System/Network-Explorer", "IoT-Practitioner", "Frontend-Developer", "Cybersecurity-Enthusiast","Robotics-Enthusiast","Tech-Savvy"];
 
     return (
         <header className="relative flex items-center justify-center h-screen text-center text-white bg-transparent">
