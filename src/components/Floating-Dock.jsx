@@ -25,11 +25,11 @@ export function SocialDock() {
             icon: <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
             href: "https://www.instagram.com/_deepesh_v.p/",
         },
-        {
-            title: "Leetcode",
-            icon: <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-            href: "https://leetcode.com/u/nerdygamer611/",
-        },
+        // {
+        //     title: "Leetcode",
+        //     icon: <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+        //     href: "https://leetcode.com/u/nerdygamer611/",
+        // },
         {
             title: "TryHackMe",
             icon: <SiTryhackme className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
