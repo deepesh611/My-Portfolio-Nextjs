@@ -58,13 +58,6 @@ export function Projects() {
       link: "https://github.com/deepesh611/Learning-Automation",
       languages: [<FaPython key="python"/>, <SiJupyter key='jupyter'/>]
     },
-    // {
-    //   title: "OmniLangDB",
-    //   image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*94n7Yjm2xml9dVFbTph0hA.jpeg",
-    //   description: "An all-in-one documentation solution for connecting databases in various languages.",
-    //   link: "https://github.com/deepesh611/OmniLangDB",
-    //   languages: [<FaPython key="python"/>, <FaJs key="javascript"/>, <SiCplusplus key='cpp'/>, <FaJava key="java"/>, <SiGo key="go"/>]
-    // },
     {
       title: "My Shell",
       image: "https://images.unsplash.com/photo-1629654291663-b91ad427698f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -83,16 +76,16 @@ export function Projects() {
       title: "Raspberry-Pi Projects",
       image: "https://images.unsplash.com/photo-1610812387871-806d3db9f5aa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFzcGJlcnJ5JTIwcGl8ZW58MHx8MHx8fDA%3D",
       description: "Using Raspberry Pi for practical tasks like setting up a web server, hosting sites on the dark web, and building a portable NAS for easy file storage and access. These projects cover a range of uses, making the most of the Raspberry Pi's capabilities in networking and storage.",
-      link: "https://github.com/deepesh611/RaspBerry-Pi-Cluster",
+      link: "https://github.com/ROFIES-IIITP/Raspberry-Pi",
       languages: [<SiRaspberrypi key="raspberrypi"/>, <SiKubernetes key="K3S"/>, <SiPowershell key='powershell'/>, <SiDocker key='docker'/>]
     },
-    {
-      title: "Arduino Projects",
-      image: "https://cdn.pixabay.com/photo/2016/01/08/15/03/arduino-1128227_1280.jpg",
-      description: "Some of my Arduino Projects",
-      link: "https://github.com/deepesh611/Arduino/",
-      languages: [<SiCplusplus key='cpp'/>, <SiArduino key='arduino'/>]
-    },
+    // {
+    //   title: "Arduino Projects",
+    //   image: "https://cdn.pixabay.com/photo/2016/01/08/15/03/arduino-1128227_1280.jpg",
+    //   description: "Some of my Arduino Projects",
+    //   link: "https://github.com/deepesh611/Arduino/",
+    //   languages: [<SiCplusplus key='cpp'/>, <SiArduino key='arduino'/>]
+    // },
   ];
 
   const renderProjectCards = (projects) => {
