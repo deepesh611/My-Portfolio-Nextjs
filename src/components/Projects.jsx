@@ -1,13 +1,14 @@
 import Image from "next/image";
+import "../assets/heimdall-icon-large2.webp";
 import {
   FaPython,
-  FaJs,
   FaServer,
   FaJava,
   FaKey,
-  FaTerminal,
   FaLock,
 } from "react-icons/fa";
+
+import { MdDashboard } from "react-icons/md";
 
 import {
   SiRaspberrypi,
@@ -16,11 +17,12 @@ import {
   SiShell,
   SiC,
   SiJellyfin,
+  SiPlex,
   SiJupyter,
   SiMysql,
-  SiCplusplus,
-  SiArduino,
   SiDocker,
+  SiPortainer,
+  SiCockpit
 } from "react-icons/si";
 
 
@@ -31,11 +33,18 @@ export function Projects() {
 
   const completedProjects = [
     {
+      title: "IIITP Hub",
+      image: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1741546753/ea6f1ee2-c020-4512-ade4-291aa4737d18.png",
+      description: "A hub for students and faculty to share resources, events, and other information. It also includes a media server for hosting videos and other media files.",
+      link: "https://github.com/deepesh611/IIITP-Hub",
+      languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>, <SiPortainer key="portainer"/>, <SiCockpit key="cockpit"/>, <MdDashboard key="dashboard"/>]
+    },
+    {
       title: "Home Server",
       image: "https://c4.wallpaperflare.com/wallpaper/115/630/492/server-depth-of-field-hardware-machine-wallpaper-preview.jpg",
       description: "Build your own Media Server, VPN Server, or host any other types of services from your Home.",
       link: "https://github.com/deepesh611/Home-Server",
-      languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>]
+      languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiPlex key="plex"/>, <SiPortainer key="portainer"/>]
     },
     {
       title: "Eagle Encryptor",
