@@ -1,8 +1,9 @@
 "use client";
+
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const FloatingNav = ({ navItems, className }) => {
   return (
@@ -22,7 +23,7 @@ export const FloatingNav = ({ navItems, className }) => {
             key={`link-${idx}`}
             href={navItem.link}
             className={cn(
-              "relative flex items-center space-x-2 text-neutral-600 dark:text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500 transition-colors duration-200",
+              "relative flex items-center space-x-2 text-neutral-800 dark:text-neutral-50 dark:hover:text-neutral-300 hover:text-neutral-500 transition-colors duration-200",
               "text-xs sm:text-sm md:text-base lg:text-base"
             )}
           >

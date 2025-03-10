@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 const certificatesData = [
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1738132819/Graphs_Camp_bn7gil.png",
@@ -80,10 +78,10 @@ export const ParticipationCertificateGrid = () => {
                             className="object-cover w-full h-70 mb-4 rounded-lg"
                         />
                         <div className="text-center">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                            <h3 className="text-xl font-semibold text-gray-300 dark:text-white mb-2">
                                 {certificate.title}
                             </h3>
-                            <p className="text-gray-500 dark:text-gray-400">{certificate.date}</p>
+                            <p className="text-gray-300 dark:text-gray-400">{certificate.date}</p>
                         </div>
                     </div>
                 ))}

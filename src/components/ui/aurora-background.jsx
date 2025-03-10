@@ -1,6 +1,7 @@
-"use client";;
-import { cn } from "@/lib/utils";
+"use client";
+
 import React from "react";
+import { cn } from "@/lib/utils";
 
 export const AuroraBackground = ({
   className,
@@ -12,7 +13,7 @@ export const AuroraBackground = ({
     (<main>
       <div
         className={cn(
-          "relative flex flex-col  h-[100vh] items-center justify-center bg-zinc-50 dark:bg-zinc-900  text-slate-950 transition-bg",
+          "relative flex flex-col  h-[100vh] items-center justify-center bg-zinc-900 dark:bg-zinc-900  text-slate-950 transition-bg",
           className
         )}
         {...props}>

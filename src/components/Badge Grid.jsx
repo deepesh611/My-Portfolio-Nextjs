@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 const certificatesData = [
     {
         imageUrl:"https://assets.holopin.io/hf2024levels/level1-sloth-hello-coffee-0-0-0.webp",
@@ -42,10 +40,10 @@ export const BadgeGrid = () => {
                             />
                         </div>
                         <div className="text-center">
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                            <h3 className="text-xl font-semibold text-gray-300 dark:text-white mb-2">
                                 {certificate.title}
                             </h3>
-                            <p className="text-gray-500 dark:text-gray-400">{certificate.date}</p>
+                            <p className="text-gray-300 dark:text-gray-400">{certificate.date}</p>
                         </div>
                     </div>
 
