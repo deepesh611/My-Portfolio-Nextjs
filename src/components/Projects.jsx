@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "../assets/heimdall-icon-large2.webp";
 import {
   FaPython,
@@ -11,18 +10,19 @@ import {
 import { MdDashboard } from "react-icons/md";
 
 import {
-  SiRaspberrypi,
-  SiKubernetes,
-  SiPowershell,
-  SiShell,
   SiC,
-  SiJellyfin,
+  SiGo,
   SiPlex,
-  SiJupyter,
   SiMysql,
+  SiShell,
   SiDocker,
+  SiCockpit,
+  SiJupyter,
+  SiJellyfin,
   SiPortainer,
-  SiCockpit
+  SiPowershell,
+  SiKubernetes,
+  SiRaspberrypi,
 } from "react-icons/si";
 
 
@@ -54,11 +54,11 @@ export function Projects() {
       languages: [<FaPython key="python"/>, <FaLock key="lock"/>]
     },
     {
-      title: "Shell Password Manager",
+      title: "Password Managers",
       image: "https://www.ncsc.gov.uk/images/iStock-480287530.jpg",
-      description: "A lightweight and secure command-line tool for managing and storing passwords efficiently within a shell environment.",
-      link: "https://github.com/deepesh611/Shell-Password-Manager",
-      languages: [<SiPowershell key="powershell"/>, <SiShell key='shell'/>, <FaKey key='key'/>]
+      description: "Creating a Password manager that can store and manage passwords securely. This project mostly aims on practical implementation of new programming languages that I am learning.",
+      link: "https://github.com/deepesh611/Password-Managers",
+      languages: [<SiGo key="go"/>, <SiPowershell key="powershell"/>, <SiShell key='shell'/>]
     },
     {
       title: "Python Automation",
