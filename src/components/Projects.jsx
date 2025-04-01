@@ -34,7 +34,7 @@ export function Projects() {
   const completedProjects = [
     {
       title: "IIITP Hub",
-      image: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1741546753/ea6f1ee2-c020-4512-ade4-291aa4737d18.png",
+      image: "https://cdn.pixabay.com/photo/2016/08/12/05/06/technology-1587673_1280.jpg",
       description: "A hub for students and faculty to share resources, events, and other information. It also includes a media server for hosting videos and other media files.",
       link: "https://github.com/deepesh611/IIITP-Hub",
       languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>, <SiPortainer key="portainer"/>, <SiCockpit key="cockpit"/>, <MdDashboard key="dashboard"/>]
