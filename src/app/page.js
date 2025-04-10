@@ -84,13 +84,13 @@ export default function Home() {
                 id="education"
                 className="relative z-[0] flex flex-col items-center pb-20 pt-16 md:pt-24 w-full px-4"
             >
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-                    Education
+                <h2 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-12">
+                    Education & Experience
                 </h2>
-                <Timeline />
+                <Timeline/>
             </section>
 
-            <Analytics />
+            <Analytics/>
         </div>
     );
 }

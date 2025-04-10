@@ -1,16 +1,27 @@
 export function Timeline() {
   const events = [
     { 
-      year: "2026", 
+      year: "May 2026",
       title: "Indian Institute of Information Technology Pune", 
-      description: "Bachelor's in Computer Science & Engineering." },
+      description: "Bachelor's in Computer Science & Engineering."
+    },
     {
-      year: "2023",
+      year: "October 2024",
+      title: "Vinyasa Summer of Code",
+      description: "Top 10 Contributor (Ranked 9th) – Vinyasa Summer of Code (VSoC)"
+    },
+    {
+      year: "July 2024",
+      title: "Mastercard",
+      description: "Successfully completed the Cybersecurity Job Simulation by Mastercard"
+    },
+    {
+      year: "August 2023",
       title: "Coincent Internship",
       description: "Completed an internship program on 'Artificial Intelligence with Python'"
     },
     {
-      year: "2023",
+      year: "August 2023",
       title: "Coincent Training Program",
       description: "Completed 'Artificial Intelligence with Python' training program."
     },

@@ -1,10 +1,10 @@
 import "../assets/heimdall-icon-large2.webp";
 import {
+  FaCloud,
+  FaJava,
+  FaLock,
   FaPython,
   FaServer,
-  FaJava,
-  FaKey,
-  FaLock,
 } from "react-icons/fa";
 
 import { MdDashboard } from "react-icons/md";
@@ -14,13 +14,16 @@ import {
   SiGo,
   SiPlex,
   SiMysql,
+  SiNginx,
   SiShell,
   SiDocker,
+  SiGnubash,
   SiCockpit,
   SiJupyter,
   SiJellyfin,
   SiPortainer,
   SiPowershell,
+  SiTensorflow,
   SiKubernetes,
   SiRaspberrypi,
 } from "react-icons/si";
@@ -33,11 +36,11 @@ export function Projects() {
 
   const completedProjects = [
     {
-      title: "IIITP Hub",
-      image: "https://cdn.pixabay.com/photo/2016/08/12/05/06/technology-1587673_1280.jpg",
-      description: "A hub for students and faculty to share resources, events, and other information. It also includes a media server for hosting videos and other media files.",
-      link: "https://github.com/deepesh611/IIITP-Hub",
-      languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>, <SiPortainer key="portainer"/>, <SiCockpit key="cockpit"/>, <MdDashboard key="dashboard"/>]
+      title: "DDoS on Cloud Architecture",
+      image: "https://www.isc2.org/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Finternationf173-xmc4e73-prodbc0f-9660%2Fmedia%2FProject%2FISC2%2FMain%2FMedia%2Finsights%2FFeatures%2F2025%2F03%2FCloud-Insight---Attacks-Launched-from-Cloud-Platforms-Square.jpeg%3Fh%3D646%26iar%3D0%26w%3D647&w=3840&q=75",
+      description: "Design and Implementation of a Detection and Prevention System for DDoS Attacks on Cloud-Based Servers",
+      link: "https://github.com/deepesh611/Minor-Project-DDoS-on-Cloud",
+      languages: [<SiDocker key="docker"/>, <FaCloud key="cloud"/>, <FaPython key="python"/>,<SiGnubash key="bash" />, <SiTensorflow key='tensorflow'/>, <SiNginx key="nginx" />]
     },
     {
       title: "Home Server",
@@ -45,6 +48,13 @@ export function Projects() {
       description: "Build your own Media Server, VPN Server, or host any other types of services from your Home.",
       link: "https://github.com/deepesh611/Home-Server",
       languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiPlex key="plex"/>, <SiPortainer key="portainer"/>]
+    },
+    {
+      title: "IIITP Hub",
+      image: "https://cdn.pixabay.com/photo/2016/08/12/05/06/technology-1587673_1280.jpg",
+      description: "A hub for students and faculty to share resources, events, and other information. It also includes a media server for hosting videos and other media files.",
+      link: "https://github.com/deepesh611/IIITP-Hub",
+      languages: [<FaServer key="server"/>,<SiDocker key="docker"/>, <SiJellyfin key="jellyfin"/>, <SiPortainer key="portainer"/>, <SiCockpit key="cockpit"/>, <MdDashboard key="dashboard"/>]
     },
     {
       title: "Eagle Encryptor",
@@ -58,7 +68,7 @@ export function Projects() {
       image: "https://www.ncsc.gov.uk/images/iStock-480287530.jpg",
       description: "Creating a Password manager that can store and manage passwords securely. This project mostly aims on practical implementation of new programming languages that I am learning.",
       link: "https://github.com/deepesh611/Password-Managers",
-      languages: [<SiGo key="go"/>, <SiPowershell key="powershell"/>, <SiShell key='shell'/>]
+      languages: [<SiGo key="go"/>, <SiPowershell key="powershell"/>, <SiGnubash key="bash" />]
     },
     {
       title: "Python Automation",
