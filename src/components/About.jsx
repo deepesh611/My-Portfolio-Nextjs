@@ -5,9 +5,13 @@ export const About = () => {
     <div className="max-w-3xl w-full">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-teal-300">About Me</h2>
           <p className="text-base md:text-lg leading-relaxed mb-6 text-center md:text-left">
-            I am a dedicated programmer with a strong passion for technology, particularly in the domains of {" "}<LinkPreview url="https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html" className="font-extrabold">
-            Cyber Security
-            </LinkPreview>{" "}
+            I am a dedicated programmer with a strong passion for technology, particularly in the domains of
+              {" "}<LinkPreview url="https://aws.amazon.com/what-is-cloud-computing/" className="font-extrabold">
+            Cloud Computing
+            </LinkPreview>{" "},
+              {" "}<LinkPreview url="https://aws.amazon.com/devops/what-is-devops/" className="font-extrabold">
+              DevOps
+          </LinkPreview>{" "}
             and
             {" "}<LinkPreview url="https://www.cisa.gov/careers/work-rolessystem-administrator" className="font-extrabold">
             System Administration
@@ -66,9 +70,9 @@ export const About = () => {
             <div className="text-center">
               <h3 className="text-xl md:text-2xl font-semibold text-teal-300">Skills</h3>
               <p className="mt-2 text-sm md:text-base">
-                Python, Networking, C/C++, Frontend, <br/>
-                Database Management, Shell Scripting, <br/>
-                Arduino & RaspBerry Pi Programming
+                Python, Go, C/C++, DBMS, MERN, <br/>
+                Computer Networks, Shell Scripting, <br/>
+                Arduino & Raspberry Pi Programming
               </p>
             </div>
           </div>

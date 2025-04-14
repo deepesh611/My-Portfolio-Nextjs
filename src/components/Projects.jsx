@@ -65,7 +65,7 @@ export function Projects() {
     },
     {
       title: "Password Managers",
-      image: "https://www.ncsc.gov.uk/images/iStock-480287530.jpg",
+      image: "https://imgs.search.brave.com/KDNRjfN9FYqENHBV9M7hDo0zoYxY9IyBHP_GyGt7uh4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA0/OTIyMDc4Ni9waG90/by9tYW4td29ya2lu/Zy1vbi1sYXB0b3At/bmV0d29yay1ncmFw/aGljLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0yWUIxYXRB/R2hOYWxFQ2JENUZt/N1dXNVlBcVpDOW5G/cTRlZHBBdG93QTlB/PQ",
       description: "Creating a Password manager that can store and manage passwords securely. This project mostly aims on practical implementation of new programming languages that I am learning.",
       link: "https://github.com/deepesh611/Password-Managers",
       languages: [<SiGo key="go"/>, <SiPowershell key="powershell"/>, <SiGnubash key="bash" />]
