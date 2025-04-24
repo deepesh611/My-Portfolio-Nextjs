@@ -37,7 +37,7 @@ export function Projects() {
   const completedProjects = [
     {
       title: "DDoS on Cloud Architecture",
-      image: "https://www.isc2.org/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Finternationf173-xmc4e73-prodbc0f-9660%2Fmedia%2FProject%2FISC2%2FMain%2FMedia%2Finsights%2FFeatures%2F2025%2F03%2FCloud-Insight---Attacks-Launched-from-Cloud-Platforms-Square.jpeg%3Fh%3D646%26iar%3D0%26w%3D647&w=3840&q=75",
+      image: "https://img.freepik.com/premium-photo/3d-rendering-circuit-cloud-with-server-computer_493806-486.jpg?ga=GA1.1.1069163389.1745317973&semt=ais_hybrid&w=740",
       description: "Design and Implementation of a Detection and Prevention System for DDoS Attacks on Cloud-Based Servers",
       link: "https://github.com/deepesh611/Minor-Project-DDoS-on-Cloud",
       languages: [<SiDocker key="docker"/>, <FaCloud key="cloud"/>, <FaPython key="python"/>,<SiGnubash key="bash" />, <SiTensorflow key='tensorflow'/>, <SiNginx key="nginx" />]
