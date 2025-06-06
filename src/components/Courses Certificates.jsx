@@ -1,9 +1,14 @@
 "use client";
 
-import { data } from "autoprefixer";
 import Image from "next/image";
+import { data } from "autoprefixer";
 
 const certificatesData = [
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1749218024/n8n_course_completion-1_ahx9t5.jpg",
+        title: "n8n Course Completion",
+        date: "June 2026",
+    },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",
         title: "Introduction to CIP",
