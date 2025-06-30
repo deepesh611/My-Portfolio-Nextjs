@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export function Achievements() {
     const achievements = [
         {
-            title: "Vice-President of Robotics Community",
+            title: "Co-Head of Robotics Community",
             description:
                 "Led the robotics community at my college for over a year, successfully organizing 10+ sessions, workshops, and competitions that engaged and educated fellow students.",
             date: "July 2023 - Present",

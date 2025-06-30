@@ -1,4 +1,4 @@
-# Deepesh Patil's Portfolio Website 🌐
+# My Portfolio Website 🌐
 
 Welcome to my personal portfolio website, built using **Next.js** and deployed on **Vercel**. You can explore the live version [here](https://deepesh-patil.vercel.app).
 
@@ -9,7 +9,7 @@ This portfolio showcases my projects, skills, and experiences in technology and 
 - 💻 Web Development
 - ☁️ IoT Development
 - 🔒 Cybersecurity
-- ⚙️ Automation
+- ⚙️ AI Automation
 
 ## Features ✨
 

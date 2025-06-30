@@ -1,4 +1,4 @@
-import "../assets/heimdall-icon-large2.webp";
+import "../assets/icons/heimdall-icon-large2.webp";
 import {
   FaCloud,
   FaJava,
@@ -71,7 +71,7 @@ export function Projects() {
       languages: [<SiGo key="go"/>, <SiPowershell key="powershell"/>, <SiGnubash key="bash" />]
     },
     {
-      title: "Python Automation",
+      title: "Automation Projects",
       image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       description: "A comprehensive set of scripts aimed at streamlining daily tasks by automating processes, enhancing productivity and efficiency.",
       link: "https://github.com/deepesh611/Learning-Automation",
@@ -121,9 +121,10 @@ export function Projects() {
                     className="object-cover w-full h-full"
                 />
                 <div className="absolute top-2 left-2 flex space-x-2">
-                  {project.languages.map((Icon) => (
-                      <span key="index" className="text-teal-400 text-2xl">{Icon}</span>
+                  {project.languages.map((Icon, index) => (
+                      <span key={index} className="text-teal-400 text-2xl">{Icon}</span>
                   ))}
+
                 </div>
               </div>
               <div className="p-6">

@@ -2,6 +2,11 @@
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1751297235/linux-unhatched_wart4e.png",
+        title: "CISCO - Linux Unhatched",
+        date: "June 2025"
+    },
+    {
         imageUrl:"https://assets.holopin.io/hf2024levels/level1-sloth-hello-coffee-0-0-0.webp",
         title: "Hacktober Fest 2024",
         date: "October 2024",

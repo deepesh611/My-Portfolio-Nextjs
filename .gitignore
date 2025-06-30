@@ -38,3 +38,6 @@ todo.txt
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+src/assets/badges
+src/assets/certificates

@@ -5,9 +5,19 @@ import { data } from "autoprefixer";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1751299019/CISCO_-_Linux_Unhactched-1_owk2ne.png",
+        title: "CISCO - Linux Unhatched",
+        date: "June 2025"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1751299020/bootdev_certificate_1_uzd205.png",
+        title: "Boot.Dev Linux",
+        date: "June 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1749218024/n8n_course_completion-1_ahx9t5.jpg",
         title: "n8n Course Completion",
-        date: "June 2026",
+        date: "June 2025",
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",
