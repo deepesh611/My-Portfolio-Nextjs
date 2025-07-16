@@ -2,6 +2,11 @@
 
 const certificatesData = [
     {
+        imageUrl: "https://media.badgr.com/uploads/badges/assertion-vyZsFWkgRCWUryUaSLe64w.png?versionId=x5Dc5KZdCF5v_rFaELuZXbT22IXmnHJs",
+        title: "Postman API Fundamentals Student Expert",
+        date: "July 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1751297235/linux-unhatched_wart4e.png",
         title: "CISCO - Linux Unhatched",
         date: "June 2025"
