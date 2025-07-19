@@ -26,10 +26,10 @@ const certificatesData = [
         title: "(ISC)2 Member",
         date: "July 2024",
     },
-    {
-        imageUrl: "https://tryhackme-badges.s3.amazonaws.com/deepesh611.png",
-        title: "Try Hack Me Stats"
-    },
+    // {
+    //     imageUrl: "https://tryhackme-badges.s3.amazonaws.com/deepesh611.png",
+    //     title: "Try Hack Me Stats"
+    // },
     {
         imageUrl: "https://api.boot.dev/v1/users/public/3cc33ecc-0bb6-4118-a6a6-b5e4adb2ca8c/thumbnail",
         title: "BOOT.DEV Stats",

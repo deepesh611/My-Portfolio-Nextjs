@@ -5,6 +5,11 @@ import { data } from "autoprefixer";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1752921857/bootdev_certificate_docker_bljn63.png",
+        title: "Boot.dev Docker",
+        date: "July 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1751299019/CISCO_-_Linux_Unhactched-1_owk2ne.png",
         title: "CISCO - Linux Unhatched",
         date: "June 2025"
