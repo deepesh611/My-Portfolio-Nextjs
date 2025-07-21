@@ -5,8 +5,13 @@ import { data } from "autoprefixer";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1753093795/bootdev_certificate_ecs8ht.png",
+        title: "BootDotDev Kubernetes Course Certificate",
+        date: "July 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1752921857/bootdev_certificate_docker_bljn63.png",
-        title: "Boot.dev Docker",
+        title: "BootDotDev Docker Course Certificate",
         date: "July 2025"
     },
     {
@@ -16,7 +21,7 @@ const certificatesData = [
     },
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1751299020/bootdev_certificate_1_uzd205.png",
-        title: "Boot.Dev Linux",
+        title: "BootDotDev Linux Course Certificate",
         date: "June 2025"
     },
     {
