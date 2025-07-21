@@ -6,7 +6,7 @@ import { data } from "autoprefixer";
 const certificatesData = [
     {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1753132034/bootdotdev_GoLang_iwau4z.png",
-        title: "Bootdotdev GoLang Course Certidicate",
+        title: "BootDotDev GoLang Course Certificate",
         date: "July 2025"
     },
     {
