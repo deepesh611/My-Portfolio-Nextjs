@@ -5,6 +5,11 @@ import { data } from "autoprefixer";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1753224918/bootdev_certificate_sql_xtdctf.png",
+        title: "BootDotDev SQL Course Certificate",
+        date: "July 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1753132034/bootdotdev_GoLang_iwau4z.png",
         title: "BootDotDev GoLang Course Certificate",
         date: "July 2025"
