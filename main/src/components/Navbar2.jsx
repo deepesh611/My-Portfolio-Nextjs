@@ -20,11 +20,11 @@ export function FloatingNavbar() {
             link: "#courses",
             icon: <IconFilePencil className="h-4 w-4 text-neutral-500 dark:text-white" />
         },
-        {
-            name: "Participations",
-            link: "#participation",
-            icon: <IconFileCertificate className="h-4 w-4 text-neutral-500 dark:text-white" />,
-        },
+        // {
+        //     name: "Participations",
+        //     link: "#participation",
+        //     icon: <IconFileCertificate className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        // },
         {
             name: "Badges",
             link: "#badges",

@@ -7,7 +7,6 @@ import { FloatingNavbar } from "@/components/Navbar2";
 import { CertificatesGrid } from "@/components/CertificateGrid";
 import { CircularBarsSpinnerLoader } from "@/components/Pre-Loader";
 import {CoursesCertificates} from "@/components/Courses Certificates";
-import { ParticipationCertificateGrid } from "@/components/Participation Certificate Grid";
 
 export default function CertificatesPage() {
 
@@ -42,10 +41,6 @@ export default function CertificatesPage() {
 
             <section id="courses" className="relative flex flex-col items-center pt-16 md:pt-24 w-full">
                 <CoursesCertificates />
-            </section>
-
-            <section id="participation" className="relative z-[0] flex flex-col items-center pt-16 md:pt-24 w-full min-h-screen px-4">
-                <ParticipationCertificateGrid/>
             </section>
 
             <section id="badges" className="relative z-[0] flex flex-col items-center min-h-screen px-4">
