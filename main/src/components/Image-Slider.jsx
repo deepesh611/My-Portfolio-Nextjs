@@ -7,8 +7,8 @@ import Link from "next/link";
 export function ImageSlider() {
   const certificates = [
     {
-      imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1749218024/n8n_course_completion-1_ahx9t5.jpg",
-      caption: "n8n Course Completion",
+      imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1754586148/AWS_Cloud_Practitioner_Essentials-1_cgmemm.jpg",
+      caption: "AWS Cloud Practitioner Essentials",
     },
     {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",

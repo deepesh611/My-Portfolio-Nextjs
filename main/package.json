@@ -27,6 +27,7 @@
     "lucide-react": "^0.424.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "15.3.3",
+    "ogl": "^1.0.11",
     "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",

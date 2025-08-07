@@ -5,6 +5,11 @@ import { data } from "autoprefixer";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1754586148/AWS_Cloud_Practitioner_Essentials-1_cgmemm.jpg",
+        title: "AWS Cloud Practitioner Essentials",
+        date: "August 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1753224918/bootdev_certificate_sql_xtdctf.png",
         title: "BootDotDev SQL Course Certificate",
         date: "July 2025"
