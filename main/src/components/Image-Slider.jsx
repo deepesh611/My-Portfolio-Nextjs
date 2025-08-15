@@ -6,13 +6,13 @@ import Link from "next/link";
 
 export function ImageSlider() {
   const certificates = [
+      {
+          imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1755217767/AWS_Cloud_Quest-Cloud_Practitioner-1_dfnxib.png",
+          caption: "AWS Cloud Quest: Cloud Practitioner"
+      },
     {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1754586148/AWS_Cloud_Practitioner_Essentials-1_cgmemm.jpg",
       caption: "AWS Cloud Practitioner Essentials",
-    },
-    {
-      imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1725778724/introduction_to_cip_oqlvie.png",
-      caption: "Introduction to CIP",
     },
     {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002278/Artificial_Intelligence_with_Python-Internship-1_nkjdqm.jpg",
@@ -21,10 +21,6 @@ export function ImageSlider() {
     {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002313/Hacktopia_GNI_Hydrabad-1_lzrjkh.jpg",
       caption: "Certificate of Talent",
-    },
-    {
-      imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724001886/STAI-1_piell3.jpg",
-      caption: "Best Performer Certificate",
     },
     {
       imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1724002345/Mastercard_job_simulation-1_qvlbre.jpg",

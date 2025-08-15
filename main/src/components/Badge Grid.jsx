@@ -2,6 +2,11 @@
 
 const certificatesData = [
     {
+        imageUrl: "https://images.credly.com/size/680x680/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png",
+        title: "AWS: Cloud Practitioner",
+        date: "August 2025"
+    },
+    {
         imageUrl: "https://media.badgr.com/uploads/badges/assertion-vyZsFWkgRCWUryUaSLe64w.png?versionId=x5Dc5KZdCF5v_rFaELuZXbT22IXmnHJs",
         title: "Postman API Fundamentals Student Expert",
         date: "July 2025"

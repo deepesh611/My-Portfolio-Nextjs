@@ -4,6 +4,11 @@ import Image from "next/image";
 
 const certificatesData = [
     {
+        imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1755217767/AWS_Cloud_Quest-Cloud_Practitioner-1_dfnxib.png",
+        title: "AWS Cloud Quest Cloud Practitioner",
+        Date: "August 2025"
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1727789436/DEEPESH_PATIL-1_rsaxxm.png",
         title: "Top Contributor in Open Source (VSoC)",
         date: "October 2024",

@@ -10,22 +10,22 @@ import {
 import { MdDashboard } from "react-icons/md";
 
 import {
-  SiC,
-  SiGo,
-  SiPlex,
-  SiMysql,
-  SiNginx,
-  SiShell,
-  SiDocker,
-  SiGnubash,
-  SiCockpit,
-  SiJupyter,
-  SiJellyfin,
-  SiPortainer,
-  SiPowershell,
-  SiTensorflow,
-  SiKubernetes,
-  SiRaspberrypi,
+    SiC,
+    SiGo,
+    SiPlex,
+    SiMysql,
+    SiNginx,
+    SiShell,
+    SiDocker,
+    SiGnubash,
+    SiCockpit,
+    SiJupyter,
+    SiJellyfin,
+    SiPortainer,
+    SiPowershell,
+    SiTensorflow,
+    SiKubernetes,
+    SiRaspberrypi, SiTypescript, SiN8N,
 } from "react-icons/si";
 
 
@@ -35,6 +35,13 @@ export function Projects() {
   ];
 
   const completedProjects = [
+      {
+          title: "RDBMS with MySQL via n8n",
+          image: "https://www.shutterstock.com/image-illustration/dbms-database-management-system-concept-600nw-2391827465.jpg",
+          description: "Member Management System with n8n workflows for tracking information, relationships, and analytics without backend code.",
+          link: "https://github.com/deepesh611/DBMS-with-n8n",
+          languages: [<SiDocker key="docker"/>, <SiN8N key="n8n"/>, <SiMysql key="mysql"/>, <SiTypescript key="ts"/>]
+      },
     {
       title: "DDoS on Cloud Architecture",
       image: "https://img.freepik.com/premium-photo/3d-rendering-circuit-cloud-with-server-computer_493806-486.jpg?ga=GA1.1.1069163389.1745317973&semt=ais_hybrid&w=740",
