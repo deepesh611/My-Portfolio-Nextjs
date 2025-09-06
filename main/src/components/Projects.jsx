@@ -65,7 +65,7 @@ export function Projects() {
     },
     {
       title: "Eagle Encryptor",
-      image: "https://wallpapers.com/images/hd/secure-digital-data-encryption-5mzhii44tfcny1fe.jpg",
+      image: "https://thirdway.imgix.net/products/encryption.PNG?auto=format&dpr=1&crop=center&fit=crop&w=500&h=333&ixlib=react-7.2.0",
       description: "A Desktop CLI encryption Application that can secure files with various formats",
       link: "https://github.com/deepesh611/Eagle-Encryptor",
       languages: [<FaPython key="python"/>, <FaLock key="lock"/>]
