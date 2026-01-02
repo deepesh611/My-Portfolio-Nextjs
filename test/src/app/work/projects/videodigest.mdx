@@ -1,0 +1,77 @@
+---
+title: "Video Summary Generator"
+publishedAt: "2025-10-26"
+summary: "A multimodal AI system that generates concise summaries from videos by running parallel pipelines for visual frame analysis and audio-based transcription and understanding."
+images:
+  - "/images/projects/videodigest/cover-01.png"  
+  - "/images/projects/videodigest/cover-02.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/Video-Summary-Generator"
+---
+
+## Overview
+
+Video Summary Generator is an AI-powered application designed to automatically extract meaningful summaries from video content by combining **visual and audio understanding**.  
+Instead of relying on a single modality, the system processes video data through **two parallel pipelines**—one focused on frame-level visual analysis and the other on audio transcription and semantic interpretation—to produce more accurate and context-aware summaries.
+
+The project explores multimodal AI workflows and efficient pipeline orchestration for real-world media processing tasks.
+
+## Key Features
+
+- **Parallel Processing Pipelines** for visual frame extraction and audio analysis
+- **Multimodal Understanding** combining visual context and spoken content
+- **Automated Video-to-Text Summarization** using LLM-based reasoning
+- **Modular Pipeline Design** enabling independent optimization of each stage
+- **Scalable Architecture** suitable for batch or on-demand processing
+
+## Technologies Used
+
+- **Python** – Core application logic
+- **FFmpeg** – Video processing and frame extraction
+- **Speech-to-Text Models** – Audio transcription
+- **Large Language Models (LLMs)** – Contextual summarization
+- **Multimodal AI Pipelines** – Visual and audio data fusion
+- **REST APIs** – Pipeline coordination and data exchange
+- **Docker** – Containerized execution environment
+- **Git & GitHub** – Version control and project management
+
+## Architecture
+
+The system is built around **two parallel pipelines**:
+
+- The **Visual Pipeline** extracts key frames from the video and analyzes visual cues to identify important scenes or transitions.
+- The **Audio Pipeline** transcribes spoken content and performs semantic analysis on the resulting text.
+- Outputs from both pipelines are merged and passed to a summarization layer that generates a coherent final summary.
+
+This architecture improves robustness by reducing reliance on a single data source and allows each pipeline to scale independently.
+
+## Current Status
+
+The project is currently in a **working prototype stage**, supporting:
+
+- End-to-end video ingestion and processing
+- Parallel execution of visual and audio pipelines
+- Generation of concise, human-readable summaries
+
+Further improvements are planned to enhance accuracy and performance.
+
+## Challenges and Learnings
+
+- Coordinating **parallel processing pipelines** efficiently
+- Handling synchronization between visual and audio outputs
+- Managing compute and latency trade-offs in media processing
+- Structuring multimodal inputs for effective LLM summarization
+- Gaining practical experience with **real-world AI pipeline orchestration**
+
+This project strengthened my understanding of applied multimodal AI systems.
+
+## Outcome
+
+Video Summary Generator demonstrates a practical application of **multimodal AI and pipeline parallelism** in media analysis.  
+Future plans include smarter frame selection, improved summarization quality, and real-time processing support.
+
+Overall, the project showcases my ability to design and implement **end-to-end AI systems** that combine multiple data sources to solve complex problems.

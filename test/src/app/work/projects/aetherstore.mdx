@@ -1,0 +1,78 @@
+---
+title: "AetherStore"
+publishedAt: "2025-12-23"
+summary: "AetherStore is a self-hosted, distributed object storage system designed to provide S3-like semantics with a lightweight, node-based architecture focused on reliability, data safety, and horizontal scalability."
+images:
+  - "/images/projects/aetherstore/cover-01.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/aetherstore"
+---
+
+## Overview
+
+AetherStore is an experimental distributed object storage system inspired by cloud storage platforms such as Amazon S3, built from the ground up to explore low-level storage design, node orchestration, and data durability.  
+The project focuses on building a **master–datanode architecture** that can run seamlessly across Docker, virtual machines, or physical servers without relying on managed cloud infrastructure.
+
+The primary goal of AetherStore is to understand and implement the core building blocks of distributed storage systems, including metadata management, node coordination, and safe object persistence.
+
+## Key Features
+
+- **Master–Datanode Architecture** for centralized coordination and decentralized storage
+- **Object-based Storage Model** with unique object identifiers and filesystem-backed persistence
+- **Pluggable Deployment Targets** supporting Docker, VM, and bare-metal environments
+- **Data Safety Mechanisms** using controlled writes and filesystem sync guarantees
+- **Service-oriented Design** enabling independent scaling of control and storage layers
+
+## Technologies Used
+
+- **Go (Golang)** – Core backend implementation
+- **Docker & Dockerfile Multi-stage Builds** – Containerized builds and runtime isolation
+- **Linux Filesystem APIs** – Low-level file operations and durability handling
+- **SQLite** – Lightweight metadata persistence (local state)
+- **RESTful APIs** – Node communication and control plane operations
+- **Shell & PowerShell** – Development tooling and automation
+- **Alpine Linux** – Minimal production runtime images
+
+## Architecture
+
+AetherStore follows a **centralized master with distributed datanodes** design:
+
+- The **Master Node** acts as the control plane, responsible for cluster awareness, node registration, and high-level coordination.
+- **Data Nodes** are responsible for physically storing objects on disk and serving read/write operations.
+- Each data node maintains its own local storage directory while adhering to protocols defined by the master.
+- Communication between components is performed via well-defined APIs, enabling future extensibility such as replication or sharding.
+
+The architecture is intentionally modular to allow incremental evolution without large refactors.
+
+## Current Status
+
+AetherStore is currently in an **active prototyping phase**.  
+Core milestones completed include:
+
+- Initial master and datanode binaries
+- Containerized build and runtime workflow
+- Storage directory structure and object persistence logic
+- Foundational documentation and design notes
+
+Advanced features such as replication, authentication, and fault tolerance are planned for future iterations. 
+
+## Challenges and Learnings
+
+- Designing **safe write semantics** and understanding filesystem guarantees such as `fsync`
+- Managing **binary builds and runtime environments** using multi-stage Dockerfiles
+- Structuring a distributed system while avoiding premature complexity
+- Balancing simplicity with extensibility in early architectural decisions
+- Gaining hands-on experience with **real-world storage system constraints**
+
+This project significantly deepened my understanding of operating systems, storage internals, and distributed system design.
+
+## Outcome
+
+AetherStore serves as a strong foundation for experimenting with advanced distributed storage concepts such as replication, leader election, and fault recovery.  
+Future plans include implementing object replication, access control, and a minimal S3-compatible API layer.
+
+More importantly, the project demonstrates my ability to design, build, and reason about **low-level backend systems** with production-like constraints.

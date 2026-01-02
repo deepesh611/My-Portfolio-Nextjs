@@ -1,0 +1,79 @@
+---
+title: "Home Server"
+publishedAt: "2025-12-09"
+summary: "A self-hosted home server setup designed to run containerized services, manage personal infrastructure, and explore real-world DevOps, networking, and system administration practices."
+images:
+  - "/images/projects/home-server/cover-01.png"
+  - "/images/projects/home-server/cover-02.png"
+  - "/images/projects/home-server/cover-03.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/Home-Server"
+---
+
+## Overview
+
+Home Server is a hands-on infrastructure project focused on building and maintaining a **self-hosted server environment** for running personal and experimental services.  
+The project serves as a practical playground for learning **Linux system administration, container orchestration, networking, and service reliability** outside of managed cloud platforms.
+
+Rather than relying on third-party hosting, this setup emphasizes full ownership of the stack—from hardware and OS configuration to service deployment and monitoring.
+
+## Key Features
+
+- **Self-hosted Infrastructure** running on local hardware
+- **Dockerized Services** for isolation, reproducibility, and easy upgrades
+- **Reverse Proxy & Networking Setup** for clean service exposure
+- **Service Monitoring & Health Checks** for reliability
+- **Expandable Architecture** to onboard new services with minimal friction
+
+## Technologies Used
+
+- **Linux (Ubuntu/Debian-based)** – Server operating system
+- **Docker & Docker Compose** – Containerization and service orchestration
+- **Nginx / Reverse Proxy** – Traffic routing and service exposure
+- **Portainer** – Container management and observability
+- **Shell Scripting** – Automation and system maintenance
+- **Git & GitHub** – Configuration tracking and documentation
+- **Networking Concepts** – Ports, DNS, LAN access, and firewall rules
+
+## Architecture
+
+The system follows a **single-node modular architecture**:
+
+- Core services are deployed as **Docker containers**, each isolated but networked via Docker bridges.
+- A **reverse proxy layer** routes incoming traffic to internal services based on ports or host rules.
+- Persistent volumes are used to ensure data durability across container restarts.
+- The design supports future migration to multi-node or cloud-based environments with minimal changes.
+
+This architecture mirrors production patterns commonly used in startups and internal tooling.
+
+## Current Status
+
+The Home Server is in an **actively used and evolving state**, currently hosting:
+
+- Management and monitoring tools
+- Development and testing services
+- Internal dashboards and utilities
+
+The setup is stable and continuously improved as new services and requirements emerge.
+
+## Challenges and Learnings
+
+- Debugging **networking and port conflicts** across multiple services
+- Understanding Docker networking and volume persistence
+- Managing service restarts and failure recovery
+- Balancing security with ease of access in a home environment
+- Gaining real-world experience with **infra troubleshooting**
+
+This project significantly improved my confidence in operating and maintaining production-like systems.
+
+## Outcome
+
+Home Server demonstrates my ability to **own infrastructure end-to-end**, from deployment to maintenance.  
+Future plans include tighter security controls, automated backups, and potentially scaling to a multi-node or hybrid setup.
+
+The project highlights practical DevOps skills and a strong understanding of how real systems behave outside of theoretical environments.
+

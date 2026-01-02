@@ -9,8 +9,8 @@ const person = {
   role: "Cloud & Automation Enthusiast",
   avatar: "/images/avatar.jpg",
   email: "deepeshvcd6273@gmail.com",
-  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Hindi", "Marathi"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata",                      // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi", "Marathi"],   // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -52,8 +52,8 @@ const social = [
 const home = {
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">AI Automation</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">AetherStore</strong></>,
+    href: "/work/aetherstore",
   },
 
   path: "/",
@@ -61,10 +61,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building reliable, automated networks</>,
+  headline: <>Building scalable systems from the ground up</>,
   subline: (
     <>
-      I'm {person.firstName}, a {person.role} and I engineer reliable infrastructure and automate complex systems. After hours, I experiment with new tools and build side projects.
+      I'm {person.firstName}, a {person.role} who builds distributed systems and infrastructure from scratch. I focus on scalability, reliability, and understanding how things work at the lowest level.
     </>
   ),
 };
@@ -94,8 +94,9 @@ const about = {
       </>
     ),
   },
+  
   work: {
-    display: false, // set to false to hide this section
+    display: false,             
     title: "Work Experience",
     experiences: [
       {
