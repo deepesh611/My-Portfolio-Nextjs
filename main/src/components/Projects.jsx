@@ -1,5 +1,7 @@
 import "../assets/icons/heimdall-icon-large2.webp";
 import {
+  FaBellSlash,
+  FaBrain,
   FaCloud,
   FaJava,
   FaLock,
@@ -12,20 +14,25 @@ import { MdDashboard } from "react-icons/md";
 import {
     SiC,
     SiGo,
+    SiN8N,
     SiPlex,
     SiMysql,
     SiNginx,
-    SiShell,
+    SiModal,
     SiDocker,
+    SiFastapi,
     SiGnubash,
     SiCockpit,
     SiJupyter,
     SiJellyfin,
     SiPortainer,
+    SiStreamlit,
     SiPowershell,
     SiTensorflow,
     SiKubernetes,
-    SiRaspberrypi, SiTypescript, SiN8N,
+    SiTypescript,
+    SiRaspberrypi,
+    SiSqlite,
 } from "react-icons/si";
 
 
@@ -35,13 +42,34 @@ export function Projects() {
   ];
 
   const completedProjects = [
-      {
-          title: "RDBMS with MySQL via n8n",
-          image: "https://www.shutterstock.com/image-illustration/dbms-database-management-system-concept-600nw-2391827465.jpg",
-          description: "Member Management System with n8n workflows for tracking information, relationships, and analytics without backend code.",
-          link: "https://github.com/deepesh611/DBMS-with-n8n",
-          languages: [<SiDocker key="docker"/>, <SiN8N key="n8n"/>, <SiMysql key="mysql"/>, <SiTypescript key="ts"/>]
-      },
+    {
+      title: "AetherStore – Distributed Object Storage",
+      image: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1767349958/Gemini_Generated_Image_towfjhtowfjhtowf_vdqdyr.png",
+      description: "AetherStore is a lightweight, scalable, S3-style distributed object storage system written in Go that supports replication, automatic node registration, and fault-tolerant object retrieval across multiple Ubuntu nodes.",
+      link: "https://github.com/deepesh611/AetherStore",
+      languages: [<SiGo key="golang"/>, <SiDocker key="docker"/>, <SiSqlite key="sqlite"/>]
+    },
+    {
+      title: "Multi-Agent Fraud Intelligence System",
+      image: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1767348333/Gemini_Generated_Image_jnx471jnx471jnx4_xeidu6.png",
+      description: "An intelligent AI system for detecting and analyzing fraudulent insurance claims using a multi-agent architecture combining rule-based detection, LLM-powered analytics, and RAG-enabled natural language queries, with interactive dashboard visualization.",
+      link: "https://github.com/deepesh611/Multi-Agent-Fraud-Detection-System",
+      languages: [<FaPython key="python"/>, <SiStreamlit key="streamlit"/>, <SiSqlite key="sqlite"/>, <FaBrain key="brain"/>]
+    },
+    {
+      title: "VideoDigest",
+      image: "https://res.cloudinary.com/dgiiz2en1/image/upload/v1767345362/Gemini_Generated_Image_ez9rghez9rghez9r_a6vbae.png",
+      description: "A deep learning–powered video summarization system that runs parallel pipelines for frame extraction and audio analysis to generate accurate, concise summaries via a Streamlit frontend and FastAPI backend.",
+      link: "https://github.com/deepesh611/Video-Summary-Generator",
+      languages: [<FaPython key="python"/>, <SiStreamlit key="streamlit"/>, <SiModal key="modal"/>, <SiFastapi key="fastapi"/>]
+    },
+    {
+      title: "RDBMS with MySQL via n8n",
+      image: "https://www.shutterstock.com/image-illustration/dbms-database-management-system-concept-600nw-2391827465.jpg",
+      description: "Member Management System with n8n workflows for tracking information, relationships, and analytics without backend code.",
+      link: "https://github.com/deepesh611/DBMS-with-n8n",
+      languages: [<SiDocker key="docker"/>, <SiN8N key="n8n"/>, <SiMysql key="mysql"/>, <SiTypescript key="ts"/>]
+    },
     {
       title: "DDoS on Cloud Architecture",
       image: "https://img.freepik.com/premium-photo/3d-rendering-circuit-cloud-with-server-computer_493806-486.jpg?ga=GA1.1.1069163389.1745317973&semt=ais_hybrid&w=740",

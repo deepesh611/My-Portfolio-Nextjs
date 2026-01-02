@@ -39,7 +39,7 @@ export function SocialDock() {
     return (
         <div className="flex flex-col items-center justify-center w-full space-y-4">
 
-        <a href="https://drive.google.com/file/d/1CMKHCrl2Graixa7wzV4ULATbM8n0o8wK/view" target="_blank">
+        <a href="https://drive.google.com/file/d/1rdIK4XoicHTLnifWSgp_YiDpNcuPCSH3/view?usp=sharing" target="_blank">
             <button
                 className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block">
               <span className="absolute inset-0 overflow-hidden rounded-full">
