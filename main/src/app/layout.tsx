@@ -103,8 +103,8 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <Flex as="body" fillWidth style={{minHeight: "100vh", margin: 0, padding: 0}}>
         <LayoutProvider>
+      <Flex as="body" fillWidth style={{minHeight: "100vh", margin: 0, padding: 0}}>
         <Providers>
           <NavigationProgress />
           <Column background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0" horizontal="center">
@@ -167,8 +167,8 @@ export default async function RootLayout({
               <Footer/>
             </Column>
           </Providers>
-          </LayoutProvider>
         </Flex>
+          </LayoutProvider>
       </Flex>
   );
 }
