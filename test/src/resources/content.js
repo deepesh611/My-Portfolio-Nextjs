@@ -82,8 +82,12 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
+  },
+  resume: {
+    display: true,
+    link: "/resume.pdf", // Place your resume PDF in /public folder
   },
   intro: {
     display: true,
