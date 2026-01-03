@@ -10,7 +10,8 @@ import {
   Tag,
   Text,
   Meta,
-  Schema
+  Schema,
+  SmartLink
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
@@ -38,6 +39,16 @@ export default function About() {
       title: about.work.title,
       display: about.work.display,
       items: about.work.experiences.map((experience) => experience.company),
+    },
+    {
+      title: about.achievements.title,
+      display: about.achievements.display,
+      items: about.achievements.items.map((item) => item.title),
+    },
+    {
+      title: about.certifications.title,
+      display: about.certifications.display,
+      items: about.certifications.items.map((item) => item.title),
     },
     {
       title: about.studies.title,
@@ -247,6 +258,64 @@ export default function About() {
             </>
           )}
 
+          {about.achievements.display && (
+            <>
+              <Heading as="h2" id={about.achievements.title} variant="display-strong-s" marginBottom="m">
+                {about.achievements.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.achievements.items.map((item, index) => (
+                  <Column key={`${item.title}-${index}`} fillWidth gap="4">
+                    <Flex fillWidth horizontal="space-between" vertical="end">
+                      <Text id={item.title} variant="heading-strong-l">
+                        {item.title}
+                      </Text>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {item.date}
+                      </Text>
+                    </Flex>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {item.description}
+                    </Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.certifications.display && (
+            <>
+              <Heading as="h2" id={about.certifications.title} variant="display-strong-s" marginBottom="m">
+                {about.certifications.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.certifications.items.map((item, index) => (
+                  <Column key={`${item.title}-${index}`} fillWidth gap="4">
+                    <Flex fillWidth horizontal="space-between" vertical="end">
+                      {item.link ? (
+                        <SmartLink href={item.link}>
+                          <Text id={item.title} variant="heading-strong-l">
+                            {item.title}
+                          </Text>
+                        </SmartLink>
+                      ) : (
+                        <Text id={item.title} variant="heading-strong-l">
+                          {item.title}
+                        </Text>
+                      )}
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {item.date}
+                      </Text>
+                    </Flex>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {item.issuer}
+                    </Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
           {about.studies.display && (
             <>
               <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
@@ -255,10 +324,17 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                    <Flex fillWidth horizontal="space-between" vertical="end">
+                      <Text id={institution.name} variant="heading-strong-l">
+                        {institution.name}
+                      </Text>
+                      {institution.timeframe && (
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {institution.timeframe}
+                        </Text>
+                      )}
+                    </Flex>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
                   </Column>

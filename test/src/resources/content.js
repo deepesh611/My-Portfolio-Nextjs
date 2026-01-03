@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Cloud & Automation Enthusiast",
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
   email: "deepeshvcd6273@gmail.com",
   location: "Asia/Kolkata",                      // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -61,10 +61,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building scalable systems from the ground up</>,
+  headline: <>Designing intelligent systems — from AI agents to production infrastructure</>,
   subline: (
     <>
-      I'm {person.firstName}, a {person.role} who builds distributed systems and infrastructure from scratch. I focus on scalability, reliability, and understanding how things work at the lowest level.
+      I'm {person.firstName}, a {person.role} focused on building distributed systems, AI-driven architectures, and self-hosted infrastructure with an emphasis on reliability, scalability, and low-level understanding.
     </>
   ),
 };
@@ -90,55 +90,113 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Deepesh is a DevOps-focused engineer passionate about transforming complex infrastructure challenges into simple, scalable, and reliable solutions. His work spans automation, cloud architecture, and the intersection of DevOps, systems engineering, and innovation.
+        Deepesh is a software engineer focused on designing and building distributed systems, production infrastructure, and AI-driven architectures. His work spans systems engineering, self-hosted infrastructure, and automation, with an emphasis on reliability, scalability, and understanding how systems behave at a low level.
       </>
     ),
   },
   
   work: {
-    display: false,             
+    display: true,             
     title: "Work Experience",
     experiences: [
+      // {
+      //   company: "Abacus Insights",
+      //   timeframe: "2026 - Present",
+      //   role: "AI Engineer",
+      //   achievements: [
+      //     <>
+      //     Developed a multimodal AI system that generates concise summaries from videos by running parallel pipelines for visual frame analysis and audio-based transcription and understanding.
+      //     </>,
+      //     <>
+      //     Developed a self-hosted home server setup designed to run containerized services, manage personal infrastructure, and explore real-world DevOps, networking, and system administration practices.
+      //     </>,
+      //   ],
+      //   images: [
+      //     // optional: leave the array empty if you don't want to display images
+      //     {
+      //       src: "/images/projects/project-01/cover-01.jpg",
+      //       alt: "Once UI Project",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //   ],
+      // },
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Saints Peter & Paul Roman Catholic Church",
+        timeframe: "Jul 2025 - Aug 2025",
+        role: "Freelance Full Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and implemented a self-hosted data management system to centralize member records and family relationships, replacing manual and fragmented workflows with a structured, queryable platform.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Architected an automation-first backend using containerized n8n workflows, enabling API-driven CRUD operations, media processing, and ETL pipelines without maintaining a traditional server codebase.
           </>,
+          <>
+            Developed an analytics interface to surface demographic and employment insights in real time, helping administrators make data-informed planning decisions.
+          </>,    
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/about/freelance/01.png",
+            alt: "landing page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/about/freelance/02.png",
+            alt: "member page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/about/freelance/03.png",
+            alt: "stats page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/about/freelance/04.png",
+            alt: "add page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/about/freelance/05.png",
+            alt: "analysis page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/about/freelance/06.png",
+            alt: "settings page",
             width: 16,
             height: 9,
           },
         ],
       },
+    ],
+  },
+
+  achievements: {
+    display: true,
+    title: "Achievements",
+    items: [
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
+        title: "Co-Head of Robotics Community",
+        description: <>
+        Led and scaled the college robotics community for over a year by organizing 10+ hands-on workshops, technical sessions, and competitions, fostering peer learning and practical exposure to robotics, automation, and problem-solving among students.
+      </>,
+        date: "Aug 2025",
       },
+      {
+        title: "Open Source Contributions",
+        description:
+          <>
+            Actively contributed to multiple open-source projects and ranked 9th among 230+ contributors in VSoC, demonstrating consistent code contributions, collaboration within distributed teams, and a strong commitment to open-source engineering.
+          </>,
+        date: "July 2024",
+      }
     ],
   },
 
@@ -148,65 +206,68 @@ const about = {
     institutions: [
       {
         name: "Indian Institute of Information Technology, Pune",
-        description: <>Studied B.Tech. in Computer Science and Engineering.</>,
+        description: <>B.Tech. in Computer Science and Engineering</>,
+        timeframe: "2022 - 26",
+      },
+    ],
+  },
+
+  certifications: {
+    display: true,
+    title: "Certifications",
+    items: [
+      {
+        title: "AWS Cloud Quest: Cloud Practitioner",
+        issuer: "AWS",
+        date: "Aug 2025",
+        link: "https://www.credly.com/badges/d78639d5-3eeb-4732-9ee0-a79bd0c98cdb/public_url",
+      },
+      {
+        title: "Top Contributor in Open Source (VSoC)",
+        issuer: "Vinyasa Club / Devfolio / Nord",
+        date: "Oct 2024",
+      },
+      {
+        title: "HacktoberFest 2024",
+        issuer: "DigitalOcean & GitHub",
+        date: "Oct 2024",
+      },
+      {
+        title: "Postman API Fundamentals Student Expert",
+        issuer: "Postman",
+        date: "Jul 2025",
+        link: "https://badges.parchment.com/public/assertions/vyZsFWkgRCWUryUaSLe64w?identity__email=deepeshvcd6273%40gmail.com",
       },
     ],
   },
 
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical Skills",
     skills: [
       {
-        title: "Terraform",
-        description: <>Infrastructure as Code for automating cloud provisioning and management.</>,
-        images: [
-          {
-            src: "/images/skills/terraform-01.png",
-            alt: "Terraform infrastructure code",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/skills/terraform-02.png",
-            alt: "Terraform automation example",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Docker",
-        description: <>Containerizing applications to create consistent, portable environments.</>,
-        images: [
-          {
-            src: "/images/skills/docker-01.png",
-            alt: "Docker containers",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Kubernetes",
-        description: <>Orchestrating containerized applications for scalable deployments.</>,
-        images: [
-          {
-            src: "/images/skills/k8s-01.png",
-            alt: "Kubernetes dashboard",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Ansible",
-        description: <>Automation of server configuration and application deployment.</>,
+        title: "Programming Languages",
+        description: <>Python, Go, JavaScript, SQL</>,
         images: [],
       },
       {
-        title: "Linux Server Administration",
-        description: <>Managing and securing Linux servers with shell scripting and system tools.</>,
+        title: "Systems & Infrastructure",
+        description: <>Linux, Docker, Containerized Deployments, Networking Fundamentals, Self-Hosted Infrastructure</>,
+        images: [],
+      },
+      {
+        title: "Backend & Data",
+        description: <>REST API Design, Databases (MySQL, SQLite), ETL Pipelines, Event-Driven Systems</>,
+        images: [],
+      },
+      {
+        title: "AI & Intelligent Systems",
+        description: <>Large Language Models (LLMs), Multi-Agent Systems, Multimodal Pipelines (Audio + Video)</>,
+        images: [],
+      },
+      {
+        title: "Engineering Tools",
+        description: <>Git & GitHub, n8n (Workflow Automation), CI-friendly Project Structuring</>,
         images: [],
       },
     ]
