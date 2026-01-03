@@ -83,7 +83,7 @@ export default function About() {
           position="fixed"
           paddingLeft="24"
           gap="32"
-          hide="s"
+          hide={true}
         >
           <TableOfContents structure={structure} about={about} />
         </Column>
