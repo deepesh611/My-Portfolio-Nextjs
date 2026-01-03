@@ -9,7 +9,8 @@ import { Background, Column, Flex, Meta, opacity, SpacingToken } from "@once-ui-
 import { Footer, Header, RouteGuard, Providers } from '@/components';
 import { NavigationProgress } from '../components/NavigationProgress';
 import { baseURL, effects, fonts, style, dataStyle, home } from '@/resources';
-import { LayoutProvider } from "@/contexts/LayoutProvider";
+import { LayoutProvider } from "@once-ui-system/core";
+
 
 
 export async function generateMetadata() {
@@ -145,7 +146,7 @@ export default async function RootLayout({
                 color: effects.lines.color,
               }}
             />
-            <Flex fillWidth minHeight="16" hide="s"/>
+            <Flex fillWidth minHeight="16" hide={true}/>
               <Header />
               <Flex
                 zIndex={0}

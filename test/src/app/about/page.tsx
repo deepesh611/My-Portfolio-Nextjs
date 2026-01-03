@@ -88,7 +88,7 @@ export default function About() {
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Flex fillWidth mobileDirection="column" horizontal="center">
+      <Flex fillWidth horizontal="center">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
@@ -255,7 +255,7 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
+                    <Flex fillWidth style={{justifyContent: "space-between"}} vertical="end" marginBottom="4">
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
@@ -317,7 +317,7 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.achievements.items.map((item, index) => (
                   <Column key={`${item.title}-${index}`} fillWidth gap="4">
-                    <Flex fillWidth horizontal="space-between" vertical="end">
+                    <Flex fillWidth style={{justifyContent: "space-between"}} vertical="end">
                       <Text id={item.title} variant="heading-strong-l">
                         {item.title}
                       </Text>
@@ -342,7 +342,7 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.certifications.items.map((item, index) => (
                   <Column key={`${item.title}-${index}`} fillWidth gap="4">
-                    <Flex fillWidth horizontal="space-between" vertical="end">
+                    <Flex fillWidth style={{justifyContent: "space-between"}} vertical="end">
                       {item.link ? (
                         <SmartLink href={item.link}>
                           <Text id={item.title} variant="heading-strong-l">
@@ -375,7 +375,7 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Flex fillWidth horizontal="space-between" vertical="end">
+                    <Flex fillWidth style={{justifyContent: "space-between"}} vertical="end">
                       <Text id={institution.name} variant="heading-strong-l">
                         {institution.name}
                       </Text>
