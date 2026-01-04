@@ -12,6 +12,10 @@ export async function generateMetadata() {
   });
 }
 
+// Force this page to be statically generated at build time
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export default function Work() {
   return (
     <Column maxWidth="m">

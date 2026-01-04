@@ -6,6 +6,10 @@ import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
 
+// Force this page to be statically generated at build time
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export default function Home() {
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
