@@ -50,9 +50,8 @@
   --scheme-neutral-600-10: rgba(137,152,159,0.1);
   --scheme-neutral-600-30: rgba(137,152,159,0.3);
   --scheme-neutral-600-50: rgba(137,152,159,0.5);
-  */
-/* }*/
-
+  /*
+}*/
 /* Responsive navigation classes */
 /* Hide on small screens (mobile) - show only icons */
 @media (max-width: 768px) {

@@ -72,5 +72,31 @@ function getMDXData(dir: string) {
 
 export function getPosts(customPath = ["", "", "", ""]) {
   const postsDir = path.join(process.cwd(), ...customPath);
-  return getMDXData(postsDir);
+  
+  console.log(`[getPosts] Attempting to read from: ${postsDir}`);
+  console.log(`[getPosts] Current working directory: ${process.cwd()}`);
+  console.log(`[getPosts] Custom path array:`, customPath);
+  
+  // Try the standard path first
+  if (fs.existsSync(postsDir)) {
+    console.log(`[getPosts] Found directory at: ${postsDir}`);
+    return getMDXData(postsDir);
+  }
+  
+  // If standard path doesn't work, try alternative paths that Vercel might use
+  const alternativePaths = [
+    path.join(process.cwd(), ".next", "server", ...customPath),
+    path.join(process.cwd(), "..", ...customPath),
+  ];
+  
+  for (const altPath of alternativePaths) {
+    console.log(`[getPosts] Trying alternative path: ${altPath}`);
+    if (fs.existsSync(altPath)) {
+      console.log(`[getPosts] Found directory at alternative path: ${altPath}`);
+      return getMDXData(altPath);
+    }
+  }
+  
+  console.error(`[getPosts] Could not find directory at any attempted paths`);
+  return [];
 }
