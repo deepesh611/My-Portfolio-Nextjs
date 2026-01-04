@@ -24,16 +24,20 @@ import { notFound } from 'next/navigation';
 
 function getMDXFiles(dir: string) {
   if (!fs.existsSync(dir)) {
-    notFound();
+    console.error(`[getMDXFiles] Directory not found: ${dir}`);
+    console.error(`[getMDXFiles] Current working directory: ${process.cwd()}`);
+    console.error(`[getMDXFiles] Attempted absolute path: ${path.resolve(dir)}`);
+    return []; // Return empty array instead of calling notFound()
   }
 
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
 }
 
 function readMDXFile(filePath: string) {
-    if (!fs.existsSync(filePath)) {
-        notFound();
-    }
+  if (!fs.existsSync(filePath)) {
+    console.error(`[readMDXFile] File not found: ${filePath}`);
+    throw new Error(`MDX file not found: ${filePath}`);
+  }
 
   const rawContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(rawContent);
