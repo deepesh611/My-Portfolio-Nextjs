@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "export": "next export",
+    "prebuild": "node scripts/generate-projects-data.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

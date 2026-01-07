@@ -97,6 +97,19 @@ export function getPosts(customPath = ["", "", "", ""]) {
     }
   }
   
+  // If we're looking for projects and can't find the directory,
+  // try reading from the pre-generated JSON file (for Vercel deployment)
+  if (customPath.includes("projects")) {
+    const jsonPath = path.join(process.cwd(), "public", "projects-data.json");
+    console.log(`[getPosts] Trying to read from JSON file: ${jsonPath}`);
+    
+    if (fs.existsSync(jsonPath)) {
+      console.log(`[getPosts] Found JSON file, reading projects data`);
+      const jsonData = fs.readFileSync(jsonPath, "utf-8");
+      return JSON.parse(jsonData);
+    }
+  }
+  
   console.error(`[getPosts] Could not find directory at any attempted paths`);
   return [];
 }

@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "aetherstore",
+    "metadata": {
+      "title": "AetherStore",
+      "publishedAt": "2025-12-23",
+      "summary": "AetherStore is a self-hosted, distributed object storage system designed to provide S3-like semantics with a lightweight, node-based architecture focused on reliability, data safety, and horizontal scalability.",
+      "image": "",
+      "images": [
+        "/images/projects/aetherstore/cover-01.png"
+      ],
+      "tag": [],
+      "team": [
+        {
+          "name": "Deepesh Patil",
+          "role": "Software Engineer",
+          "avatar": "/images/avatar.jpg",
+          "linkedin": "https://www.linkedin.com/in/deepesh-patil-103a87258"
+        }
+      ],
+      "link": "https://github.com/deepesh611/aetherstore"
+    },
+    "content": "\r\n## Overview\r\n\r\nAetherStore is an experimental distributed object storage system inspired by cloud storage platforms such as Amazon S3, built from the ground up to explore low-level storage design, node orchestration, and data durability.  \r\nThe project focuses on building a **master–datanode architecture** that can run seamlessly across Docker, virtual machines, or physical servers without relying on managed cloud infrastructure.\r\n\r\nThe primary goal of AetherStore is to understand and implement the core building blocks of distributed storage systems, including metadata management, node coordination, and safe object persistence.\r\n\r\n## Key Features\r\n\r\n- **Master–Datanode Architecture** for centralized coordination and decentralized storage\r\n- **Object-based Storage Model** with unique object identifiers and filesystem-backed persistence\r\n- **Pluggable Deployment Targets** supporting Docker, VM, and bare-metal environments\r\n- **Data Safety Mechanisms** using controlled writes and filesystem sync guarantees\r\n- **Service-oriented Design** enabling independent scaling of control and storage layers\r\n\r\n## Technologies Used\r\n\r\n- **Go (Golang)** – Core backend implementation\r\n- **Docker & Dockerfile Multi-stage Builds** – Containerized builds and runtime isolation\r\n- **Linux Filesystem APIs** – Low-level file operations and durability handling\r\n- **SQLite** – Lightweight metadata persistence (local state)\r\n- **RESTful APIs** – Node communication and control plane operations\r\n- **Shell & PowerShell** – Development tooling and automation\r\n- **Alpine Linux** – Minimal production runtime images\r\n\r\n## Architecture\r\n\r\nAetherStore follows a **centralized master with distributed datanodes** design:\r\n\r\n- The **Master Node** acts as the control plane, responsible for cluster awareness, node registration, and high-level coordination.\r\n- **Data Nodes** are responsible for physically storing objects on disk and serving read/write operations.\r\n- Each data node maintains its own local storage directory while adhering to protocols defined by the master.\r\n- Communication between components is performed via well-defined APIs, enabling future extensibility such as replication or sharding.\r\n\r\nThe architecture is intentionally modular to allow incremental evolution without large refactors.\r\n\r\n## Current Status\r\n\r\nAetherStore is currently in an **active prototyping phase**.  \r\nCore milestones completed include:\r\n\r\n- Initial master and datanode binaries\r\n- Containerized build and runtime workflow\r\n- Storage directory structure and object persistence logic\r\n- Foundational documentation and design notes\r\n\r\nAdvanced features such as replication, authentication, and fault tolerance are planned for future iterations. \r\n\r\n## Challenges and Learnings\r\n\r\n- Designing **safe write semantics** and understanding filesystem guarantees such as `fsync`\r\n- Managing **binary builds and runtime environments** using multi-stage Dockerfiles\r\n- Structuring a distributed system while avoiding premature complexity\r\n- Balancing simplicity with extensibility in early architectural decisions\r\n- Gaining hands-on experience with **real-world storage system constraints**\r\n\r\nThis project significantly deepened my understanding of operating systems, storage internals, and distributed system design.\r\n\r\n## Outcome\r\n\r\nAetherStore serves as a strong foundation for experimenting with advanced distributed storage concepts such as replication, leader election, and fault recovery.  \r\nFuture plans include implementing object replication, access control, and a minimal S3-compatible API layer.\r\n\r\nMore importantly, the project demonstrates my ability to design, build, and reason about **low-level backend systems** with production-like constraints.\r\n"
+  },
+  {
+    "slug": "home-server",
+    "metadata": {
+      "title": "Home Server",
+      "publishedAt": "2025-12-09",
+      "summary": "A self-hosted home server setup designed to run containerized services, manage personal infrastructure, and explore real-world DevOps, networking, and system administration practices.",
+      "image": "",
+      "images": [
+        "/images/projects/home-server/cover-01.png",
+        "/images/projects/home-server/cover-02.png",
+        "/images/projects/home-server/cover-03.png"
+      ],
+      "tag": [],
+      "team": [
+        {
+          "name": "Deepesh Patil",
+          "role": "Software Engineer",
+          "avatar": "/images/avatar.jpg",
+          "linkedin": "https://www.linkedin.com/in/deepesh-patil-103a87258"
+        }
+      ],
+      "link": "https://github.com/deepesh611/Home-Server"
+    },
+    "content": "\r\n## Overview\r\n\r\nHome Server is a hands-on infrastructure project focused on building and maintaining a **self-hosted server environment** for running personal and experimental services.  \r\nThe project serves as a practical playground for learning **Linux system administration, container orchestration, networking, and service reliability** outside of managed cloud platforms.\r\n\r\nRather than relying on third-party hosting, this setup emphasizes full ownership of the stack—from hardware and OS configuration to service deployment and monitoring.\r\n\r\n## Key Features\r\n\r\n- **Self-hosted Infrastructure** running on local hardware\r\n- **Dockerized Services** for isolation, reproducibility, and easy upgrades\r\n- **Reverse Proxy & Networking Setup** for clean service exposure\r\n- **Service Monitoring & Health Checks** for reliability\r\n- **Expandable Architecture** to onboard new services with minimal friction\r\n\r\n## Technologies Used\r\n\r\n- **Linux (Ubuntu/Debian-based)** – Server operating system\r\n- **Docker & Docker Compose** – Containerization and service orchestration\r\n- **Nginx / Reverse Proxy** – Traffic routing and service exposure\r\n- **Portainer** – Container management and observability\r\n- **Shell Scripting** – Automation and system maintenance\r\n- **Git & GitHub** – Configuration tracking and documentation\r\n- **Networking Concepts** – Ports, DNS, LAN access, and firewall rules\r\n\r\n## Architecture\r\n\r\nThe system follows a **single-node modular architecture**:\r\n\r\n- Core services are deployed as **Docker containers**, each isolated but networked via Docker bridges.\r\n- A **reverse proxy layer** routes incoming traffic to internal services based on ports or host rules.\r\n- Persistent volumes are used to ensure data durability across container restarts.\r\n- The design supports future migration to multi-node or cloud-based environments with minimal changes.\r\n\r\nThis architecture mirrors production patterns commonly used in startups and internal tooling.\r\n\r\n## Current Status\r\n\r\nThe Home Server is in an **actively used and evolving state**, currently hosting:\r\n\r\n- Management and monitoring tools\r\n- Development and testing services\r\n- Internal dashboards and utilities\r\n\r\nThe setup is stable and continuously improved as new services and requirements emerge.\r\n\r\n## Challenges and Learnings\r\n\r\n- Debugging **networking and port conflicts** across multiple services\r\n- Understanding Docker networking and volume persistence\r\n- Managing service restarts and failure recovery\r\n- Balancing security with ease of access in a home environment\r\n- Gaining real-world experience with **infra troubleshooting**\r\n\r\nThis project significantly improved my confidence in operating and maintaining production-like systems.\r\n\r\n## Outcome\r\n\r\nHome Server demonstrates my ability to **own infrastructure end-to-end**, from deployment to maintenance.  \r\nFuture plans include tighter security controls, automated backups, and potentially scaling to a multi-node or hybrid setup.\r\n\r\nThe project highlights practical DevOps skills and a strong understanding of how real systems behave outside of theoretical environments.\r\n\r\n"
+  },
+  {
+    "slug": "multi-agent-fraud-intelligence-system",
+    "metadata": {
+      "title": "Multi-Agent Fraud Detection System",
+      "publishedAt": "2025-11-30",
+      "summary": "A distributed, multi-agent AI system for detecting fraudulent activity by coordinating specialized agents that analyze transactions, behavior patterns, and risk signals in parallel.",
+      "image": "",
+      "images": [
+        "/images/projects/multi-agent-system/cover-01.png",
+        "/images/projects/multi-agent-system/cover-02.png",
+        "/images/projects/multi-agent-system/cover-03.png",
+        "/images/projects/multi-agent-system/cover-04.png"
+      ],
+      "tag": [],
+      "team": [
+        {
+          "name": "Deepesh Patil",
+          "role": "Software Engineer",
+          "avatar": "/images/avatar.jpg",
+          "linkedin": "https://www.linkedin.com/in/deepesh-patil-103a87258"
+        }
+      ],
+      "link": "https://github.com/deepesh611/Multi-Agent-Fraud-Detection-System"
+    },
+    "content": "\r\n## Overview\r\n\r\nThe Multi-Agent Fraud Detection System is an AI-driven platform designed to identify fraudulent transactions by leveraging **multiple autonomous agents**, each responsible for analyzing fraud from a different perspective.  \r\nInstead of relying on a single monolithic model, the system decomposes fraud detection into parallel, cooperative reasoning tasks to improve accuracy, explainability, and scalability.\r\n\r\nThe project explores how **agent-based architectures** can outperform traditional single-model approaches in complex, high-risk domains like financial fraud.\r\n\r\n## Key Features\r\n\r\n- **Multi-Agent Architecture** with specialized agents for behavioral, transactional, and anomaly analysis\r\n- **Parallel Reasoning Pipelines** to reduce detection latency and increase coverage\r\n- **Agent Coordination Layer** for decision aggregation and conflict resolution\r\n- **Modular Design** allowing agents to be added, removed, or upgraded independently\r\n- **Explainable Outputs** via agent-level reasoning and verdict traces\r\n\r\n## Technologies Used\r\n\r\n- **Python** – Core implementation and agent logic\r\n- **Large Language Models (LLMs)** – Intelligent reasoning and contextual analysis\r\n- **Multi-Agent Orchestration Frameworks** – Agent coordination and task routing\r\n- **REST APIs** – Inter-agent and service communication\r\n- **JSON-based Event Pipelines** – Transaction and signal exchange\r\n- **Docker** – Containerized execution environment\r\n- **Git & GitHub** – Version control and collaboration\r\n\r\n## Architecture\r\n\r\nThe system follows a **coordinated multi-agent design**:\r\n\r\n- Each **agent** operates independently, focusing on a specific fraud dimension such as spending patterns, historical behavior, or anomaly detection.\r\n- An **orchestrator layer** assigns tasks, collects agent responses, and synthesizes a final fraud verdict.\r\n- Agents run in parallel, enabling faster decisions while reducing single-point reasoning failures.\r\n- The architecture supports future enhancements like reinforcement learning agents or real-time streaming inputs.\r\n\r\nThis design emphasizes **fault isolation**, **scalability**, and **decision transparency**.\r\n\r\n## Current Status\r\n\r\nThe project is currently in a **functional prototype stage** with:\r\n\r\n- Multiple working fraud analysis agents\r\n- End-to-end fraud evaluation pipeline\r\n- Agent coordination and response aggregation logic\r\n- Initial test scenarios and simulated transaction data\r\n\r\nFuture iterations aim to improve real-world adaptability and performance.\r\n\r\n## Challenges and Learnings\r\n\r\n- Designing **agent cooperation strategies** without tightly coupling logic\r\n- Managing inconsistent or conflicting agent outputs\r\n- Balancing LLM reasoning depth with performance constraints\r\n- Structuring agent prompts and roles for deterministic behavior\r\n- Gaining practical insight into **distributed AI system design**\r\n\r\nThis project strengthened my understanding of **AI orchestration, system decomposition, and decision pipelines**.\r\n\r\n## Outcome\r\n\r\nThe Multi-Agent Fraud Detection System demonstrates how complex decision-making problems can be solved using **collaborative AI agents** rather than single models.  \r\nPlanned enhancements include real-time data ingestion, model specialization, confidence scoring, and production-grade monitoring.\r\n\r\nOverall, the project showcases my ability to design and implement **advanced AI systems with strong architectural foundations**, suitable for high-stakes domains.\r\n\r\n"
+  },
+  {
+    "slug": "videodigest",
+    "metadata": {
+      "title": "Video Summary Generator",
+      "publishedAt": "2025-10-26",
+      "summary": "A multimodal AI system that generates concise summaries from videos by running parallel pipelines for visual frame analysis and audio-based transcription and understanding.",
+      "image": "",
+      "images": [
+        "/images/projects/videodigest/cover-01.png",
+        "/images/projects/videodigest/cover-02.png"
+      ],
+      "tag": [],
+      "team": [
+        {
+          "name": "Deepesh Patil",
+          "role": "Software Engineer",
+          "avatar": "/images/avatar.jpg",
+          "linkedin": "https://www.linkedin.com/in/deepesh-patil-103a87258"
+        }
+      ],
+      "link": "https://github.com/deepesh611/Video-Summary-Generator"
+    },
+    "content": "\r\n## Overview\r\n\r\nVideo Summary Generator is an AI-powered application designed to automatically extract meaningful summaries from video content by combining **visual and audio understanding**.  \r\nInstead of relying on a single modality, the system processes video data through **two parallel pipelines**—one focused on frame-level visual analysis and the other on audio transcription and semantic interpretation—to produce more accurate and context-aware summaries.\r\n\r\nThe project explores multimodal AI workflows and efficient pipeline orchestration for real-world media processing tasks.\r\n\r\n## Key Features\r\n\r\n- **Parallel Processing Pipelines** for visual frame extraction and audio analysis\r\n- **Multimodal Understanding** combining visual context and spoken content\r\n- **Automated Video-to-Text Summarization** using LLM-based reasoning\r\n- **Modular Pipeline Design** enabling independent optimization of each stage\r\n- **Scalable Architecture** suitable for batch or on-demand processing\r\n\r\n## Technologies Used\r\n\r\n- **Python** – Core application logic\r\n- **FFmpeg** – Video processing and frame extraction\r\n- **Speech-to-Text Models** – Audio transcription\r\n- **Large Language Models (LLMs)** – Contextual summarization\r\n- **Multimodal AI Pipelines** – Visual and audio data fusion\r\n- **REST APIs** – Pipeline coordination and data exchange\r\n- **Docker** – Containerized execution environment\r\n- **Git & GitHub** – Version control and project management\r\n\r\n## Architecture\r\n\r\nThe system is built around **two parallel pipelines**:\r\n\r\n- The **Visual Pipeline** extracts key frames from the video and analyzes visual cues to identify important scenes or transitions.\r\n- The **Audio Pipeline** transcribes spoken content and performs semantic analysis on the resulting text.\r\n- Outputs from both pipelines are merged and passed to a summarization layer that generates a coherent final summary.\r\n\r\nThis architecture improves robustness by reducing reliance on a single data source and allows each pipeline to scale independently.\r\n\r\n## Current Status\r\n\r\nThe project is currently in a **working prototype stage**, supporting:\r\n\r\n- End-to-end video ingestion and processing\r\n- Parallel execution of visual and audio pipelines\r\n- Generation of concise, human-readable summaries\r\n\r\nFurther improvements are planned to enhance accuracy and performance.\r\n\r\n## Challenges and Learnings\r\n\r\n- Coordinating **parallel processing pipelines** efficiently\r\n- Handling synchronization between visual and audio outputs\r\n- Managing compute and latency trade-offs in media processing\r\n- Structuring multimodal inputs for effective LLM summarization\r\n- Gaining practical experience with **real-world AI pipeline orchestration**\r\n\r\nThis project strengthened my understanding of applied multimodal AI systems.\r\n\r\n## Outcome\r\n\r\nVideo Summary Generator demonstrates a practical application of **multimodal AI and pipeline parallelism** in media analysis.  \r\nFuture plans include smarter frame selection, improved summarization quality, and real-time processing support.\r\n\r\nOverall, the project showcases my ability to design and implement **end-to-end AI systems** that combine multiple data sources to solve complex problems.\r\n"
+  }
+]
