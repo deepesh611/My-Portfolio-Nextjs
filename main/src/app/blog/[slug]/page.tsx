@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "blog", "posts"]);
-  return posts.map((post) => ({
+  return posts.map((post: any) => ({
     slug: post.slug,
   }));
 }
@@ -25,7 +25,7 @@ export async function generateMetadata({
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
   const posts = getPosts(["src", "app", "blog", "posts"])
-  let post = posts.find((post) => post.slug === slugPath);
+  let post = posts.find((post: any) => post.slug === slugPath);
 
   if (!post) return {};
 
@@ -44,14 +44,14 @@ export default async function Blog({
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slugPath);
+  let post = getPosts(["src", "app", "blog", "posts"]).find((post: any) => post.slug === slugPath);
 
   if (!post) {
     notFound();
   }
 
   const avatars =
-    post.metadata.team?.map((person) => ({
+    post.metadata.team?.map((person: any) => ({
       src: person.avatar,
     })) || [];
 
