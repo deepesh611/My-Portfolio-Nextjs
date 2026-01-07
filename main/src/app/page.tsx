@@ -5,12 +5,16 @@ import { home, about, person, newsletter, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import { getPosts } from "@/utils/utils";
 
 // Force this page to be statically generated at build time
 export const dynamic = 'force-static';
 export const revalidate = false;
 
 export default function Home() {
+  // Fetch projects at build time (server component)
+  const allProjects = getPosts(["src", "app", "work", "projects"]);
+  
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
       <Schema
@@ -72,7 +76,7 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+        <Projects projects={allProjects} range={[1, 1]} />
       </RevealFx>
       {routes["/blog"] && (
         <Flex fillWidth gap="24">
@@ -86,7 +90,7 @@ export default function Home() {
           </Flex>
         </Flex>
       )}
-      <Projects range={[2, 3]} />
+      <Projects projects={allProjects} range={[2, 3]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );

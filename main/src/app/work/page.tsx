@@ -1,6 +1,7 @@
 import { Column, Meta, Schema } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { Projects } from "@/components/work/Projects";
+import { getPosts } from "@/utils/utils";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -17,6 +18,9 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export default function Work() {
+  // Fetch projects at build time (server component)
+  const allProjects = getPosts(["src", "app", "work", "projects"]);
+  
   return (
     <Column maxWidth="m">
       <Schema
@@ -32,7 +36,7 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Projects />
+      <Projects projects={allProjects} />
     </Column>
   );
 }
