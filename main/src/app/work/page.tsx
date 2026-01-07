@@ -2,6 +2,12 @@ import { Column, Meta, Schema } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { Projects } from "@/components/work/Projects";
 import { getPosts } from "@/utils/utils";
+import { cache } from "react";
+
+// Cache the projects data so it's computed once at build time
+const getProjects = cache(() => {
+  return getPosts(["src", "app", "work", "projects"]);
+});
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -19,7 +25,7 @@ export const revalidate = false;
 
 export default function Work() {
   // Fetch projects at build time (server component)
-  const allProjects = getPosts(["src", "app", "work", "projects"]);
+  const allProjects = getProjects();
   
   return (
     <Column maxWidth="m">

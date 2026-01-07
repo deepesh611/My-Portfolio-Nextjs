@@ -6,6 +6,12 @@ import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
 import { getPosts } from "@/utils/utils";
+import { cache } from "react";
+
+// Cache the projects data so it's computed once at build time
+const getProjects = cache(() => {
+  return getPosts(["src", "app", "work", "projects"]);
+});
 
 // Force this page to be statically generated at build time
 export const dynamic = 'force-static';
@@ -13,7 +19,7 @@ export const revalidate = false;
 
 export default function Home() {
   // Fetch projects at build time (server component)
-  const allProjects = getPosts(["src", "app", "work", "projects"]);
+  const allProjects = getProjects();
   
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
