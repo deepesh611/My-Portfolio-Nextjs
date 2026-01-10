@@ -10,7 +10,7 @@ const person = {
   avatar: "/images/avatar.jpg",
   email: "deepeshvcd6273@gmail.com",
   location: "Asia/Kolkata",                      // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Hindi", "Marathi"],   // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Hindi", "Marathi"],   
 };
 
 const newsletter = {
@@ -25,8 +25,6 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -251,27 +249,27 @@ const about = {
     skills: [
       {
         title: "Programming Languages",
-        description: <>Python, Go, JavaScript, SQL</>,
+        description: <>Python . Go . JavaScript . SQL</>,
         images: [],
       },
       {
         title: "Systems & Infrastructure",
-        description: <>Linux, Docker, Containerized Deployments, Networking Fundamentals, Self-Hosted Infrastructure</>,
+        description: <>Linux · Docker · Networking · Self-Hosting</>,
         images: [],
       },
       {
         title: "Backend & Data",
-        description: <>REST API Design, Databases (MySQL, SQLite), ETL Pipelines, Event-Driven Systems</>,
+        description: <>REST APIs · MySQL · SQLite · ETL Pipelines · Event-Driven Systems</>,
         images: [],
       },
       {
         title: "AI & Intelligent Systems",
-        description: <>Large Language Models (LLMs), Multi-Agent Systems, Multimodal Pipelines (Audio + Video)</>,
+        description: <>LLMs · Multi-Agent Systems · Multimodal Pipelines</>,
         images: [],
       },
       {
-        title: "Engineering Tools",
-        description: <>Git & GitHub, n8n (Workflow Automation), CI-friendly Project Structuring</>,
+        title: "Engineering Tooling",
+        description: <>Git · GitHub · n8n (Automation)</>,
         images: [],
       },
     ]

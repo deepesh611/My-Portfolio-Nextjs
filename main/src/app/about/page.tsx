@@ -78,6 +78,7 @@ export default function About() {
       />
       {about.tableOfContent.display && (
         <Column
+          className={styles.sidebar}
           left="0"
           style={{ top: "50%", transform: "translateY(-50%)" }}
           position="fixed"
@@ -121,34 +122,10 @@ export default function About() {
             fillWidth
             minHeight="160"
             vertical="center"
-            marginBottom="32"
           >
-            {about.resume.display && (
-              <SmartLink href={about.resume.link} target="_blank">
-                <Flex
-                  fitWidth
-                  border="brand-alpha-medium"
-                  className={styles.blockAlign}
-                  style={{
-                    backdropFilter: "blur(var(--static-space-1))",
-                  }}
-                  background="brand-alpha-weak"
-                  radius="full"
-                  padding="4"
-                  gap="8"
-                  marginBottom="m"
-                  vertical="center"
-                >
-                  <Icon paddingLeft="12" name="download" onBackground="brand-weak" />
-                  <Flex paddingX="8">Download Resume</Flex>
-                  <IconButton
-                    data-border="rounded"
-                    variant="secondary"
-                    icon="chevronRight"
-                  />
-                </Flex>
-              </SmartLink>
-            )}
+            <Column className={`${styles.mobileAvatar} s-flex-show`} horizontal="center" marginBottom="m">
+              <Avatar src={person.avatar} size="xl" />
+            </Column>
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
@@ -186,6 +163,32 @@ export default function About() {
                         </React.Fragment>
                     ),
                 )}
+              </Flex>
+            )}
+            {about.resume.display && (
+              <Flex fillWidth horizontal="start" marginTop="24" marginBottom="32" className={styles.resumeButton}>
+                <SmartLink href={about.resume.link} target="_blank">
+                  <Flex
+                    fitWidth
+                    border="brand-alpha-medium"
+                    style={{
+                      backdropFilter: "blur(var(--static-space-1))",
+                    }}
+                    background="brand-alpha-weak"
+                    radius="full"
+                    padding="4"
+                    gap="8"
+                    vertical="center"
+                  >
+                    <Icon paddingLeft="12" name="document" onBackground="brand-weak" />
+                    <Flex paddingX="8">Download Resume</Flex>
+                    <IconButton
+                      data-border="rounded"
+                      variant="secondary"
+                      icon="chevronRight"
+                    />
+                  </Flex>
+                </SmartLink>
               </Flex>
             )}
 

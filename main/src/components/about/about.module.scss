@@ -1,29 +1,51 @@
 @use "../breakpoints.scss" as breakpoints;
 
 .hover {
-    transition: var(--transition-micro-medium);
+  transition: var(--transition-micro-medium);
 
-    &:hover {
-        transform: translateX(var(--static-space-4));
-    }
+  &:hover {
+    transform: translateX(var(--static-space-4));
+  }
 }
 
 .avatar {
-    position: sticky;
-    height: fit-content;
-    top: var(--static-space-64);
+  position: sticky;
+  height: fit-content;
+  top: var(--static-space-64);
+}
+
+.mobileAvatar {
+  display: none;
 }
 
 @media (max-width: breakpoints.$s) {
-    .avatar {
-        top: auto;
-    }
+  .avatar {
+    display: none !important;
+  }
 
-    .textAlign {
-        text-align: center;
-    }
+  .mobileAvatar {
+    display: flex !important;
+  }
 
-    .blockAlign {
-        align-self: center;
-    }
+  .sidebar {
+    display: none !important;
+  }
+
+  .resumeButton {
+    justify-content: center !important;
+  }
+
+  .textAlign {
+    text-align: center;
+  }
+
+  .blockAlign {
+    align-self: center;
+  }
+}
+
+@media (max-width: breakpoints.$m) {
+  .sidebar {
+    display: none !important;
+  }
 }

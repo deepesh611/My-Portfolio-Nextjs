@@ -1,0 +1,107 @@
+---
+title: "Member Management System (Workflow-Driven Backend)"
+publishedAt: "2024-09-15"
+summary: "A workflow-driven member management system built with React and n8n, delivered as part of a freelance engagement. Implements CRUD operations, relational data modeling, and analytics using a self-hosted stack."
+# images:
+#   - "/images/projects/dbms-with-n8n/cover.png"
+team:
+  - name: Deepesh Patil
+    role: Full Stack Developer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/DBMS-with-n8n"
+website: "https://dbms-with-n8n.vercel.app/"
+---
+
+> **Note:** This project was developed as part of a freelance engagement. Client details have been anonymized, and only non-sensitive functionality is shown.
+
+## Overview
+
+This project is a **workflow-driven Member Management System** designed to replace manual and spreadsheet-based record keeping with a structured, queryable platform.
+
+The system uses a **React + TypeScript frontend** paired with **n8n workflows acting as the backend layer**, handling CRUD operations, validation, and automation. All data is stored in a **MySQL database**, and the application is designed to be deployed in a self-hosted environment.
+
+A public demo is provided to showcase functionality and UI behavior.
+
+[**View Demo (Showcase Instance)**](https://dbms-with-n8n.vercel.app/)
+
+---
+
+## Problem This Project Solves
+
+Organizations that rely on spreadsheets or fragmented tools often struggle with:
+- Maintaining consistent member records
+- Representing family and relational data
+- Generating demographic insights
+- Ensuring control over their data infrastructure
+
+This project addresses those issues by providing a centralized system with structured data models, automation-driven backend logic, and built-in analytics.
+
+---
+
+## Core Capabilities
+
+- **CRUD-based Member Management:** Structured creation, retrieval, updating, and deletion of member records
+- **Relational Data Modeling:** Family relationships (spouse, parent, child) represented through normalized tables
+- **Employment Tracking:** Storage of professional and employment-related attributes
+- **Analytics & Insights:** Demographic and employment summaries rendered through dashboards
+- **Image Handling:** Support for profile images via uploads or external links
+- **Bulk Operations:** CSV/XLSX-based data import for migration from existing records
+
+---
+
+## Tech Stack
+
+This project follows a **low-code backend / pro-code frontend** approach:
+
+- **Frontend:** React + Vite + TypeScript
+- **UI & Styling:** Tailwind CSS + shadcn/ui
+- **Backend Logic:** n8n workflows exposed via webhooks
+- **Database:** MySQL
+- **Visualization:** Recharts
+
+---
+
+## Architecture
+
+The system is designed around a **workflow-centric backend**:
+
+1. **React Frontend**  
+   Sends requests directly to n8n webhook endpoints.
+
+2. **n8n Workflows**  
+   Act as the API layer, handling validation, business logic, and SQL execution.
+
+3. **MySQL Database**  
+   Stores normalized relational data and supports complex queries.
+
+This approach avoids maintaining a large custom backend codebase while keeping logic explicit and modular.
+
+---
+
+## Database Design
+
+The schema is normalized to support real-world relationships:
+
+- **Members:** Core identity and status information
+- **Phones:** One-to-many contact records (primary, WhatsApp, emergency)
+- **Employment:** Professional and employment details
+- **Relationships:** Self-referential links defining family connections
+
+---
+
+## Trade-offs & Limitations
+
+- Designed for internal or small-scale organizational use
+- No authentication or role-based access control
+- Workflow-based backend prioritizes flexibility over raw performance
+- Demo deployment is for showcase purposes only
+
+---
+
+## Outcome & Learnings
+
+- Delivered a complete CRUD-based system for a real client
+- Gained experience using workflow automation as backend infrastructure
+- Designed and implemented relational schemas for non-trivial data
+- Balanced rapid development with maintainable system design
