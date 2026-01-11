@@ -1,7 +1,7 @@
 ---
 title: "Multi-Agent Fraud Detection System"
 publishedAt: "2025-11-30"
-summary: "A distributed, multi-agent AI system for detecting fraudulent activity by coordinating specialized agents that analyze transactions, behavior patterns, and risk signals in parallel."
+summary: "A hybrid fraud detection platform combining rule-based analytics and AI agents to detect, investigate, and explain fraudulent insurance claims through an interactive dashboard."
 images:
   - "/images/projects/multi-agent-system/cover-01.png"
   - "/images/projects/multi-agent-system/cover-02.png"
@@ -17,65 +17,74 @@ link: "https://github.com/deepesh611/Multi-Agent-Fraud-Detection-System"
 
 ## Overview
 
-The Multi-Agent Fraud Detection System is an AI-driven platform designed to identify fraudulent transactions by leveraging **multiple autonomous agents**, each responsible for analyzing fraud from a different perspective.  
-Instead of relying on a single monolithic model, the system decomposes fraud detection into parallel, cooperative reasoning tasks to improve accuracy, explainability, and scalability.
+The **Multi-Agent Fraud Detection System** is a hybrid AI-driven platform designed to detect, investigate, and explain fraudulent insurance claims.  
+It combines **rule-based detection**, **AI-powered agents**, and an **interactive dashboard** to provide transparent and explainable fraud analysis.
 
-The project explores how **agent-based architectures** can outperform traditional single-model approaches in complex, high-risk domains like financial fraud.
+The system focuses on decomposing fraud detection into specialized agents rather than relying on a single monolithic model.
+
+---
+
+## What the Project Includes
+
+- **Synthetic Data Pipeline** for generating realistic insurance claims with injected fraud patterns
+- **Rule-Based Detection Engine** identifying suspicious claim behavior
+- **Multi-Agent Architecture**, including:
+  - Detection Agent (rule-based analysis)
+  - Investigation Agent (AI-driven reasoning)
+  - Explanation Agent (human-readable fraud justification)
+  - Query Agent (natural language search over historical cases)
+- **Interactive Dashboard** for fraud analytics, claim exploration, and AI-assisted investigation
+- **End-to-End Pipeline** from data generation to fraud verdict
+
+---
 
 ## Key Features
 
-- **Multi-Agent Architecture** with specialized agents for behavioral, transactional, and anomaly analysis
-- **Parallel Reasoning Pipelines** to reduce detection latency and increase coverage
-- **Agent Coordination Layer** for decision aggregation and conflict resolution
-- **Modular Design** allowing agents to be added, removed, or upgraded independently
-- **Explainable Outputs** via agent-level reasoning and verdict traces
+- Hybrid fraud detection using rules and AI agents
+- Explainable decisions with traceable reasoning
+- Modular agent design for independent evolution
+- Natural language querying of claims data
+- Interactive visual analytics dashboard
 
-## Technologies Used
-
-- **Python** – Core implementation and agent logic
-- **Large Language Models (LLMs)** – Intelligent reasoning and contextual analysis
-- **Multi-Agent Orchestration Frameworks** – Agent coordination and task routing
-- **REST APIs** – Inter-agent and service communication
-- **JSON-based Event Pipelines** – Transaction and signal exchange
-- **Docker** – Containerized execution environment
-- **Git & GitHub** – Version control and collaboration
+---
 
 ## Architecture
 
-The system follows a **coordinated multi-agent design**:
+The system follows a coordinated multi-agent design:
 
-- Each **agent** operates independently, focusing on a specific fraud dimension such as spending patterns, historical behavior, or anomaly detection.
-- An **orchestrator layer** assigns tasks, collects agent responses, and synthesizes a final fraud verdict.
-- Agents run in parallel, enabling faster decisions while reducing single-point reasoning failures.
-- The architecture supports future enhancements like reinforcement learning agents or real-time streaming inputs.
+1. **Synthetic Data Generator** produces labeled claim datasets  
+2. **ETL Pipeline** processes and stores data  
+3. **Agent Orchestrator** coordinates agent execution  
+4. **Specialized Agents** analyze, investigate, and explain fraud  
+5. **Dashboard UI** presents analytics and agent outputs  
 
-This design emphasizes **fault isolation**, **scalability**, and **decision transparency**.
+This architecture emphasizes **modularity**, **fault isolation**, and **decision transparency**.
+
+---
+
+## Tools & Technologies
+
+- **Python** — core implementation
+- **Streamlit** — interactive dashboard UI
+- **SQLite** — data storage
+- **FAISS** — vector similarity search
+- **LLMs** — reasoning and explanation agents
+- **Docker** — containerized execution
+
+---
 
 ## Current Status
 
-The project is currently in a **functional prototype stage** with:
+- Functional prototype with multiple cooperating agents
+- Working dashboard for analytics and investigation
+- Synthetic test data and simulated fraud scenarios
+- Modular architecture ready for extension
 
-- Multiple working fraud analysis agents
-- End-to-end fraud evaluation pipeline
-- Agent coordination and response aggregation logic
-- Initial test scenarios and simulated transaction data
+---
 
-Future iterations aim to improve real-world adaptability and performance.
+## Outcome & Learnings
 
-## Challenges and Learnings
-
-- Designing **agent cooperation strategies** without tightly coupling logic
-- Managing inconsistent or conflicting agent outputs
-- Balancing LLM reasoning depth with performance constraints
-- Structuring agent prompts and roles for deterministic behavior
-- Gaining practical insight into **distributed AI system design**
-
-This project strengthened my understanding of **AI orchestration, system decomposition, and decision pipelines**.
-
-## Outcome
-
-The Multi-Agent Fraud Detection System demonstrates how complex decision-making problems can be solved using **collaborative AI agents** rather than single models.  
-Planned enhancements include real-time data ingestion, model specialization, confidence scoring, and production-grade monitoring.
-
-Overall, the project showcases my ability to design and implement **advanced AI systems with strong architectural foundations**, suitable for high-stakes domains.
-
+- Designed a real multi-agent AI system end-to-end
+- Combined deterministic rules with AI reasoning
+- Built explainable fraud detection pipelines
+- Gained practical experience in AI orchestration and system design

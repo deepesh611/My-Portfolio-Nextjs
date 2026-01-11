@@ -1,7 +1,7 @@
 ---
-title: "Home Server"
-publishedAt: "2025-12-09"
-summary: "A self-hosted home server setup designed to run containerized services, manage personal infrastructure, and explore real-world DevOps, networking, and system administration practices."
+title: "Home Server Guide"
+publishedAt: "2025-12-12"
+summary: "A comprehensive, beginner-friendly guide to building a self-hosted home server using modern tools like Docker, Portainer, Twingate, and Nginx Proxy Manager. Walks through hardware preparation, secure remote access, containerized deployments, and service dashboards."
 images:
   - "/images/projects/home-server/cover-01.png"
   - "/images/projects/home-server/cover-02.png"
@@ -10,70 +10,88 @@ team:
   - name: Deepesh Patil
     role: Software Engineer
     avatar: "/images/avatar.jpg"
-    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+    linkedin: "https://www.linkedin.com/deepesh-patil-103a87258"
 link: "https://github.com/deepesh611/Home-Server"
 ---
 
 ## Overview
 
-Home Server is a hands-on infrastructure project focused on building and maintaining a **self-hosted server environment** for running personal and experimental services.  
-The project serves as a practical playground for learning **Linux system administration, container orchestration, networking, and service reliability** outside of managed cloud platforms.
+This project is a **comprehensive home server setup guide** that walks readers through turning a spare device — such as an old laptop, Raspberry Pi, or desktop — into a self-hosted server capable of running services like media servers, dashboards, and containerized applications.
 
-Rather than relying on third-party hosting, this setup emphasizes full ownership of the stack—from hardware and OS configuration to service deployment and monitoring.
+The guide is written in a practical, beginner-friendly style and emphasizes clear, step-by-step documentation rather than abstract theory. The focus is on using modern, approachable tools to make self-hosting more accessible.
 
-## Key Features
+---
 
-- **Self-hosted Infrastructure** running on local hardware
-- **Dockerized Services** for isolation, reproducibility, and easy upgrades
-- **Reverse Proxy & Networking Setup** for clean service exposure
-- **Service Monitoring & Health Checks** for reliability
-- **Expandable Architecture** to onboard new services with minimal friction
+## Why This Guide
 
-## Technologies Used
+Setting up a home server can feel intimidating for many people due to scattered resources and complex tutorials online. This guide exists to:
 
-- **Linux (Ubuntu/Debian-based)** – Server operating system
-- **Docker & Docker Compose** – Containerization and service orchestration
-- **Nginx / Reverse Proxy** – Traffic routing and service exposure
-- **Portainer** – Container management and observability
-- **Shell Scripting** – Automation and system maintenance
-- **Git & GitHub** – Configuration tracking and documentation
-- **Networking Concepts** – Ports, DNS, LAN access, and firewall rules
+- Break down the setup process into clear, incremental sections  
+- Teach secure remote access without exposing open ports  
+- Demonstrate how to use Docker and Portainer for service management  
+- Provide examples for building a unified landing page and SSL-secured routing  
 
-## Architecture
+It is aimed at people who want to learn hands-on home-server setup without unnecessary jargon.
 
-The system follows a **single-node modular architecture**:
+---
 
-- Core services are deployed as **Docker containers**, each isolated but networked via Docker bridges.
-- A **reverse proxy layer** routes incoming traffic to internal services based on ports or host rules.
-- Persistent volumes are used to ensure data durability across container restarts.
-- The design supports future migration to multi-node or cloud-based environments with minimal changes.
+## What the Guide Covers
 
-This architecture mirrors production patterns commonly used in startups and internal tooling.
+The guide leads users through the following stages:
 
-## Current Status
+- Preparing the hardware and flashing a Linux-based OS  
+- Assigning a static IP and enabling SSH for remote management  
+- Setting up secure remote access using Twingate  
+- Installing Docker for managing applications as containers  
+- Using Portainer's web UI to manage containers  
+- Building a custom landing page for self-hosted services  
+- Configuring Nginx Proxy Manager for SSL and domain routing  
+- Deploying services such as media servers, file browsers, or dashboards  
 
-The Home Server is in an **actively used and evolving state**, currently hosting:
+Each section is designed to be accessible and practical, with links and instructions to help readers follow along at their own pace.
 
-- Management and monitoring tools
-- Development and testing services
-- Internal dashboards and utilities
+---
 
-The setup is stable and continuously improved as new services and requirements emerge.
+## Key Tools and Technologies
 
-## Challenges and Learnings
+This guide demonstrates the use of:
 
-- Debugging **networking and port conflicts** across multiple services
-- Understanding Docker networking and volume persistence
-- Managing service restarts and failure recovery
-- Balancing security with ease of access in a home environment
-- Gaining real-world experience with **infra troubleshooting**
+- **Docker** for containerizing applications  
+- **Portainer** for visual container management  
+- **Twingate** for secure remote access without opening router ports  
+- **Nginx Proxy Manager** for SSL certificates and domain routing  
+- **Linux-based OS** setup for initial server configuration  
+- Shell scripts and automation examples  
+- Example dashboards built with Astro.js / Next.js  
 
-This project significantly improved my confidence in operating and maintaining production-like systems.
+These tools were selected for their usability and broad adoption in self-hosted environments, making the guide suitable for beginners and intermediate users alike.
 
-## Outcome
+---
 
-Home Server demonstrates my ability to **own infrastructure end-to-end**, from deployment to maintenance.  
-Future plans include tighter security controls, automated backups, and potentially scaling to a multi-node or hybrid setup.
+## Approach and Design Decisions
 
-The project highlights practical DevOps skills and a strong understanding of how real systems behave outside of theoretical environments.
+- Focused on step-by-step documentation rather than software development  
+- Emphasized tools that are user-friendly and reduce reliance on terminal commands where possible  
+- Included secure remote access patterns to avoid common security pitfalls  
+- Organized content to build confidence progressively  
 
+The guide is a learning resource as well as a reference manual for people setting up their first home server.
+
+---
+
+## Limitations
+
+- This is **not a packaged application or dashboard product**  
+- It does **not include a complete automated installer**  
+- The guide assumes some familiarity with concepts like networking and Linux basics  
+
+Readers looking for hands-off "one-click" home server platforms might want to explore dedicated OS projects (e.g., CasaOS, Umbrel).
+
+---
+
+## Outcome & Value
+
+- Offers a clear, structured approach to home server setup  
+- Helps users gain confidence with remote access, Docker, and service management  
+- Serves as a learning resource for self-hosting fundamentals  
+- Provides practical steps for secure and meaningful home infrastructure  

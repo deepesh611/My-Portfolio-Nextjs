@@ -78,6 +78,7 @@ export default function About() {
       />
       {about.tableOfContent.display && (
         <Column
+          className={styles.sidebar}
           left="0"
           style={{ top: "50%", transform: "translateY(-50%)" }}
           position="fixed"
@@ -121,34 +122,10 @@ export default function About() {
             fillWidth
             minHeight="160"
             vertical="center"
-            marginBottom="32"
           >
-            {about.resume.display && (
-              <SmartLink href={about.resume.link} target="_blank">
-                <Flex
-                  fitWidth
-                  border="brand-alpha-medium"
-                  className={styles.blockAlign}
-                  style={{
-                    backdropFilter: "blur(var(--static-space-1))",
-                  }}
-                  background="brand-alpha-weak"
-                  radius="full"
-                  padding="4"
-                  gap="8"
-                  marginBottom="m"
-                  vertical="center"
-                >
-                  <Icon paddingLeft="12" name="download" onBackground="brand-weak" />
-                  <Flex paddingX="8">Download Resume</Flex>
-                  <IconButton
-                    data-border="rounded"
-                    variant="secondary"
-                    icon="chevronRight"
-                  />
-                </Flex>
-              </SmartLink>
-            )}
+            <Column className={`${styles.mobileAvatar} s-flex-show`} horizontal="center" marginBottom="m">
+              <Avatar src={person.avatar} size="xl" />
+            </Column>
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
@@ -188,6 +165,32 @@ export default function About() {
                 )}
               </Flex>
             )}
+            {about.resume.display && (
+              <Flex fillWidth horizontal="start" marginTop="24" marginBottom="32" className={styles.resumeButton}>
+                <SmartLink href={about.resume.link} target="_blank">
+                  <Flex
+                    fitWidth
+                    border="brand-alpha-medium"
+                    style={{
+                      backdropFilter: "blur(var(--static-space-1))",
+                    }}
+                    background="brand-alpha-weak"
+                    radius="full"
+                    padding="4"
+                    gap="8"
+                    vertical="center"
+                  >
+                    <Icon paddingLeft="12" name="document" onBackground="brand-weak" />
+                    <Flex paddingX="8">Download Resume</Flex>
+                    <IconButton
+                      data-border="rounded"
+                      variant="secondary"
+                      icon="chevronRight"
+                    />
+                  </Flex>
+                </SmartLink>
+              </Flex>
+            )}
 
           </Column>
 
@@ -203,15 +206,19 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
+                marginBottom="m"
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+              <Column fillWidth gap="s" marginBottom="24">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
+                  <Column 
+                    key={`${skill}-${index}`} 
+                    fillWidth 
+                    gap="4"
+                  >
+                    <Text id={skill.title} variant="heading-strong-m">{skill.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-medium">
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
@@ -360,6 +367,29 @@ export default function About() {
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {item.issuer}
                     </Text>
+                    {item.image && (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap>
+                        <Flex
+                          border="neutral-medium"
+                          radius="m"
+                          //@ts-ignore
+                          minWidth={item.image.width}
+                          //@ts-ignore
+                          height={item.image.height}
+                        >
+                          <Media
+                            enlarge
+                            radius="m"
+                            //@ts-ignore
+                            sizes={item.image.width.toString()}
+                            //@ts-ignore
+                            alt={item.image.alt}
+                            //@ts-ignore
+                            src={item.image.src}
+                          />
+                        </Flex>
+                      </Flex>
+                    )}
                   </Column>
                 ))}
               </Column>

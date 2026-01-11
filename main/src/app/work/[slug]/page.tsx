@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPosts } from "@/utils/utils";
-import { Meta, Schema, AvatarGroup, Button, Column, Flex, Heading, Media, Text } from "@once-ui-system/core";
+import { Meta, Schema, AvatarGroup, Button, Column, Flex, Heading, Media, Text, SmartLink } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
@@ -92,6 +92,14 @@ export default async function Project({
           </Text>
         </Flex>
         <CustomMDX source={post.content} />
+        {post.metadata.link && (
+          <Column fillWidth gap="16" marginTop="40" paddingTop="24" style={{ borderTop: "1px solid var(--neutral-alpha-medium)" }}>
+            <Text variant="heading-strong-l">Repository</Text>
+            <SmartLink href={post.metadata.link} suffixIcon="arrowUpRightFromSquare">
+              <Text variant="body-default-m">View on GitHub</Text>
+            </SmartLink>
+          </Column>
+        )}
       </Column>
       <ScrollToHash />
     </Column>
