@@ -206,15 +206,19 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
+                marginBottom="m"
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+              <Column fillWidth gap="s" marginBottom="24">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
+                  <Column 
+                    key={`${skill}-${index}`} 
+                    fillWidth 
+                    gap="4"
+                  >
+                    <Text id={skill.title} variant="heading-strong-m">{skill.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-medium">
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
@@ -363,6 +367,29 @@ export default function About() {
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {item.issuer}
                     </Text>
+                    {item.image && (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap>
+                        <Flex
+                          border="neutral-medium"
+                          radius="m"
+                          //@ts-ignore
+                          minWidth={item.image.width}
+                          //@ts-ignore
+                          height={item.image.height}
+                        >
+                          <Media
+                            enlarge
+                            radius="m"
+                            //@ts-ignore
+                            sizes={item.image.width.toString()}
+                            //@ts-ignore
+                            alt={item.image.alt}
+                            //@ts-ignore
+                            src={item.image.src}
+                          />
+                        </Flex>
+                      </Flex>
+                    )}
                   </Column>
                 ))}
               </Column>

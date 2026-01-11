@@ -92,14 +92,14 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Deepesh is a software engineer focused on designing and building distributed systems, production infrastructure, and AI-driven architectures. His work spans systems engineering, self-hosted infrastructure, and automation, with an emphasis on reliability, scalability, and understanding how systems behave at a low level.
+        Deepesh is a software engineer who builds reliable, scalable systems. His work spans distributed architectures, AI-driven solutions, and self-hosted infrastructure, with a focus on understanding how systems behave at a low level.
       </>
     ),
   },
   
   work: {
     display: true,             
-    title: "Work Experience",
+    title: "Experience",
     experiences: [
       // {
       //   company: "Abacus Insights",
@@ -153,6 +153,23 @@ const about = {
           },
         ],
       },
+      {
+        company: "R.O.F.I.E.S – Robotics Club",
+        timeframe: "2023 – 2025",
+        role: "Co-Head & Community Leader",
+        achievements: [
+          <>
+            Led and mentored a 20-member robotics team in Arduino programming, sensor integration, and end-to-end system design, resulting in the successful delivery of 7 robotics projects.
+          </>,
+          <>
+            Conducted 10+ hands-on workshops on microcontrollers, CAD design, PCB assembly, and soldering techniques, training 100+ students and increasing active participation by 40%.
+          </>,
+          <>
+            Organized technical sessions, internal competitions, and community events to promote practical learning and collaboration in robotics and automation across the college.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
 
@@ -161,17 +178,18 @@ const about = {
     title: "Achievements",
     items: [
       {
-        title: "Co-Head of Robotics Community",
-        description: <>
-        Led and scaled the college robotics community for over a year by organizing 10+ hands-on workshops, technical sessions, and competitions, fostering peer learning and practical exposure to robotics, automation, and problem-solving among students.
-      </>,
-        date: "Aug 2025",
+        title: "Hackathon Finalist",
+        description:
+          <>
+            Advanced to final rounds in multiple college-level and national hackathons, gaining hands-on experience in rapid problem-solving, teamwork, and technical execution under time constraints.
+          </>,
+        date: "2022-2025",
       },
       {
         title: "Open Source Contributions",
         description:
           <>
-            Actively contributed to multiple open-source projects and ranked 9th among 230+ contributors in VSoC, demonstrating consistent code contributions, collaboration within distributed teams, and a strong commitment to open-source engineering.
+            Ranked 9th among 230+ contributors in VSoC, demonstrating consistent contributions and collaboration across multiple open-source projects.
           </>,
         date: "July 2024",
       }
@@ -201,50 +219,52 @@ const about = {
         link: "https://www.credly.com/badges/d78639d5-3eeb-4732-9ee0-a79bd0c98cdb/public_url",
       },
       {
-        title: "Top Contributor in Open Source (VSoC)",
-        issuer: "Vinyasa Club / Devfolio",
-        date: "Oct 2024",
-      },
-      {
         title: "Postman API Fundamentals Student Expert",
         issuer: "Postman",
         date: "Jul 2025",
         link: "https://badges.parchment.com/public/assertions/vyZsFWkgRCWUryUaSLe64w?identity__email=deepeshvcd6273%40gmail.com",
       },
+      {
+        title: "Artificial Intelligence with Python",
+        issuer: "Coincent",
+        date: "Jul 2023",
+        image: {
+          src: "/certs/Artificial Intelligence with Python-Training-1.png",
+          alt: "Artificial Intelligence with Python Certificate",
+          width: 16,
+          height: 11,
+        },
+      },
     ],
   },
 
   technical: {
-    display: true,
-    title: "Technical Skills",
-    skills: [
-      {
-        title: "Programming Languages",
-        description: <>Python . Go . JavaScript . SQL</>,
-        images: [],
-      },
-      {
-        title: "Systems & Infrastructure",
-        description: <>Linux · Docker · Networking · Self-Hosting</>,
-        images: [],
-      },
-      {
-        title: "Backend & Data",
-        description: <>REST APIs · MySQL · SQLite · ETL Pipelines · Event-Driven Systems</>,
-        images: [],
-      },
-      {
-        title: "AI & Intelligent Systems",
-        description: <>LLMs · Multi-Agent Systems · Multimodal Pipelines</>,
-        images: [],
-      },
-      {
-        title: "Engineering Tooling",
-        description: <>Git · GitHub · n8n (Automation)</>,
-        images: [],
-      },
-    ]
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Programming Languages",
+      description: <>Python · Go · JavaScript · SQL</>,
+      images: [],
+    },
+    {
+      title: "Infrastructure & DevOps",
+      description: <>Linux · Docker · Networking Fundamentals · Self-Hosting · Git</>,
+      images: [],
+    },
+    {
+      title: "Backend & Data Engineering",
+      description: <>REST APIs · MySQL · SQLite · ETL Pipelines · n8n Automation</>,
+      images: [],
+    },
+    {
+      title: "AI & Intelligent Systems",
+      description: <>LLMs · Multi-Agent Systems · Anomaly Detection · RAG Pipelines</>,
+      images: [],
+    },
+  ],
+},
+
 };
 
 const blog = {
