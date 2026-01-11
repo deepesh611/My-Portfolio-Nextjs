@@ -146,32 +146,8 @@ const about = {
             height: 9,
           },
           {
-            src: "/images/about/freelance/02.png",
-            alt: "member page",
-            width: 16,
-            height: 9,
-          },
-          {
             src: "/images/about/freelance/03.png",
             alt: "stats page",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/about/freelance/04.png",
-            alt: "add page",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/about/freelance/05.png",
-            alt: "analysis page",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/about/freelance/06.png",
-            alt: "settings page",
             width: 16,
             height: 9,
           },
@@ -203,7 +179,7 @@ const about = {
   },
 
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -226,12 +202,7 @@ const about = {
       },
       {
         title: "Top Contributor in Open Source (VSoC)",
-        issuer: "Vinyasa Club / Devfolio / Nord",
-        date: "Oct 2024",
-      },
-      {
-        title: "HacktoberFest 2024",
-        issuer: "DigitalOcean & GitHub",
+        issuer: "Vinyasa Club / Devfolio",
         date: "Oct 2024",
       },
       {
