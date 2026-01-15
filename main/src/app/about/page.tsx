@@ -195,7 +195,7 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="40">
               {about.intro.description}
             </Column>
           )}
@@ -210,7 +210,7 @@ export default function About() {
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="s" marginBottom="24">
+              <Column fillWidth gap="s" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
                   <Column 
                     key={`${skill}-${index}`} 
@@ -345,7 +345,7 @@ export default function About() {
               <Heading as="h2" id={about.certifications.title} variant="display-strong-s" marginBottom="m">
                 {about.certifications.title}
               </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+              <Column fillWidth gap="s" marginBottom="40">
                 {about.certifications.items.map((item, index) => (
                   <Column key={`${item.title}-${index}`} fillWidth gap="4">
                     <Flex fillWidth style={{justifyContent: "space-between"}} vertical="end">
