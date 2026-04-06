@@ -16,7 +16,7 @@
     "classnames": "^2.5.1",
     "cookie": "^1.0.2",
     "gray-matter": "^4.0.3",
-    "next": "15.5.12",
+    "next": "^15.5.14",
     "next-mdx-remote": "^6.0.0",
     "nprogress": "^0.2.0",
     "react": "19.0.0",

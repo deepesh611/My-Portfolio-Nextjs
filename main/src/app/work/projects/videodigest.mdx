@@ -1,7 +1,7 @@
 ---
 title: "Video Summary Generator"
 publishedAt: "2025-10-26"
-summary: "A multimodal AI system that generates concise summaries from videos by running parallel pipelines for visual frame analysis and audio-based transcription and understanding."
+summary: "A multimodal deep learning system that generates intelligent video summaries by processing visual and audio content together at synchronized time intervals using BLIP-2 and Whisper models."
 images:
   - "/images/projects/videodigest/cover-01.png"  
   - "/images/projects/videodigest/cover-02.png"
@@ -15,63 +15,114 @@ link: "https://github.com/deepesh611/Video-Summary-Generator"
 
 ## Overview
 
-Video Summary Generator is an AI-powered application designed to automatically extract meaningful summaries from video content by combining **visual and audio understanding**.  
-Instead of relying on a single modality, the system processes video data through **two parallel pipelines**—one focused on frame-level visual analysis and the other on audio transcription and semantic interpretation—to produce more accurate and context-aware summaries.
+Video Summary Generator is a **multimodal deep learning application** that automatically generates intelligent summaries from video content by processing **visual and audio content together** at synchronized time intervals.  
 
-The project explores multimodal AI workflows and efficient pipeline orchestration for real-world media processing tasks.
+Unlike traditional approaches that process modalities separately, this system uses **time-synchronized extraction** where each moment in the video is analyzed both visually (using BLIP-2) and aurally (using Whisper), ensuring perfect alignment between what is seen and what is heard. This synchronized approach creates richer, more accurate video summaries.
+
+The project demonstrates advanced multimodal AI techniques, serverless GPU deployment, and production-ready ML pipeline design.
 
 ## Key Features
 
-- **Parallel Processing Pipelines** for visual frame extraction and audio analysis
-- **Multimodal Understanding** combining visual context and spoken content
-- **Automated Video-to-Text Summarization** using LLM-based reasoning
-- **Modular Pipeline Design** enabling independent optimization of each stage
-- **Scalable Architecture** suitable for batch or on-demand processing
+- **Synchronized Multimodal Processing** – Extracts (frame + audio) pairs at regular time intervals ensuring perfect audio-visual alignment
+- **Advanced Visual Understanding** – BLIP-2 (2.7B parameters) generates natural language descriptions of video frames
+- **Speech Recognition** – OpenAI Whisper transcribes audio segments with multiple model size options (tiny to large)
+- **Intelligent Moment Selection** – Automatically identifies ~20 key moments from the video timeline
+- **LLM-Based Narrative Generation** – Optional OpenRouter API integration for coherent summary narratives
+- **Cloud Deployment** – Backend on Modal (serverless GPU), frontend on Streamlit Cloud
+- **Production-Ready API** – FastAPI backend with proper error handling and file validation
 
 ## Technologies Used
 
-- **Python** – Core application logic
-- **FFmpeg** – Video processing and frame extraction
-- **Speech-to-Text Models** – Audio transcription
-- **Large Language Models (LLMs)** – Contextual summarization
-- **Multimodal AI Pipelines** – Visual and audio data fusion
-- **REST APIs** – Pipeline coordination and data exchange
-- **Docker** – Containerized execution environment
-- **Git & GitHub** – Version control and project management
+### Deep Learning & AI
+- **PyTorch** – Deep learning framework
+- **BLIP-2** (Salesforce) – Multimodal image-to-text model (2.7B parameters)
+- **OpenAI Whisper** – State-of-the-art speech recognition
+- **Transformers** (HuggingFace) – Model loading and inference
+- **OpenRouter API** – LLM-based narrative summarization
+
+### Computer Vision & Audio
+- **OpenCV** – Video frame extraction
+- **FFmpeg** – Audio segment extraction and processing
+- **Pillow** – Image preprocessing
+
+### Backend & Deployment
+- **FastAPI** – Modern async web framework
+- **Modal** – Serverless GPU platform (T4/A10G support)
+- **Streamlit** – Interactive web frontend
+- **Uvicorn** – ASGI server
 
 ## Architecture
 
-The system is built around **two parallel pipelines**:
+The system uses a **synchronized multimodal pipeline** with four main stages:
 
-- The **Visual Pipeline** extracts key frames from the video and analyzes visual cues to identify important scenes or transitions.
-- The **Audio Pipeline** transcribes spoken content and performs semantic analysis on the resulting text.
-- Outputs from both pipelines are merged and passed to a summarization layer that generates a coherent final summary.
+### 1. Synchronized Clip Extraction
+- Extracts (frame + audio) pairs at regular time intervals (default: 2 seconds)
+- Uses OpenCV for frame capture and FFmpeg for audio segment extraction
+- Ensures perfect temporal alignment between visual and audio content
 
-This architecture improves robustness by reducing reliance on a single data source and allows each pipeline to scale independently.
+### 2. Multimodal Caption Generation
+- **Visual**: BLIP-2 generates natural language descriptions of each frame
+- **Audio**: Whisper transcribes speech from audio segments
+- **Fusion**: Combines visual and audio captions at each timestamp
+
+### 3. Key Moment Selection
+- Intelligently selects ~20 most important moments from all multimodal captions
+- Uses uniform sampling (with potential for diversity-based selection)
+
+### 4. Narrative Summary Generation
+- Creates timeline of key moments with timestamps and multimodal captions
+- Optional LLM-based narrative summarization via OpenRouter API
+- Fallback to formatted timeline if LLM unavailable
+
+This **time-synchronized approach** ensures that visual and audio information are always aligned, creating more accurate and contextually rich summaries.
 
 ## Current Status
 
-The project is currently in a **working prototype stage**, supporting:
+The project is **production-ready** and deployed, supporting:
 
-- End-to-end video ingestion and processing
-- Parallel execution of visual and audio pipelines
-- Generation of concise, human-readable summaries
+- **Full multimodal pipeline** with synchronized visual and audio processing
+- **Cloud deployment** on Modal (backend) and Streamlit Cloud (frontend)
+- **Multiple video formats** (.mp4, .mkv, .mov) up to 500MB
+- **Configurable parameters** (clip duration, target moments, Whisper model size)
+- **Automatic cleanup** of temporary files and old uploads
+- **GPU acceleration** with T4/A10G support on Modal
 
-Further improvements are planned to enhance accuracy and performance.
+**Live Demo**: [Deployed and accessible via Streamlit Cloud](https://video-summary-generator.streamlit.app/)
+**Repository**: [GitHub - Video-Summary-Generator](https://github.com/deepesh611/Video-Summary-Generator)
 
 ## Challenges and Learnings
 
-- Coordinating **parallel processing pipelines** efficiently
-- Handling synchronization between visual and audio outputs
-- Managing compute and latency trade-offs in media processing
-- Structuring multimodal inputs for effective LLM summarization
-- Gaining practical experience with **real-world AI pipeline orchestration**
+### Technical Challenges
+- **Temporal Synchronization** – Ensuring perfect alignment between visual frames and audio segments at each timestamp
+- **Model Memory Management** – Loading large models (BLIP-2: 2.7B params) efficiently on GPU
+- **Cold Start Optimization** – Minimizing serverless deployment latency on Modal
+- **Multimodal Fusion** – Combining visual and audio captions meaningfully without redundancy
+- **Error Handling** – Managing failures in audio extraction, transcription, or API calls gracefully
 
-This project strengthened my understanding of applied multimodal AI systems.
+### Key Learnings
+- Designing **time-synchronized multimodal pipelines** for better accuracy than parallel processing
+- Deploying **serverless GPU applications** with Modal for cost-effective scaling
+- Implementing **production-ready ML APIs** with FastAPI (validation, error handling, CORS)
+- Working with **state-of-the-art models** (BLIP-2, Whisper) in real-world applications
+- Building **end-to-end ML systems** from data processing to cloud deployment
+
+This project significantly strengthened my expertise in multimodal AI, MLOps, and production ML system design.
 
 ## Outcome
 
-Video Summary Generator demonstrates a practical application of **multimodal AI and pipeline parallelism** in media analysis.  
-Future plans include smarter frame selection, improved summarization quality, and real-time processing support.
+Video Summary Generator is a **production-deployed multimodal AI system** that successfully combines visual and audio understanding for intelligent video summarization.
 
-Overall, the project showcases my ability to design and implement **end-to-end AI systems** that combine multiple data sources to solve complex problems.
+### Impact
+- Demonstrates **advanced multimodal AI techniques** with synchronized processing
+- Showcases **full-stack ML deployment** (FastAPI + Modal + Streamlit Cloud)
+- Provides a **practical tool** for automated video content analysis
+- Serves as a **portfolio piece** highlighting end-to-end ML system design
+
+### Future Enhancements
+- **Diversity-based moment selection** using embedding similarity
+- **Scene change detection** for better key frame identification
+- **Multi-language support** leveraging Whisper's multilingual capabilities
+- **Batch processing** for multiple videos
+- **Real-time streaming** support for live video analysis
+
+This project demonstrates my ability to design, implement, and deploy **production-ready multimodal AI systems** that solve real-world problems by intelligently combining multiple data modalities.
