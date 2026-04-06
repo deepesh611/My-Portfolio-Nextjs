@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Software Engineer",
+  role: "AI Engineer",
   avatar: "/images/avatar.jpg",
   email: "deepeshvcd6273@gmail.com",
   location: "Asia/Kolkata",                      // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -92,7 +92,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Deepesh is a software engineer who builds reliable, scalable systems. His work spans distributed architectures, AI-driven solutions, and self-hosted infrastructure, with a focus on understanding how systems behave at a low level.
+        Deepesh is an AI engineer building scalable, production-grade intelligent systems. His work spans LLM pipelines, agent-based architectures, and self-hosted infrastructure, with a deep focus on how systems behave under the hood.
       </>
     ),
   },
@@ -294,43 +294,83 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/gallery/angry cat.jpeg",
+      alt: "angry cat",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/gallery/barbeque.jpeg",
+      alt: "barbeque",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/gallery/beach.jpeg",
+      alt: "beach",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      src: "/images/gallery/camera on sand.jpeg",
+      alt: "camera on sand",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
+      src: "/images/gallery/cheeze cakes.jpeg",
+      alt: "cheeze cakes",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      src: "/images/gallery/cleanwater.jpeg",
+      alt: "cleanwater",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      src: "/images/gallery/farm-1.jpeg",
+      alt: "farm-1",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/farm-2.jpeg",
+      alt: "farm-2",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/hanger.jpeg",
+      alt: "hanger",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/mirror mountains.jpeg",
+      alt: "mirror mountains",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/mosque.jpeg",
+      alt: "mosque",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/night city.jpeg",
+      alt: "night city",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/photographer-1.jpeg",
+      alt: "photographer-1",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/photographer-2.jpeg",
+      alt: "photographer-2",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/photographer-3.jpeg",
+      alt: "photographer-3",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/ramen.jpeg",
+      alt: "ramen",
       orientation: "vertical",
     },
   ],
