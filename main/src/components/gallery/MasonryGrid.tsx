@@ -1,15 +1,29 @@
 "use client";
 
 import Masonry from "react-masonry-css";
-import { Media } from "@once-ui-system/core";
+import { Flex, Text, Media } from "@once-ui-system/core";
 import styles from "./Gallery.module.scss";
-import { gallery } from "@/resources";
+import type { GalleryImage } from "@/utils/googleDrive";
 
-export default function MasonryGrid() {
+type MasonryGridProps = {
+  images: GalleryImage[];
+};
+
+export default function MasonryGrid({ images }: MasonryGridProps) {
   const breakpointColumnsObj = {
     default: 2,
     720: 1,
   };
+
+  if (images.length === 0) {
+    return (
+      <Flex fillWidth paddingY="64" horizontal="center" vertical="center">
+        <Text onBackground="neutral-weak" variant="body-default-m">
+          No images found. Check your Drive folder link and API key.
+        </Text>
+      </Flex>
+    );
+  }
 
   return (
     <Masonry
@@ -17,7 +31,7 @@ export default function MasonryGrid() {
       className={styles.masonryGrid}
       columnClassName={styles.masonryGridColumn}
     >
-      {gallery.images.map((image, index) => (
+      {images.map((image, index) => (
         <Media
           priority={index < 10}
           sizes="(max-width: 560px) 100vw, 50vw"
