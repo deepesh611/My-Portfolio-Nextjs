@@ -288,92 +288,11 @@ const work = {
 const gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
+  title: `Photo gallery \u2013 ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/angry cat.jpeg",
-      alt: "angry cat",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/barbeque.jpeg",
-      alt: "barbeque",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/beach.jpeg",
-      alt: "beach",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/camera on sand.jpeg",
-      alt: "camera on sand",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/cheeze cakes.jpeg",
-      alt: "cheeze cakes",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/cleanwater.jpeg",
-      alt: "cleanwater",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/farm-1.jpeg",
-      alt: "farm-1",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/farm-2.jpeg",
-      alt: "farm-2",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/hanger.jpeg",
-      alt: "hanger",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/mirror mountains.jpeg",
-      alt: "mirror mountains",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/mosque.jpeg",
-      alt: "mosque",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/night city.jpeg",
-      alt: "night city",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/photographer-1.jpeg",
-      alt: "photographer-1",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/photographer-2.jpeg",
-      alt: "photographer-2",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/photographer-3.jpeg",
-      alt: "photographer-3",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/ramen.jpeg",
-      alt: "ramen",
-      orientation: "vertical",
-    },
-  ],
+  // Share your Google Drive folder publicly ("Anyone with the link can view")
+  // then paste the link below
+  driveLink: "https://drive.google.com/drive/folders/1fClj1wcWk6mSFUDWX0Zz9MlfBeTAWXc0/",
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };

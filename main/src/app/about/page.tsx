@@ -228,16 +228,14 @@ export default function About() {
                             key={index}
                             border="neutral-medium"
                             radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
+                            style={{ minWidth: "min(100%, 480px)" }}
                           >
                             <Media
                               enlarge
                               radius="m"
                               //@ts-ignore
-                              sizes={image.width.toString()}
+                              aspectRatio={`${image.width} / ${image.height}`}
+                              sizes="(max-width: 560px) 100vw, 480px"
                               //@ts-ignore
                               alt={image.alt}
                               //@ts-ignore
@@ -290,16 +288,14 @@ export default function About() {
                             key={index}
                             border="neutral-medium"
                             radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
+                            style={{ minWidth: "min(100%, 480px)" }}
                           >
                             <Media
                               enlarge
                               radius="m"
                               //@ts-ignore
-                              sizes={image.width.toString()}
+                              aspectRatio={`${image.width} / ${image.height}`}
+                              sizes="(max-width: 560px) 100vw, 480px"
                               //@ts-ignore
                               alt={image.alt}
                               //@ts-ignore
@@ -372,16 +368,14 @@ export default function About() {
                         <Flex
                           border="neutral-medium"
                           radius="m"
-                          //@ts-ignore
-                          minWidth={item.image.width}
-                          //@ts-ignore
-                          height={item.image.height}
+                          style={{ minWidth: "min(100%, 480px)" }}
                         >
                           <Media
                             enlarge
                             radius="m"
                             //@ts-ignore
-                            sizes={item.image.width.toString()}
+                            aspectRatio={`${item.image.width} / ${item.image.height}`}
+                            sizes="(max-width: 560px) 100vw, 480px"
                             //@ts-ignore
                             alt={item.image.alt}
                             //@ts-ignore
