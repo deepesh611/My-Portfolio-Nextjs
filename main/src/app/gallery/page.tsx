@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 
-import { Column, Meta, Schema } from "@once-ui-system/core";
+import { Flex, Meta, Schema } from "@once-ui-system/core";
 import MasonryGrid from "@/components/gallery/MasonryGrid";
 import { baseURL, gallery, person } from "@/resources";
 import { getGalleryImages } from "@/utils/googleDrive";
@@ -19,7 +19,7 @@ export default async function Gallery() {
   const images = await getGalleryImages(gallery.driveLink);
 
   return (
-    <Column fillWidth maxWidth="l">
+    <Flex maxWidth="l">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -34,6 +34,6 @@ export default async function Gallery() {
         }}
       />
       <MasonryGrid images={images} />
-    </Column>
+    </Flex>
   );
 }
