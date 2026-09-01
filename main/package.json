@@ -12,11 +12,11 @@
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^15.3.1",
-    "@once-ui-system/core": "^1.5.12",
+    "@once-ui-system/core": "^1.8.4",
     "classnames": "^2.5.1",
     "cookie": "^1.0.2",
     "gray-matter": "^4.0.3",
-    "next": "^15.5.18",
+    "next": "^16.3.4",
     "next-mdx-remote": "^6.0.0",
     "nprogress": "^0.2.0",
     "react": "19.0.0",
