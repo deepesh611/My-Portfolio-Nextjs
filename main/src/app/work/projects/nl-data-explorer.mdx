@@ -1,0 +1,42 @@
+---
+title: "Natural Language Data Explorer & Self-Healing Pipeline"
+publishedAt: "2026-04-15"
+summary: "A healthcare data-exploration system on Azure Databricks with multi-agent Text-to-SQL, schema-drift handling, an AI schema advisor, role-based PHI masking, and a Streamlit interface."
+images:
+  - "/images/projects/nl-data-explorer/cover-01.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/Natural-Language-Data-Explorer-and-Self-Healing-Pipeline"
+---
+
+## Overview
+
+An end-to-end cloud data pipeline and AI-driven exploration system built on **Azure Databricks**, designed for analysts and clinicians who need to query complex synthetic healthcare data in plain English.
+
+The system combines three pipelines: automated ingestion into Delta Lake with drift detection, a LangGraph multi-agent Text-to-SQL path with SQL safety gates and role-based PHI masking, and an AI schema advisor that recommends and applies safe schema fixes when critical drift appears.
+
+## Key Features
+
+- Multi-agent Text-to-SQL over Synthea healthcare tables (analyzer, schema mapper, SQL generator, executor, evaluator, diagnostician)
+- Self-healing ingestion with schema-drift severity levels and blocking remediation on critical drift
+- AI Schema Advisor (GPT-4o) with DDL safety gates — autonomous `ALTER TABLE ... ADD COLUMNS` only
+- Role-based PHI masking at query time (doctor / analyst / sysadmin policies)
+- Streamlit Data Explorer deployed as a Databricks App (chatbot, dashboard, AI advisor pages)
+- Local pytest coverage for Pipeline 3 advisor logic without Spark
+
+## Architecture
+
+1. **Pipeline 1 — Ingestion** — Synthea CSVs from ADLS Gen2 → normalize, detect drift, write Delta tables in Unity Catalog  
+2. **Pipeline 3 — AI Schema Advisor** — on critical drift, recommend/apply schema fixes and update `master_schema.json`  
+3. **Pipeline 2 — Text-to-SQL** — natural-language questions → Spark SQL → PHI masking → Streamlit results  
+
+## Technologies Used
+
+- Python, PySpark, Azure Databricks, Delta Lake, Unity Catalog
+- LangGraph / LangChain, OpenAI GPT-4o
+- Azure Data Lake Storage Gen2
+- Streamlit (Databricks Apps)
+- Pydantic, pytest
