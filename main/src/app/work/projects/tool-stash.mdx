@@ -1,0 +1,49 @@
+---
+title: "Tool Stash"
+publishedAt: "2026-09-24"
+summary: "An AI-assisted software-tool catalog that researches tools, drafts structured profiles for review, and supports browsing, import/export, and recommendations — packaged with Docker Compose and multi-arch CI images."
+images:
+  - "/images/projects/tool-stash/cover-01.png"
+  - "/images/projects/tool-stash/cover-02.png"
+  - "/images/projects/tool-stash/cover-03.png"
+  - "/images/projects/tool-stash/cover-04.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/Tool-Stash"
+---
+
+## Overview
+
+**Tool Stash** is a personal catalog for software tools you run into day to day. An AI agent researches a tool name or URL, drafts a structured profile for review, then saves it into a searchable stash with categories, tags, and recommendations.
+
+The stack is designed for local and self-hosted use: FastAPI backend, React/TypeScript frontend, SQLite storage, and Docker Compose with optional bundled Ollama. Images are published to Docker Hub for `linux/amd64` and `linux/arm64`.
+
+## Key Features
+
+- Research a tool by name or URL with live web search while the agent fills a profile
+- Review and edit drafted profiles before they hit the stash
+- Browse, search, categorize, and tag saved tools
+- AI Suggest — describe a task and get recommendations from your stash
+- JSON export / import for moving a stash between machines
+- Switch LLM provider and model from the UI (Ollama, Claude, or OpenAI-compatible endpoints)
+- Docker Compose stacks for bundled Ollama or host-installed Ollama
+- CI-published multi-arch backend and frontend images
+
+## Architecture
+
+1. **Frontend** — React + TypeScript UI for browse, research, review, and settings  
+2. **Backend** — FastAPI service for research orchestration, persistence, and recommendations  
+3. **LLM layer** — Ollama (local/bundled) or hosted providers via configurable endpoints  
+4. **Storage** — SQLite database volume for the stash  
+
+## Technologies Used
+
+- Python, FastAPI
+- React, TypeScript
+- Docker, Docker Compose
+- Ollama (local LLMs)
+- SQLite
+- GitHub Actions (multi-arch image publishing)
