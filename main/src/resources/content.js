@@ -50,8 +50,8 @@ const social = [
 const home = {
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">AetherStore</strong></>,
-    href: "/work/aetherstore",
+    title: <>Recent project: <strong className="ml-4">Tool Stash</strong></>,
+    href: "/work/tool-stash",
   },
 
   path: "/",
@@ -59,10 +59,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Designing intelligent systems — from AI agents to production infrastructure</>,
+  headline: <>Designing intelligent systems — from GenAI apps to production data pipelines</>,
   subline: (
     <>
-      I'm {person.firstName}, a {person.role} focused on building distributed systems, AI-driven architectures, and self-hosted infrastructure with an emphasis on reliability, scalability, and low-level understanding.
+      I'm {person.firstName}, an {person.role} focused on GenAI applications, Databricks/PySpark pipelines, and reliable full-stack delivery — with a practical eye for evaluation, observability, and deployment.
     </>
   ),
 };
@@ -92,7 +92,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Deepesh is an AI engineer building scalable, production-grade intelligent systems. His work spans LLM pipelines, agent-based architectures, and self-hosted infrastructure, with a deep focus on how systems behave under the hood.
+        Deepesh is an AI/Data Engineer building GenAI applications and data pipelines with Databricks and PySpark. His work spans LLM evaluation, MLflow-based observability, synthetic healthcare data generation, and full-stack Python apps focused on validation, security, and reliable delivery.
       </>
     ),
   },
@@ -101,32 +101,39 @@ const about = {
     display: true,             
     title: "Experience",
     experiences: [
-      // {
-      //   company: "Abacus Insights",
-      //   timeframe: "2026 - Present",
-      //   role: "AI Engineer",
-      //   achievements: [
-      //     <>
-      //     Developed a multimodal AI system that generates concise summaries from videos by running parallel pipelines for visual frame analysis and audio-based transcription and understanding.
-      //     </>,
-      //     <>
-      //     Developed a self-hosted home server setup designed to run containerized services, manage personal infrastructure, and explore real-world DevOps, networking, and system administration practices.
-      //     </>,
-      //   ],
-      //   images: [
-      //     // optional: leave the array empty if you don't want to display images
-      //     {
-      //       src: "/images/projects/project-01/cover-01.jpg",
-      //       alt: "Once UI Project",
-      //       width: 16,
-      //       height: 9,
-      //     },
-      //   ],
-      // },
+      {
+        company: "Abacus Insights",
+        timeframe: "Jun 2026 – Oct 2026",
+        role: "AI Engineer",
+        achievements: [
+          <>
+            Built and deployed a Databricks App for Genie NL2SQL evaluation, capturing MLflow traces in Unity Catalog and scoring outputs with schema-grounding checks and MLflow judges.
+          </>,
+          <>
+            Developed a deterministic PySpark synthetic eligibility-data generator (8 scenario types, 25 quality gates, idempotent Delta writes), producing 752K eligibility spans for 422K synthetic members.
+          </>,
+          <>
+            Built a synthetic Payment Integrity case pipeline with deterministic IDs and nine validation gates; delivered 17 approved cases.
+          </>,
+          <>
+            Set up Databricks Asset Bundle deployment for multi-workspace delivery with CI packaging checks, and compared MLflow vs Langfuse observability on 1,145 benchmark traces.
+          </>,
+        ],
+      },
+      {
+        company: "Abacus Insights",
+        timeframe: "Apr 2026 – May 2026",
+        role: "Supervised Project — Claim Denial Prevention",
+        achievements: [
+          <>
+            Built a claim-denial prevention prototype on synthetic data using XGBoost, SHAP, FastAPI, Next.js, and a Databricks medallion pipeline — predicting denial risk and generating remediation guidance before payer submission.
+          </>,
+        ],
+      },
       {
         company: "Saints Peter & Paul Roman Catholic Church",
         timeframe: "Jul 2025 - Aug 2025",
-        role: "Freelance Full Stack Developer",
+        role: "Full-Stack Developer (Volunteer)",
         achievements: [
           <>
             Designed and implemented a self-hosted data management system to centralize member records and family relationships, replacing manual and fragmented workflows with a structured, queryable platform.
@@ -138,37 +145,6 @@ const about = {
             Developed an analytics interface to surface demographic and employment insights in real time, helping administrators make data-informed planning decisions.
           </>,    
         ],
-        images: [
-          {
-            src: "/images/about/freelance/01.png",
-            alt: "landing page",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/about/freelance/03.png",
-            alt: "stats page",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "R.O.F.I.E.S – Robotics Club",
-        timeframe: "2023 – 2025",
-        role: "Co-Head & Community Leader",
-        achievements: [
-          <>
-            Led and mentored a 20-member robotics team in Arduino programming, sensor integration, and end-to-end system design, resulting in the successful delivery of 7 robotics projects.
-          </>,
-          <>
-            Conducted 10+ hands-on workshops on microcontrollers, CAD design, PCB assembly, and soldering techniques, training 100+ students and increasing active participation by 40%.
-          </>,
-          <>
-            Organized technical sessions, internal competitions, and community events to promote practical learning and collaboration in robotics and automation across the college.
-          </>,
-        ],
-        images: [],
       },
     ],
   },
@@ -177,6 +153,14 @@ const about = {
     display: true,
     title: "Achievements",
     items: [
+      {
+        title: "Co-Head, R.O.F.I.E.S Robotics Club, IIIT Pune",
+        description:
+          <>
+            Led and mentored a 20-member robotics team across Arduino programming, sensor integration, and end-to-end system design, delivering 7 projects. Conducted 10+ workshops for 100+ students and organized competitions and community events to grow practical learning on campus.
+          </>,
+        date: "2023 – 2025",
+      },
       {
         title: "Hackathon Finalist",
         description:
@@ -244,22 +228,22 @@ const about = {
   skills: [
     {
       title: "Programming Languages",
-      description: <>Python · Go · JavaScript · SQL</>,
+      description: <>Python · SQL · Bash · Go · TypeScript · C/C++</>,
       images: [],
     },
     {
-      title: "Infrastructure & DevOps",
-      description: <>Linux · Docker · Networking Fundamentals · Self-Hosting · Git</>,
+      title: "AI & Data Engineering",
+      description: <>PySpark · Databricks · Delta Lake · Unity Catalog · MLflow · Langfuse · LLM evaluation · RAG · FAISS</>,
       images: [],
     },
     {
-      title: "Backend & Data Engineering",
-      description: <>REST APIs · MySQL · SQLite · ETL Pipelines · n8n Automation</>,
+      title: "Backend & Web",
+      description: <>FastAPI · Flask · React · TypeScript · REST APIs</>,
       images: [],
     },
     {
-      title: "AI & Intelligent Systems",
-      description: <>LLMs · Multi-Agent Systems · Anomaly Detection · RAG Pipelines</>,
+      title: "Cloud & Delivery",
+      description: <>Docker · Kubernetes · AWS · Git · GitHub Actions · Databricks Asset Bundles · Linux</>,
       images: [],
     },
   ],
@@ -285,14 +269,4 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery \u2013 ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Share your Google Drive folder publicly ("Anyone with the link can view")
-  // then paste the link below
-  driveLink: "https://drive.google.com/drive/folders/1fClj1wcWk6mSFUDWX0Zz9MlfBeTAWXc0/",
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work };

@@ -8,7 +8,6 @@ const routes = {
   "/about": true,
   "/work": true,
   "/blog": false,
-  "/gallery": true,
 };
 
 const display = {

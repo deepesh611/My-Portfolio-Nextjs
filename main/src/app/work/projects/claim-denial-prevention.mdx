@@ -1,0 +1,50 @@
+---
+title: "AI Claim Denial Prevention"
+publishedAt: "2026-06-19"
+summary: "An end-to-end healthcare claim denial prevention system combining rule checks, XGBoost risk scoring, SHAP explanations, RAG policy retrieval, and an agentic remediation planner — with FastAPI, Next.js, and a Databricks medallion pipeline."
+images:
+  - "/images/projects/claim-denial-prevention/cover-03.png"
+  - "/images/projects/claim-denial-prevention/cover-01.png"
+  - "/images/projects/claim-denial-prevention/cover-02.png"
+  - "/images/projects/claim-denial-prevention/cover-05.png"
+  - "/images/projects/claim-denial-prevention/cover-04.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil-103a87258"
+link: "https://github.com/deepesh611/AI-Claims-Denial-Prevention"
+---
+
+## Overview
+
+**AI Claim Denial Prevention** predicts, explains, and remediates healthcare claim denials *before* submission to payers. It combines deterministic rule validation, XGBoost denial-risk scoring, SHAP feature explanations, RAG over insurance policy documents, and a GPT-based remediation agent.
+
+The platform spans a Next.js dashboard, a FastAPI orchestration API, and a Databricks/GCP lakehouse with medallion feature tables and model serving. A live demo UI is available at [ai-claims-denial-prevention.vercel.app](https://ai-claims-denial-prevention.vercel.app).
+
+Companion UI repo: [AI-Claim-Denial-Prevention-UI](https://github.com/deepesh611/AI-Claim-Denial-Prevention-UI).
+
+## Key Features
+
+- Rule pre-screening across referential and financial integrity checks
+- XGBoost denial-risk scoring (Databricks Model Serving with local fallback)
+- SHAP explanations for the top risk drivers on high-risk claims
+- RAG over insurance policy docs via embeddings + vector search
+- Agentic remediation plans that synthesize rules, ML, SHAP, and policy context
+- Single-claim and batch CSV analysis with CSV/JSON export
+- Google OAuth–gated Next.js dashboard
+
+## Architecture
+
+1. **Frontend** — Next.js dashboard for claim intake, batch upload, and analysis views  
+2. **API** — FastAPI `/predict` pipeline coordinating rules → ML → SHAP → RAG → agent  
+3. **Lakehouse** — Bronze → Silver → Gold feature tables on Databricks; MLflow model registry  
+4. **Retrieval** — Policy PDFs indexed for vector search grounded remediation  
+
+## Technologies Used
+
+- Next.js, React, TypeScript, Tailwind, NextAuth
+- FastAPI, XGBoost, SHAP, Pandas
+- Databricks, Delta Lake, MLflow, Vector Search
+- OpenAI embeddings + GPT-4o-mini
+- Docker
