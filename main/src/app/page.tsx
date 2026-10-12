@@ -1,10 +1,9 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema } from "@once-ui-system/core";
-import { home, about, person, newsletter, baseURL, routes } from "@/resources";
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema, SmartLink } from "@once-ui-system/core";
+import { home, about, person, newsletter, baseURL, work } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
-import { Posts } from "@/components/blog/Posts";
 import { getPosts } from "@/utils/utils";
 import { cache } from "react";
 
@@ -82,21 +81,13 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects projects={allProjects} range={[1, 1]} />
+        <Projects projects={allProjects} range={[1, 2]} />
       </RevealFx>
-      {routes["/blog"] && (
-        <Flex fillWidth gap="24">
-          <Flex flex={1} paddingLeft="l" paddingTop="24">
-            <Heading as="h2" variant="display-strong-xs" wrap="balance">
-              Latest from the blog
-            </Heading>
-          </Flex>
-          <Flex flex={3} paddingX="20">
-            <Posts range={[1, 2]} columns="2" />
-          </Flex>
-        </Flex>
-      )}
-      <Projects projects={allProjects} range={[2, 3]} />
+      <RevealFx delay={0.8} fillWidth horizontal="center" paddingBottom="24">
+        <SmartLink href={work.path} suffixIcon="arrowRight">
+          <Text variant="body-default-m">View all projects</Text>
+        </SmartLink>
+      </RevealFx>
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );
