@@ -1,24 +1,43 @@
-name: Dependabot auto-merge
-on: pull_request
+name: Dependabot security and dependency updates
+
+on:
+  pull_request:
+    branches: [main, master]
 
 permissions:
-  pull-requests: write
   contents: write
+  pull-requests: write
 
 jobs:
-  dependabot:
-    runs-on: ubuntu-latest
+  verify-and-merge:
     if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
     steps:
-      - name: Fetch Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v2
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Check out pull request
+        uses: actions/checkout@v4
 
-      - name: Auto-merge patch/minor updates only
-        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
-        run: gh pr merge --auto --merge "$PR_URL"
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          cache-dependency-path: main/pnpm-lock.yaml
+
+      - name: Install dependencies
+        working-directory: main
+        run: pnpm install --frozen-lockfile
+
+      - name: Build portfolio
+        working-directory: main
+        run: pnpm build
+
+      - name: Enable auto-merge after successful build
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge --auto --merge "$PR_URL"

@@ -33,7 +33,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/deepesh-patil-103a87258/",
+    link: "https://www.linkedin.com/in/deepesh-patil/",
   },
   {
     name: "Instagram",
@@ -122,9 +122,12 @@ const about = {
       },
       {
         company: "Abacus Insights",
-        timeframe: "Apr 2026 – May 2026",
-        role: "Supervised Project — Claim Denial Prevention",
+        timeframe: "Feb 2026 – May 2026",
+        role: "Intern — Bootcamp & Supervised Project",
         achievements: [
+          <>
+            Completed an intensive bootcamp covering Python, Databricks, PySpark, Delta Lake, Unity Catalog, and AWS — building foundational hands-on proficiency across the modern data engineering stack.
+          </>,
           <>
             Built a claim-denial prevention prototype on synthetic data using XGBoost, SHAP, FastAPI, Next.js, and a Databricks medallion pipeline — predicting denial risk and generating remediation guidance before payer submission.
           </>,
@@ -262,11 +265,11 @@ const blog = {
 
 const work = {
   path: "/work",
-  label: "Work",
+  label: "Projects",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Showcasable projects and builds by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/work/projects
+  // All projects will be listed on the /work route
 };
 
 export { person, social, newsletter, home, about, blog, work };
