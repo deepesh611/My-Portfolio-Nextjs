@@ -50,8 +50,8 @@ const social = [
 const home = {
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Tool Stash</strong></>,
-    href: "/work/tool-stash",
+    title: <>Recent project: <strong className="ml-4">Retail Lakehouse</strong></>,
+    href: "/work/retail-lakehouse",
   },
 
   path: "/",

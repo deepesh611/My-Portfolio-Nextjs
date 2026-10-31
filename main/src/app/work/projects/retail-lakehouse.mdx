@@ -1,0 +1,49 @@
+---
+title: "Retail Lakehouse Portfolio"
+publishedAt: "2026-10-30"
+summary: "End-to-end retail lakehouse on Databricks: synthetic ingest → Lakeflow bronze/silver/gold → Unity Catalog governance → MLflow churn model with champion/challenger → batch scoring → Streamlit/FastAPI control room with Genie."
+images:
+  - "/images/projects/retail-lakehouse/cover-01.png"
+  - "/images/projects/retail-lakehouse/cover-02.png"
+  - "/images/projects/retail-lakehouse/cover-03.png"
+team:
+  - name: Deepesh Patil
+    role: Software Engineer
+    avatar: "/images/avatar.jpg"
+    linkedin: "https://www.linkedin.com/in/deepesh-patil"
+link: "https://github.com/deepesh611/Retail-Lakehouse-Portfolio"
+---
+
+## Overview
+
+**Retail Lakehouse Portfolio** answers one question end to end: *which customers will churn next week, and is the pipeline healthy?*
+
+Synthetic retail orders land in a Unity Catalog volume, flow through a Lakeflow Declarative Pipeline (bronze → silver expectations/quarantine → gold SCD2 + customer 360), then power AI/BI + Genie, an MLflow churn model with champion/challenger promotion, batch scoring, and a Databricks App control room (Streamlit UI + FastAPI over shared services). Delivery uses a Declarative Automation Bundle with `dev`/`prod` targets and GitHub Actions for pytest + bundle validate/deploy.
+
+## Key Features
+
+- Synthetic ingest of customers, orders, and clickstream into a UC Volume
+- Lakeflow bronze/silver/gold with Auto Loader, data expectations, and quarantine
+- Gold SCD Type 2 customers, order facts, customer 360, and region KPIs
+- Unity Catalog governance — PII tags, email masking UDF, region-filtered views
+- MLflow GBM churn model with champion/challenger promotion and batch scoring to Delta
+- Streamlit control room + FastAPI (`/models`, `/predictions`, `/predict`, `/pipeline/health`, `/genie/ask`)
+- Databricks Asset Bundle (`dev`/`prod`) with paused schedules and CI validation
+- Offline pytest suite for quality gates without a live workspace
+
+## Architecture
+
+1. **Ingest** — Job writes synthetic JSON under a UC Volume landing path  
+2. **Lakehouse** — Lakeflow pipeline builds bronze → silver (quarantine bad rows) → gold  
+3. **Governance** — Job applies tags, `mask_email`, and masked/region views  
+4. **ML** — Train, promote via thresholds, batch-score into `churn_predictions`  
+5. **Serve** — Control room App reads registry, predictions, pipeline health, and Genie  
+
+## Technologies Used
+
+- Databricks (Lakeflow Declarative Pipelines, Unity Catalog, Databricks Apps)
+- PySpark / Delta Lake
+- MLflow (model registry, champion/challenger)
+- Streamlit + FastAPI
+- Databricks Asset Bundles + GitHub Actions
+- AI/BI Dashboards + Genie
